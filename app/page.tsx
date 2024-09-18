@@ -12,18 +12,21 @@ export default function Home() {
           height={195}
           priority
         />
-        <h1 className="text-2xl font-bold text-[#40514e] text-center sm:text-3xl">
-          Physical Therapy for Your Pelvic Floor & Whole Body
-        </h1>
-        <ul className="list-inside text-[#11999e] text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Expert care for pregnancy, postpartum, menopause, and sexual health.
-          </li>
-          <li>
-            Not sure if pelvic floor PT is right for you? We have a quiz for
-            that.
-          </li>
-        </ul>
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-xl font-bold text-[#40514e] text-center sm:text-2xl pb-4 pt-6">
+            Physical Therapy for Your Pelvic Floor & Whole Body
+          </h1>
+          <ul className="list-inside text-[#11999e] text-sm text-center sm:text-left font-[family-name:var(--font-geist-sans)]">
+            <li className="mb-2">
+              Expert care for pregnancy, postpartum, menopause, and sexual
+              health.
+            </li>
+            <li>
+              Not sure if pelvic floor PT is right for you? We have a quiz for
+              that.
+            </li>
+          </ul>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row ">
           <a
