@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Eleva Care: Empowering growth, embracing care. Expert care for pregnancy, postpartum, menopause, and sexual health.",
     images: [
       {
-        url: "https://eleva.care/img/eleva-care-share.png",
+        url: "https://eleva.care/img/eleva-care-share.svg",
         width: 1200,
         height: 680,
         alt: "Eleva Care",
