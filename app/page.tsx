@@ -5,7 +5,7 @@ export default function Home() {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center ">
         <Image
-          className="dark:invert w-96"
+          className="w-96"
           src="/img/logo-eleva-care.svg"
           alt="Eleva Care"
           width={740}
@@ -13,9 +13,6 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-xl font-bold text-[#40514e] text-center sm:text-2xl pb-4 pt-6">
-            Physical Therapy for Your Pelvic Floor & Whole Body
-          </h1>
           <ul className="list-inside text-[#11999e] text-sm text-center sm:text-left font-[family-name:var(--font-geist-sans)]">
             <li className="mb-2">
               Expert care for pregnancy, postpartum, menopause, and sexual
@@ -30,13 +27,13 @@ export default function Home() {
 
         <div className="flex gap-4 items-center flex-col sm:flex-row ">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#1999e] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#1999e]  text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://patimota.typeform.com/to/XNQHJbgT?utm_source=eleva-care&utm_medium=website&utm_campaign=ongoing&utm_term=physical%2Btherapy&utm_content=temp_home_btn"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Image
-              className="dark:invert"
+              className=""
               src="/img/clipboard-icon.svg"
               alt="Vercel logomark"
               width={20}
@@ -45,7 +42,7 @@ export default function Home() {
             Take the Quiz
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border border-solid border-black/[.08] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://cal.com/patimota/consulta-de-fisioterapia"
             target="_blank"
             rel="noopener noreferrer"
