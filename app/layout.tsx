@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://eleva.care",
+    siteName: "Eleva Care",
     title: "Expert care for Pregnancy, Postpartum & Sexual Health | Eleva Care",
     description:
       "Eleva Care: Empowering growth, embracing care. Expert care for pregnancy, postpartum, menopause, and sexual health.",
