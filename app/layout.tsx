@@ -14,9 +14,24 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Physical Therapy for Your Pelvic Floor | Eleva Care",
+  title: "Expert care for Pregnancy, Postpartum & Sexual Health | Eleva Care",
   description:
-    "Eleva Care: Empowering growth, embracing care. Expert physical therapy for your pelvic floor and whole body.",
+    "Eleva Care: Empowering growth, embracing care. Expert care for pregnancy, postpartum, menopause, and sexual health.",
+  openGraph: {
+    type: "website",
+    url: "https://eleva.care",
+    title: "Expert care for Pregnancy, Postpartum & Sexual Health | Eleva Care",
+    description:
+      "Eleva Care: Empowering growth, embracing care. Expert care for pregnancy, postpartum, menopause, and sexual health.",
+    images: [
+      {
+        url: "https://eleva.care/img/eleva-care-share.png",
+        width: 1200,
+        height: 680,
+        alt: "Eleva Care",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
