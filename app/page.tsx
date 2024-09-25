@@ -30,7 +30,6 @@ export default function Home() {
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#1999e]  text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="https://patimota.typeform.com/to/XNQHJbgT?utm_source=eleva-care&utm_medium=website&utm_campaign=ongoing&utm_term=physical%2Btherapy&utm_content=temp_home_btn"
             target="_blank"
-            rel="noopener noreferrer"
           >
             <Image
               className=""
@@ -45,7 +44,6 @@ export default function Home() {
             className="rounded-full border border-solid border-black/[.08] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://cal.com/patimota/consulta-de-fisioterapia"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Book Now
           </a>
@@ -59,7 +57,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/img/podcast.svg"
+            src="/img/podcast-icon.svg"
             alt="Podcast"
             width={16}
             height={16}
