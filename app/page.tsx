@@ -54,6 +54,20 @@ export default function Home() {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://podcasters.spotify.com/pod/show/elevacare"
+          target="_blank"
+        >
+          <Image
+            aria-hidden
+            src="/img/podcast.svg"
+            alt="Podcast"
+            width={16}
+            height={16}
+          />
+          Podcast
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://www.linkedin.com/in/patimota/"
           target="_blank"
           rel="noopener noreferrer"
