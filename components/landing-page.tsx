@@ -14,6 +14,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+// Define the type for supported languages
+type Language = "en" | "pt-PT" | "es-ES";
+
 const translations = {
   "en": {
     language: "English",
@@ -279,8 +282,8 @@ const translations = {
 }
 
 export function LandingPageComponent() {
-  const [lang, setLang] = useState("en")
-  const t = translations[lang]
+  const [lang, setLang] = useState<Language>("en"); // Use the defined type
+  const t = translations[lang]; // Now TypeScript knows lang is a valid key
   const [isHalfPageModalOpen, setIsHalfPageModalOpen] = useState(false)
 
   return (
