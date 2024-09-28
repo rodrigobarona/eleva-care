@@ -39,36 +39,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"; // Import the Carousel component
-import { Canvas, useFrame, useLoader, ThreeElements } from "@react-three/fiber";
-import { TextureLoader } from "three/src/loaders/TextureLoader"; // Corrected import
-import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
-
-function CoverArt(props: ThreeElements["mesh"]) {
-  const mesh = useRef<THREE.Mesh>(null!);
-  const [hovered, setHover] = useState(false);
-  const texture = useLoader(
-    TextureLoader,
-    "/img/Elevating-Women-Health-Podcast.png"
-  );
-
-  useFrame((state, delta) => {
-    mesh.current.rotation.y = Math.sin(state.clock.elapsedTime) * 0.2;
-  });
-
-  return (
-    <mesh
-      {...props}
-      ref={mesh}
-      scale={hovered ? 1 : 1}
-      onPointerOver={() => setHover(true)}
-      onPointerOut={() => setHover(false)}
-    >
-      <boxGeometry args={[4, 4, 0.2]} />
-      <meshStandardMaterial color="#111111" />
-      <meshBasicMaterial map={texture} />
-    </mesh>
-  );
-}
 
 // Define the type for supported languages
 type Language = "en" | "pt-PT" | "es-ES";
@@ -146,13 +116,24 @@ export default function LandingPage() {
       </header>
       <main className="flex-1 pt-16">
         <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-[#e6f3f3] to-[#f0f8f8]">
-          <div className="container px-4 md:px-6">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/Females-Standing-Camera.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-pink-100 opacity-60"></div>
+          <div className="container relative z-10 px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <FadeInSection>
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-[#0d6c70]">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
                   {t.hero.title}
                 </h1>
-                <p className="mx-auto max-w-[700px] text-[#576d69] md:text-xl">
+                <p className="mx-auto max-w-[700px] text-white md:text-xl">
                   {t.hero.subtitle}
                 </p>
                 <div className="space-x-4">
@@ -234,23 +215,14 @@ export default function LandingPage() {
                     </Link>
                   </Button>
                 </div>
-                <div className="flex justify-center w-96 h-96">
-                  <Canvas className="w-96 h-96">
-                    <PerspectiveCamera makeDefault position={[0, 0, 6]} />
-                    <ambientLight intensity={0.5} />
-                    <spotLight
-                      position={[10, 10, 10]}
-                      angle={0.15}
-                      penumbra={1}
-                    />
-                    <OrbitControls enableZoom={false} />
-                    <spotLight
-                      position={[10, 10, 10]}
-                      angle={0.15}
-                      penumbra={1}
-                    />
-                    <CoverArt />
-                  </Canvas>
+                <div className="flex justify-center">
+                  <Image
+                    src="/img/Elevating-Women-Health-Podcast.png"
+                    alt="Eleva Care Podcast"
+                    width={300}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                  />
                 </div>
               </div>
             </div>
@@ -342,7 +314,10 @@ export default function LandingPage() {
                     </h4>
                     <ul className="list-disc list-inside text-[#576d69]">
                       {t.mission.beliefs.items.map((item, index) => (
-                        <li key={index}>{item}</li>
+                        <li key={index} className="flex items-center">
+                          <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
+                          {item}
+                        </li>
                       ))}
                     </ul>
                   </div>
