@@ -22,6 +22,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -37,6 +38,28 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"; // Import the Carousel component
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { TextureLoader } from "three/src/loaders/TextureLoader"; // Corrected import
+import { PerspectiveCamera, Text } from "@react-three/drei";
+
+function CoverArt() {
+  const mesh = useRef<THREE.Mesh>(null!);
+  const texture = useLoader(
+    TextureLoader,
+    "/img/Elevating-Women-Health-Podcast.png"
+  );
+
+  useFrame((state) => {
+    mesh.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
+  });
+
+  return (
+    <mesh ref={mesh}>
+      <planeGeometry args={[3, 3]} />
+      <meshBasicMaterial map={texture} />
+    </mesh>
+  );
+}
 
 // Define the type for supported languages
 type Language = "en" | "pt-PT" | "es-ES";
@@ -210,6 +233,17 @@ export default function LandingPage() {
                     height={300}
                     className="rounded-lg shadow-lg"
                   />
+
+                  <Canvas>
+                    <PerspectiveCamera makeDefault position={[0, 0, 3]} />
+                    <ambientLight intensity={0.5} />
+                    <spotLight
+                      position={[10, 10, 10]}
+                      angle={0.15}
+                      penumbra={1}
+                    />
+                    <CoverArt />
+                  </Canvas>
                 </div>
               </div>
             </div>
@@ -421,7 +455,7 @@ export default function LandingPage() {
           </section>
         </FadeInSection>
         <FadeInSection>
-          <section className="w-full py-12 md:py-24 bg-white">
+          <section className="w-full py-12 md:py-24 bg-[#f0f8f8]">
             <div className="container px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-8 text-[#0d6c70]">
                 {t.social.title}

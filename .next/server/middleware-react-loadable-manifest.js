@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST='{"node_modules/.pnpm/@react-three+drei@9.114.0_@react-three+fiber@8.17.8_react-dom@18.3.1_react@18.3.1__react-nati_kibrdi7kkg7vda3lbjzd2lwpti/node_modules/@react-three/drei/core/VideoTexture.js -> hls.js":{"id":null,"files":[]},"node_modules/.pnpm/@react-three+drei@9.114.0_@react-three+fiber@8.17.8_react-dom@18.3.1_react@18.3.1__react-nati_kibrdi7kkg7vda3lbjzd2lwpti/node_modules/@react-three/drei/web/FaceLandmarker.js -> @mediapipe/tasks-vision":{"id":null,"files":[]}}';
