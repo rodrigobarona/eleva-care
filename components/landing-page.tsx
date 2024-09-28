@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { translations as en } from "../public/locales/en";
 import { translations as pt } from "../public/locales/pt-PT";
@@ -38,24 +39,32 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"; // Import the Carousel component
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { Canvas, useFrame, useLoader, ThreeElements } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader"; // Corrected import
-import { PerspectiveCamera, Text } from "@react-three/drei";
+import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
 
-function CoverArt() {
+function CoverArt(props: ThreeElements["mesh"]) {
   const mesh = useRef<THREE.Mesh>(null!);
+  const [hovered, setHover] = useState(false);
   const texture = useLoader(
     TextureLoader,
     "/img/Elevating-Women-Health-Podcast.png"
   );
 
-  useFrame((state) => {
-    mesh.current.rotation.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
+  useFrame((state, delta) => {
+    mesh.current.rotation.y = Math.sin(state.clock.elapsedTime) * 0.2;
   });
 
   return (
-    <mesh ref={mesh}>
-      <planeGeometry args={[3, 3]} />
+    <mesh
+      {...props}
+      ref={mesh}
+      scale={hovered ? 1 : 1}
+      onPointerOver={() => setHover(true)}
+      onPointerOut={() => setHover(false)}
+    >
+      <boxGeometry args={[4, 4, 0.2]} />
+      <meshStandardMaterial color="#111111" />
       <meshBasicMaterial map={texture} />
     </mesh>
   );
@@ -225,18 +234,16 @@ export default function LandingPage() {
                     </Link>
                   </Button>
                 </div>
-                <div className="flex justify-center">
-                  <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt="Eleva Care Podcast"
-                    width={300}
-                    height={300}
-                    className="rounded-lg shadow-lg"
-                  />
-
-                  <Canvas>
-                    <PerspectiveCamera makeDefault position={[0, 0, 3]} />
+                <div className="flex justify-center w-96 h-96">
+                  <Canvas className="w-96 h-96">
+                    <PerspectiveCamera makeDefault position={[0, 0, 6]} />
                     <ambientLight intensity={0.5} />
+                    <spotLight
+                      position={[10, 10, 10]}
+                      angle={0.15}
+                      penumbra={1}
+                    />
+                    <OrbitControls enableZoom={false} />
                     <spotLight
                       position={[10, 10, 10]}
                       angle={0.15}

@@ -29,42 +29,42 @@ export const translations = {
         title: "Pregnancy & Postpartum",
         description:
           "Expert care and support throughout your pregnancy and postpartum journey, including physical therapy, OB/GYN care, and nutritional guidance.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Leaf className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Pelvic Health",
         description:
           "Specialized treatments for pelvic pain, incontinence, and prolapse, with customized plans tailored to your unique needs.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Brain className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Mental Wellness",
         description:
           "Access to therapy and support for stress, anxiety, and depression, ensuring your mental health is prioritized at every stage.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Dumbbell className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Fitness & Nutrition",
         description:
           "Personalized fitness plans and nutritional guidance to help you achieve your health goals and feel your best.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Users className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Teen Health",
         description:
           "Specialized support for young women navigating puberty, menstruation, and the transition to adulthood.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Heart className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Menopause Management",
         description:
           "Comprehensive care to address hormonal changes and prioritize well-being during the menopausal transition.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
     ],
   },
@@ -111,28 +111,28 @@ export const translations = {
       {
         name: "Dr. Patricia Mota",
         role: "Founder & CEO",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "Our goal is to make expert women's health care accessible to all, regardless of location or circumstances.",
       },
       {
         name: "Dr. Sofia Rodriguez",
         role: "Chief Medical Officer",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "We're bridging the gap between cutting-edge research and everyday patient care.",
       },
       {
         name: "Emma Chen",
         role: "Head of Patient Experience",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "At Eleva Care, we're reimagining healthcare to put women's needs and experiences first.",
       },
       {
         name: "Dr. Aisha Patel",
         role: "Lead Researcher",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "Our research drives innovation in women's health, leading to better outcomes for all.",
       },

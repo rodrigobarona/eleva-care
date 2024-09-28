@@ -375,7 +375,7 @@ export function LandingPageComponent() {
         <section
           className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
+            backgroundImage: "url('/placeholder.png?height=1080&width=1920')",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -466,7 +466,7 @@ export function LandingPageComponent() {
               </div>
               <div className="flex justify-center">
                 <Image
-                  src="/placeholder.svg?height=300&width=300"
+                  src="/placeholder.png?height=300&width=300"
                   alt="Eleva Care Podcast"
                   width={300}
                   height={300}
@@ -488,7 +488,7 @@ export function LandingPageComponent() {
               <Card className="bg-[#f0f8f8] border-[#1999e]">
                 <CardContent className="p-6">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/placeholder.png?height=200&width=300"
                     alt="Pregnancy & Postpartum Care"
                     width={300}
                     height={200}
@@ -508,7 +508,7 @@ export function LandingPageComponent() {
               <Card className="bg-[#f0f8f8] border-[#1999e]">
                 <CardContent className="p-6">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/placeholder.png?height=200&width=300"
                     alt="Pelvic Health Services"
                     width={300}
                     height={200}
@@ -528,7 +528,7 @@ export function LandingPageComponent() {
               <Card className="bg-[#f0f8f8] border-[#1999e]">
                 <CardContent className="p-6">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/placeholder.png?height=200&width=300"
                     alt="Comprehensive Women's Health"
                     width={300}
                     height={200}

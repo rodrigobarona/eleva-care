@@ -31,42 +31,42 @@ export const translations = {
         title: "Embarazo y Posparto",
         description:
           "Atención y apoyo expertos durante todo tu viaje de embarazo y posparto, incluyendo fisioterapia, atención obstétrica/ginecológica y orientación nutricional.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Leaf className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Salud Pélvica",
         description:
           "Tratamientos especializados para el dolor pélvico, incontinencia y prolapso, con planes personalizados adaptados a tus necesidades únicas.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Brain className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Bienestar Mental",
         description:
           "Acceso a terapia y apoyo para el estrés, la ansiedad y la depresión, asegurando que tu salud mental sea priorizada en cada etapa.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Dumbbell className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Fitness y Nutrición",
         description:
           "Planes de fitness personalizados y orientación nutricional para ayudarte a alcanzar tus objetivos de salud y sentirte en tu mejor forma.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Users className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Salud Adolescente",
         description:
           "Apoyo especializado para mujeres jóvenes que atraviesan la pubertad, la menstruación y la transición a la edad adulta.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Heart className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Manejo de la Menopausia",
         description:
           "Atención integral para abordar los cambios hormonales y priorizar el bienestar durante la transición de la menopausia.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
     ],
   },
@@ -113,28 +113,28 @@ export const translations = {
       {
         name: "Dra. Patricia Mota",
         role: "Fundadora y CEO",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "Nuestro objetivo es hacer que la atención médica especializada para mujeres sea accesible para todas, independientemente de su ubicación o circunstancias.",
       },
       {
         name: "Dra. Sofía Rodríguez",
         role: "Directora Médica",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "Estamos cerrando la brecha entre la investigación de vanguardia y la atención diaria a las pacientes.",
       },
       {
         name: "Emma Chen",
         role: "Responsable de Experiencia del Paciente",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "En Eleva Care, estamos reimaginando la atención médica para poner las necesidades y experiencias de las mujeres en primer lugar.",
       },
       {
         name: "Dra. Aisha Patel",
         role: "Investigadora Principal",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "Nuestra investigación impulsa la innovación en la salud de las mujeres, llevando a mejores resultados para todas.",
       },

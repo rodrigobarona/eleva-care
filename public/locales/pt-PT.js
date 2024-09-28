@@ -31,42 +31,42 @@ export const translations = {
         title: "Gravidez e Pós-parto",
         description:
           "Cuidados e apoio especializados durante toda a sua jornada de gravidez e pós-parto, incluindo fisioterapia, cuidados obstétricos/ginecológicos e orientação nutricional.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Leaf className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Saúde Pélvica",
         description:
           "Tratamentos especializados para dor pélvica, incontinência e prolapso, com planos personalizados adaptados às suas necessidades únicas.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Brain className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Bem-estar Mental",
         description:
           "Acesso a terapia e apoio para stress, ansiedade e depressão, garantindo que a sua saúde mental é priorizada em todas as etapas.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Dumbbell className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Fitness e Nutrição",
         description:
           "Planos de fitness personalizados e orientação nutricional para ajudá-la a alcançar os seus objetivos de saúde e sentir-se no seu melhor.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Users className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Saúde Adolescente",
         description:
           "Apoio especializado para jovens mulheres que atravessam a puberdade, menstruação e a transição para a idade adulta.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
       {
         icon: <Heart className="w-12 h-12 text-[#0d6c70] mb-4" />,
         title: "Gestão da Menopausa",
         description:
           "Cuidados abrangentes para abordar as mudanças hormonais e priorizar o bem-estar durante a transição da menopausa.",
-        image: "/placeholder.svg?height=200&width=300",
+        image: "/placeholder.png?height=200&width=300",
       },
     ],
   },
@@ -113,28 +113,28 @@ export const translations = {
       {
         name: "Dra. Patrícia Mota",
         role: "Fundadora e CEO",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "O nosso objetivo é tornar os cuidados de saúde feminina especializados acessíveis a todas, independentemente da localização ou circunstâncias.",
       },
       {
         name: "Dra. Sofia Rodriguez",
         role: "Diretora Médica",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "Estamos a colmatar a lacuna entre a investigação de ponta e os cuidados diários às pacientes.",
       },
       {
         name: "Emma Chen",
         role: "Responsável pela Experiência da Paciente",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "Na Eleva Care, estamos a reimaginar os cuidados de saúde para colocar as necessidades e experiências das mulheres em primeiro lugar.",
       },
       {
         name: "Dra. Aisha Patel",
         role: "Investigadora Principal",
-        image: "/placeholder.svg?height=400&width=300",
+        image: "/placeholder.png?height=400&width=300",
         quote:
           "A nossa investigação impulsiona a inovação na saúde das mulheres, levando a melhores resultados para todas.",
       },
