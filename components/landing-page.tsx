@@ -1,17 +1,13 @@
 "use client";
 
-import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { translations as en } from "../public/locales/en";
-import { translations as pt } from "../public/locales/pt-PT";
-import { translations as es } from "../public/locales/es-ES";
+import { translations as pt } from "../public/locales/pt";
+import { translations as es } from "../public/locales/es";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import {
   ChevronRight,
-  Sparkles,
-  Globe,
-  ChevronDown,
   Podcast,
   Linkedin,
   Instagram,
@@ -24,12 +20,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import React from "react"; // Ensure React is imported
 import FadeInSection from "@/components/ui/FadeInSection"; // Update the import path
 import {
@@ -39,14 +29,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"; // Import the Carousel component
+import Header from "@/components/molecules/Header";
 
 // Define the type for supported languages
-type Language = "en" | "pt-PT" | "es-ES";
+type Language = "en" | "pt" | "es";
 
 const languageMap = {
   en: en,
-  "pt-PT": pt,
-  "es-ES": es,
+  pt: pt,
+  es: es,
 };
 
 export default function LandingPage() {
@@ -56,64 +47,8 @@ export default function LandingPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-[#e6f3f3]">
-      <header className="px-4 lg:px-6 h-16 flex items-center bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 fixed w-full z-50 border-b border-[#0d6c70]/10">
-        <Link className="flex items-center justify-center" href="#">
-          <Sparkles className="h-6 w-6 text-[#0d6c70]" />
-          <span className="ml-2 text-2xl font-bold text-[#0d6c70]">
-            Eleva Care
-          </span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
-          <Link
-            className="text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
-            href="#services"
-          >
-            {t.nav.services}
-          </Link>
-          <Link
-            className="text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
-            href="#approach"
-          >
-            {t.nav.approach}
-          </Link>
-          <Link
-            className="text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
-            href="#mission"
-          >
-            {t.nav.mission}
-          </Link>
-          <Link
-            className="text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
-            href="#team"
-          >
-            {t.nav.team}
-          </Link>
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-[#576d69] hover:text-[#0d6c70]"
-              >
-                <Globe className="h-5 w-5 mr-2" />
-                {t.language}
-                <ChevronDown className="h-4 w-4 ml-2" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuItem onClick={() => setLang("en")}>
-                English
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setLang("pt-PT")}>
-                Português
-              </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setLang("es-ES")}>
-                Español
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </nav>
-      </header>
+      <Header t={t} setLang={setLang} />
+
       <main className="flex-1 pt-16">
         <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-[#e6f3f3] to-[#f0f8f8]">
           <video
@@ -123,7 +58,7 @@ export default function LandingPage() {
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src="/Females-Standing-Camera.mp4" type="video/mp4" />
+            <source src="/hero-banner-video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-pink-100 opacity-60"></div>
