@@ -1,38 +1,18 @@
-"use client";
-
-import { Button } from "@/components/ui/button";
 import { translations as en } from "../public/locales/en";
 import { translations as pt } from "../public/locales/pt";
 import { translations as es } from "../public/locales/es";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  ChevronRight,
-  Podcast,
-  Linkedin,
-  Instagram,
-  Facebook,
-  Twitter,
-  BookOpen,
-  X,
-} from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import { Input } from "@/components/ui/input";
-import React from "react"; // Ensure React is imported
-import FadeInSection from "@/components/ui/FadeInSection"; // Update the import path
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"; // Import the Carousel component
-import Header from "@/components/molecules/NavBar"; // Import the NavBar component
-import Hero from "@/components/molecules/Hero"; // Import the Hero component
 
-// Define the type for supported languages
-type Language = "en" | "pt" | "es";
+import React from "react"; // Ensure React is imported
+import NavBar from "@/components/molecules/NavBar"; // Import the NavBar component
+import Hero from "@/components/molecules/Hero"; // Import the Hero component
+import ServiceSection from "@/components/molecules/ServiceSection";
+import ApproachSection from "@/components/molecules/ApproachSection";
+import MissionSection from "@/components/molecules/MissionSection";
+import TeamSection from "@/components/molecules/TeamSection";
+import PodcastSection from "@/components/molecules/PodcastSection";
+import NewsletterSection from "@/components/molecules/NewsletterSection";
+import FollowUsSection from "@/components/molecules/FollowUsSection"; // Import the new FollowUsSection component
+import Footer from "@/components/molecules/Footer"; // Import the new Footer component
 
 const languageMap = {
   en: en,
@@ -41,364 +21,23 @@ const languageMap = {
 };
 
 export default function Home() {
-  const [lang, setLang] = useState<Language>("en"); // Use the defined type
-  const t = languageMap[lang]; // Now TypeScript knows lang is a valid key
+  const t = languageMap["en"]; // Default to English or handle language selection in NavBar
 
   return (
     <div className="overflow-hidden">
       <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-[#e6f3f3]">
-        <Header t={t} setLang={(lang: Language) => setLang(lang)} />
-
+        <NavBar t={t} /> {/* Pass only the translation object */}
         <main className="flex-1 pt-16">
           <Hero t={t} />
-
-          <FadeInSection>
-            <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f0f8f8]">
-              <div className="container px-4 md:px-6">
-                <div className="grid gap-6 lg:grid-cols-2 items-center">
-                  <div className="space-y-4">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-[#0d6c70]">
-                      {t.podcast.title}
-                    </h2>
-                    <p className="text-[#576d69] md:text-lg">
-                      {t.podcast.description}
-                    </p>
-                    <Button
-                      className="bg-[#0d6c70] text-white hover:bg-[#0d6c70]/90"
-                      asChild
-                    >
-                      <Link
-                        href="https://podcasters.spotify.com/pod/show/elevacare"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Podcast className="mr-2 h-4 w-4" />
-                        {t.podcast.cta}
-                      </Link>
-                    </Button>
-                  </div>
-                  <div className="flex justify-center">
-                    <Image
-                      src="/img/Elevating-Women-Health-Podcast.png"
-                      alt="Eleva Care Podcast"
-                      width={300}
-                      height={300}
-                      className="rounded-lg shadow-lg"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-          </FadeInSection>
-          <FadeInSection>
-            <section
-              id="services"
-              className="w-full py-12 md:py-24 lg:py-32 bg-white"
-            >
-              <div className="container px-4 md:px-6">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-4 text-[#0d6c70]">
-                  {t.services.title}
-                </h2>
-                <p className="text-xl text-center mb-8 text-[#576d69]">
-                  {t.services.subtitle}
-                </p>
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                  {t.services.items.map((service, index) => (
-                    <Card
-                      key={index}
-                      className="bg-white border-[#0d6c70]/10 overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-                    >
-                      <Image
-                        src={service.image}
-                        alt={service.title}
-                        width={300}
-                        height={200}
-                        className="w-full h-48 object-cover"
-                      />
-                      <CardContent className="p-6">
-                        <div className="flex items-center mb-4">
-                          {service.icon}
-                          <h3 className="text-xl font-bold ml-4 text-[#0d6c70]">
-                            {service.title}
-                          </h3>
-                        </div>
-                        <p className="text-[#576d69]">{service.description}</p>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            </section>
-          </FadeInSection>
-          <FadeInSection>
-            <section
-              id="approach"
-              className="w-full py-12 md:py-24 lg:py-32 bg-[#f0f8f8]"
-            >
-              <div className="container px-4 md:px-6">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-[#0d6c70]">
-                  {t.approach.title}
-                </h2>
-                <p className="text-xl text-center max-w-[800px] mx-auto text-[#576d69]">
-                  {t.approach.description}
-                </p>
-              </div>
-            </section>
-          </FadeInSection>
-          <FadeInSection>
-            <section
-              id="mission"
-              className="w-full py-12 md:py-24 lg:py-32 bg-white"
-            >
-              <div className="container px-4 md:px-6">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#0d6c70]">
-                    {t.mission.title}
-                  </h2>
-                  <p className="mt-4 text-xl text-[#576d69]">
-                    {t.mission.subtitle}
-                  </p>
-                </div>
-                <div className="grid gap-6 lg:grid-cols-2 items-center">
-                  <div>
-                    <p className="text-xl mb-6 text-[#576d69]">
-                      {t.mission.description}
-                    </p>
-                    <h3 className="text-2xl font-bold mb-2 text-[#0d6c70]">
-                      {t.mission.vision.title}
-                    </h3>
-                    <p className="text-xl mb-6 text-[#576d69]">
-                      {t.mission.vision.description}
-                    </p>
-                    <div className="mb-6">
-                      <h4 className="text-xl font-bold mb-2 text-[#0d6c70]">
-                        {t.mission.beliefs.title}
-                      </h4>
-                      <ul className="list-disc list-inside text-[#576d69]">
-                        {t.mission.beliefs.items.map((item, index) => (
-                          <li key={index} className="flex items-center">
-                            <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <Button className="mt-4 bg-[#0d6c70] text-white hover:bg-[#0d6c70]/90">
-                      {t.mission.cta}
-                      <ChevronRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </div>
-                  <div className="grid grid-cols-2 gap-4">
-                    {t.mission.stats.map((stat, index) => (
-                      <div
-                        key={index}
-                        className="bg-[#f0f8f8] p-6 rounded-lg text-center"
-                      >
-                        <div className="text-3xl font-bold text-[#0d6c70]">
-                          {stat.value}
-                        </div>
-                        <div className="text-[#576d69]">{stat.label}</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </section>
-          </FadeInSection>
-          <FadeInSection>
-            <section
-              id="team"
-              className="w-full py-12 md:py-24 lg:py-32 bg-[#f0f8f8]"
-            >
-              <div className="container px-4 md:px-6">
-                <div className="text-center mb-12">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#0d6c70]">
-                    {t.team.title}
-                  </h2>
-                  <p className="mt-4 text-xl text-[#576d69]">
-                    {t.team.subtitle}
-                  </p>
-                </div>
-                <p className="text-center text-xl mb-12 text-[#576d69]">
-                  {t.team.description}
-                </p>
-                <div className="embla">
-                  <Carousel className="w-full max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-4xl xl:max-w-5xl mx-auto">
-                    <CarouselContent>
-                      {t.team.members.map((member, index) => (
-                        <CarouselItem
-                          key={index}
-                          className="md:basis-1/2 lg:basis-1/3"
-                        >
-                          <div className="p-1">
-                            <Card className="bg-background border-border">
-                              <CardContent className="flex flex-col items-center p-6">
-                                <Image
-                                  src={member.image}
-                                  alt={member.name}
-                                  width={200}
-                                  height={200}
-                                  className="rounded-full mb-4"
-                                />
-                                <h3 className="text-xl font-bold text-primary">
-                                  {member.name}
-                                </h3>
-                                <p className="text-muted-foreground mb-4">
-                                  {member.role}
-                                </p>
-                                <p className="text-center italic text-muted-foreground">
-                                  "{member.quote}"
-                                </p>
-                              </CardContent>
-                            </Card>
-                          </div>
-                        </CarouselItem>
-                      ))}
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                  </Carousel>
-                </div>
-              </div>
-            </section>
-          </FadeInSection>
-          <FadeInSection>
-            <section className="w-full py-12 md:py-24 bg-white">
-              <div className="container px-4 md:px-6">
-                <div className="max-w-2xl mx-auto text-center">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-[#0d6c70] mb-4">
-                    {t.newsletter.title}
-                  </h2>
-                  <p className="text-[#576d69] mb-8">
-                    {t.newsletter.description}
-                  </p>
-                  <form
-                    action="https://app.beehiiv.com/forms/YOUR_FORM_ID_HERE"
-                    method="POST"
-                    className="space-y-4"
-                  >
-                    <div className="flex gap-2">
-                      <Input
-                        type="email"
-                        name="email"
-                        placeholder={t.newsletter.placeholder}
-                        required
-                        className="flex-grow"
-                      />
-                      <Button
-                        type="submit"
-                        className="bg-[#0d6c70] text-white hover:bg-[#0d6c70]/90"
-                      >
-                        {t.newsletter.cta}
-                      </Button>
-                    </div>
-                    <p className="text-xs text-[#576d69]">
-                      {t.newsletter.privacy}
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </section>
-          </FadeInSection>
-          <FadeInSection>
-            <section className="w-full py-12 md:py-24 bg-[#f0f8f8]">
-              <div className="container px-4 md:px-6">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center mb-8 text-[#0d6c70]">
-                  {t.social.title}
-                </h2>
-                <div className="flex flex-wrap justify-center gap-4">
-                  <Button
-                    variant="outline"
-                    className="text-[#0d6c70] border-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
-                    asChild
-                  >
-                    <Link
-                      href="https://www.linkedin.com/in/patimota/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Linkedin className="mr-2 h-4 w-4" />
-                      {t.social.linkedin}
-                    </Link>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="text-[#0d6c70] border-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
-                    asChild
-                  >
-                    <Link
-                      href="https://www.instagram.com/patricia_mota_pt_phd/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Instagram className="mr-2 h-4 w-4" />
-                      {t.social.instagram}
-                    </Link>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="text-[#0d6c70] border-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
-                    asChild
-                  >
-                    <Link
-                      href="https://facebook.com/eleva.care"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Facebook className="mr-2 h-4 w-4" />
-                      {t.social.facebook}
-                    </Link>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="text-[#0d6c70] border-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
-                    asChild
-                  >
-                    <Link
-                      href="https://x.com/eleva.care"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Twitter className="mr-2 h-4 w-4" />
-                      {t.social.twitter}
-                    </Link>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="text-[#0d6c70] border-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
-                    asChild
-                  >
-                    <Link
-                      href="https://scholar.google.pt/citations?user=fNJsrScAAAAJ"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <BookOpen className="mr-2 h-4 w-4" />
-                      {t.social.scholar}
-                    </Link>
-                  </Button>
-                </div>
-              </div>
-            </section>
-          </FadeInSection>
+          <ServiceSection t={t} />
+          <ApproachSection t={t} />
+          <MissionSection t={t} />
+          <TeamSection t={t} />
+          <PodcastSection t={t} />
+          <NewsletterSection t={t} />
+          <FollowUsSection t={t} />
+          <Footer t={t} />
         </main>
-        <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-[#0d6c70]/10 bg-white">
-          <p className="text-xs text-[#576d69]">{t.footer.copyright}</p>
-          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <Link
-              className="text-xs hover:underline underline-offset-4 text-[#576d69]"
-              href="#"
-            >
-              {t.footer.terms}
-            </Link>
-            <Link
-              className="text-xs hover:underline underline-offset-4 text-[#576d69]"
-              href="#"
-            >
-              {t.footer.privacy}
-            </Link>
-          </nav>
-        </footer>
       </div>
     </div>
   );
