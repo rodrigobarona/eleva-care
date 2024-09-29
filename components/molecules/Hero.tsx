@@ -18,6 +18,7 @@ const Hero: React.FC<HeroProps> = ({ t, setIsHalfPageModalOpen }) => {
         loop
         autoPlay="muted"
         muted
+        preload="auto"
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       />
