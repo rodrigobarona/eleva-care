@@ -47,7 +47,7 @@ export default function LandingPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-white to-[#e6f3f3]">
-      <Header t={t} setLang={setLang} />
+      <Header t={t} setLang={(lang: Language) => setLang(lang)} />
 
       <main className="flex-1 pt-16">
         <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-[#e6f3f3] to-[#f0f8f8]">

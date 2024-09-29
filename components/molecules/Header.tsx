@@ -10,10 +10,15 @@ import {
 import { Globe, ChevronDown, Sparkles } from "lucide-react";
 import Image from "next/image"; // Ensure correct import for Image component
 
-const Header: React.FC<{ t: any; setLang: (lang: string) => void }> = ({
-  t,
-  setLang,
-}) => {
+type Language = "en" | "pt" | "es"; // Use 'type' to import as a type
+
+// Define the props type for Header
+type HeaderProps = {
+  t: any; // Adjust this type as needed
+  setLang: (lang: Language) => void; // Ensure setLang accepts Language type
+};
+
+const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
   return (
     <header className="px-4 lg:px-6 h-16 flex items-center bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 fixed w-full z-50 border-b border-[#0d6c70]/10">
       <Link
@@ -69,10 +74,10 @@ const Header: React.FC<{ t: any; setLang: (lang: string) => void }> = ({
             <DropdownMenuItem onClick={() => setLang("en")}>
               English
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setLang("pt-PT")}>
+            <DropdownMenuItem onClick={() => setLang("pt")}>
               Português
             </DropdownMenuItem>
-            <DropdownMenuItem onClick={() => setLang("es-ES")}>
+            <DropdownMenuItem onClick={() => setLang("es")}>
               Español
             </DropdownMenuItem>
           </DropdownMenuContent>
