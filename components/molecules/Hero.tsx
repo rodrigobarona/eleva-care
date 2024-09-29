@@ -18,6 +18,7 @@ const Hero: React.FC<HeroProps> = ({ t, setIsHalfPageModalOpen }) => {
         loop
         autoPlay="muted"
         muted
+        playsInline
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-pink-100 opacity-60"></div>
