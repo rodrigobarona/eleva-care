@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
       <MuxPlayer
         style={{ height: "100%", maxWidth: "100%" }}
         playbackId="spiirAKtzZ7TGB01MH8JSz8i101bjm2kU3"
-        poster="https://image.mux.com/spiirAKtzZ7TGB01MH8JSz8i101bjm2kU3/thumbnail.webp?height=640&fit_mode=preserve&time=0"
+        poster="https://image.mux.com/spiirAKtzZ7TGB01MH8JSz8i101bjm2kU3/thumbnail.webp?height=640&fit_mode=preserve&time=5"
         stream-type="on-demand"
         loop
         autoPlay="muted"
