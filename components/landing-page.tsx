@@ -29,7 +29,8 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"; // Import the Carousel component
-import Header from "@/components/molecules/Header";
+import Header from "@/components/molecules/NavBar"; // Import the NavBar component
+import Hero from "@/components/molecules/Hero"; // Import the Hero component
 
 // Define the type for supported languages
 type Language = "en" | "pt" | "es";
@@ -50,55 +51,7 @@ export default function LandingPage() {
       <Header t={t} setLang={(lang: Language) => setLang(lang)} />
 
       <main className="flex-1 pt-16">
-        <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-[#e6f3f3] to-[#f0f8f8]">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            <source src="/hero-banner-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-r from-yellow-100 to-pink-100 opacity-60"></div>
-          <div className="container relative z-10 px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <FadeInSection>
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
-                  {t.hero.title}
-                </h1>
-                <p className="mx-auto max-w-[700px] text-white md:text-xl">
-                  {t.hero.subtitle}
-                </p>
-                <div className="space-x-4">
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button className="bg-[#0d6c70] text-white hover:bg-[#0d6c70]/90">
-                        {t.hero.cta1}
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent className="sm:max-w-[425px]">
-                      <iframe
-                        src="https://patimota.typeform.com/to/XNQHJbgT?utm_source=eleva-care&utm_medium=website&utm_campaign=ongoing&utm_term=physical%2Btherapy&utm_content=temp_home_btn"
-                        width="100%"
-                        height="500px"
-                        frameBorder="0"
-                      ></iframe>
-                    </DialogContent>
-                  </Dialog>
-                  <Button
-                    variant="outline"
-                    className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
-                    onClick={() => setIsHalfPageModalOpen(true)}
-                  >
-                    {t.hero.cta2}
-                  </Button>
-                </div>
-              </FadeInSection>
-            </div>
-          </div>
-        </section>
+        <Hero t={t} setIsHalfPageModalOpen={setIsHalfPageModalOpen} />
         {isHalfPageModalOpen && (
           <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center">
             <div className="bg-white w-full max-w-2xl h-1/2 rounded-t-lg overflow-hidden flex flex-col">
