@@ -51,33 +51,8 @@ export default function LandingPage() {
       <Header t={t} setLang={(lang: Language) => setLang(lang)} />
 
       <main className="flex-1 pt-16">
-        <Hero t={t} setIsHalfPageModalOpen={setIsHalfPageModalOpen} />
-        {isHalfPageModalOpen && (
-          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center">
-            <div className="bg-white w-full max-w-2xl h-1/2 rounded-t-lg overflow-hidden flex flex-col">
-              <div className="flex justify-between items-center p-4 border-b border-[#0d6c70]/10">
-                <h2 className="text-xl font-bold text-[#0d6c70]">
-                  {t.hero.cta2}
-                </h2>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => setIsHalfPageModalOpen(false)}
-                >
-                  <X className="h-4 w-4" />
-                </Button>
-              </div>
-              <div className="flex-1 overflow-auto">
-                <iframe
-                  src="https://cal.com/patimota/consulta-de-fisioterapia"
-                  width="100%"
-                  height="100%"
-                  frameBorder="0"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        )}
+        <Hero t={t} />
+
         <FadeInSection>
           <section className="w-full py-12 md:py-24 lg:py-32 bg-[#f0f8f8]">
             <div className="container px-4 md:px-6">

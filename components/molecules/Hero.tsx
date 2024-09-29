@@ -1,14 +1,19 @@
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogOverlay,
+  DialogPortal,
+} from "@/components/ui/dialog";
 import FadeInSection from "@/components/ui/FadeInSection";
 import MuxPlayer from "@mux/mux-video-react"; // Change to MuxPlayer
 
 type HeroProps = {
   t: any; // Adjust this type as needed
-  setIsHalfPageModalOpen: (open: boolean) => void; // Function to control modal state
 };
 
-const Hero: React.FC<HeroProps> = ({ t, setIsHalfPageModalOpen }) => {
+const Hero: React.FC<HeroProps> = ({ t }) => {
   return (
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-[#e6f3f3] to-[#f0f8f8]">
       <MuxPlayer
@@ -39,22 +44,38 @@ const Hero: React.FC<HeroProps> = ({ t, setIsHalfPageModalOpen }) => {
                     {t.hero.cta1}
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-[425px]">
-                  <iframe
-                    src="https://patimota.typeform.com/to/XNQHJbgT?utm_source=eleva-care&utm_medium=website&utm_campaign=ongoing&utm_term=physical%2Btherapy&utm_content=temp_home_btn"
-                    width="100%"
-                    height="500px"
-                    frameBorder="0"
-                  ></iframe>
-                </DialogContent>
+                <DialogPortal>
+                  <DialogOverlay className="bg-green-500/20">
+                    <DialogContent className="w-screen h-screen max-w-fit p-2">
+                      <iframe
+                        src="https://patimota.typeform.com/to/XNQHJbgT?utm_source=eleva-care&utm_medium=website&utm_campaign=ongoing&utm_term=physical%2Btherapy&utm_content=temp_home_btn"
+                        width="900px"
+                        height="100%"
+                        frameBorder="0"
+                      ></iframe>
+                    </DialogContent>
+                  </DialogOverlay>
+                </DialogPortal>
               </Dialog>
-              <Button
-                variant="outline"
-                className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
-                onClick={() => setIsHalfPageModalOpen(true)}
-              >
-                {t.hero.cta2}
-              </Button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white">
+                    {t.hero.cta2}
+                  </Button>
+                </DialogTrigger>
+                <DialogPortal>
+                  <DialogOverlay className="bg-green-500/20">
+                    <DialogContent className="sm:max-w-[425px]">
+                      <iframe
+                        src="https://cal.com/patimota/consulta-de-fisioterapia"
+                        width="100%"
+                        height="500px"
+                        frameBorder="0"
+                      ></iframe>
+                    </DialogContent>
+                  </DialogOverlay>
+                </DialogPortal>
+              </Dialog>
             </div>
           </FadeInSection>
         </div>
