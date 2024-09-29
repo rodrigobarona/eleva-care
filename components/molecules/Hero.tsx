@@ -13,8 +13,9 @@ const Hero: React.FC<HeroProps> = ({ t, setIsHalfPageModalOpen }) => {
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-[#e6f3f3] to-[#f0f8f8]">
       <MuxPlayer
         style={{ height: "100%", maxWidth: "100%" }}
-        playbackId="DS00Spx1CV902MCtPj5WknGlR102V5HFkDe"
-        controls
+        playbackId="spiirAKtzZ7TGB01MH8JSz8i101bjm2kU3"
+        stream-type="on-demand"
+        loop
         autoPlay
         muted
         className="absolute inset-0 w-full h-full object-cover"
