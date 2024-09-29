@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ t, setIsHalfPageModalOpen }) => {
         playbackId="spiirAKtzZ7TGB01MH8JSz8i101bjm2kU3"
         stream-type="on-demand"
         loop
-        autoPlay
+        autoPlay="muted"
         muted
         className="absolute inset-0 w-full h-full object-cover"
       />
