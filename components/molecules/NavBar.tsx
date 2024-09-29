@@ -36,25 +36,25 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
         <Link
-          className="text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
+          className="hidden md:block  text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
           href="#services"
         >
           {t.nav.services}
         </Link>
         <Link
-          className="text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
+          className="hidden md:block text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
           href="#approach"
         >
           {t.nav.approach}
         </Link>
         <Link
-          className="text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
+          className="hidden md:block text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
           href="#mission"
         >
           {t.nav.mission}
         </Link>
         <Link
-          className="text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
+          className="hidden md:block text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
           href="#team"
         >
           {t.nav.team}

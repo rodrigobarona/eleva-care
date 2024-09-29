@@ -46,10 +46,10 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
                 </DialogTrigger>
                 <DialogPortal>
                   <DialogOverlay className="bg-green-500/20">
-                    <DialogContent className="w-screen h-screen max-w-fit p-2">
+                    <DialogContent className="w-screen h-screen">
                       <iframe
                         src="https://patimota.typeform.com/to/XNQHJbgT?utm_source=eleva-care&utm_medium=website&utm_campaign=ongoing&utm_term=physical%2Btherapy&utm_content=temp_home_btn"
-                        width="900px"
+                        width="100%"
                         height="100%"
                         frameBorder="0"
                       ></iframe>
@@ -65,11 +65,11 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
                 </DialogTrigger>
                 <DialogPortal>
                   <DialogOverlay className="bg-green-500/20">
-                    <DialogContent className="sm:max-w-[425px]">
+                    <DialogContent className="w-screen h-screen">
                       <iframe
                         src="https://cal.com/patimota/consulta-de-fisioterapia"
                         width="100%"
-                        height="500px"
+                        height="100%"
                         frameBorder="0"
                       ></iframe>
                     </DialogContent>
