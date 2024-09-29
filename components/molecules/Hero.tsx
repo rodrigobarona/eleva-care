@@ -59,7 +59,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
               </Dialog>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white">
+                  <Button className="bg-[#0d6c70] text-white hover:bg-[#0d6c70]/90">
                     {t.hero.cta2}
                   </Button>
                 </DialogTrigger>
