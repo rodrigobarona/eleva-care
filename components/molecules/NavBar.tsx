@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react"; // Import useEffect and useState
+import { useState } from "react"; // Import useState
 import Link from "next/link"; // Adjusted import to default export
 import { Button } from "@/components/ui/button";
 
@@ -21,19 +21,7 @@ type HeaderProps = {
 };
 
 const Header: React.FC<HeaderProps> = ({ t }) => {
-  const [lang, setLang] = useState<Language>("en"); // Default to English
-
-  useEffect(() => {
-    // Read the language from the cookie
-    const langCookie = document.cookie
-      .split('; ')
-      .find(row => row.startsWith('lang='))
-      ?.split('=')[1];
-
-    if (langCookie) {
-      setLang(langCookie as Language); // Set the language from the cookie
-    }
-  }, []);
+  const [lang, setLang] = useState<Language>("en"); // Move state here
 
   return (
     <header className="px-4 lg:px-6 h-16 flex items-center bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 fixed w-full z-50 border-b border-[#0d6c70]/10">

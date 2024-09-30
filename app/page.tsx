@@ -21,13 +21,7 @@ const languageMap = {
 };
 
 export default function Home() {
-  // Read the language from the cookie
-  const langCookie = document.cookie
-    .split('; ')
-    .find(row => row.startsWith('lang='))
-    ?.split('=')[1] || 'en'; // Default to English if cookie is not set
-
-  const t = languageMap[langCookie]; // Get translations based on the cookie
+  const t = languageMap["en"]; // Default to English or handle language selection in NavBar
 
   return (
     <div className="overflow-hidden">
