@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react"; // Import useState
 import Link from "next/link"; // Adjusted import to default export
 import { Button } from "@/components/ui/button";
 
@@ -10,7 +7,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Globe, ChevronDown } from "lucide-react";
+import { Globe, ChevronDown, Sparkles } from "lucide-react";
 import Image from "next/image"; // Ensure correct import for Image component
 
 type Language = "en" | "pt" | "es"; // Use 'type' to import as a type
@@ -18,11 +15,10 @@ type Language = "en" | "pt" | "es"; // Use 'type' to import as a type
 // Define the props type for Header
 type HeaderProps = {
   t: any; // Adjust this type as needed
+  setLang: (lang: Language) => void; // Ensure setLang accepts Language type
 };
 
-const Header: React.FC<HeaderProps> = ({ t }) => {
-  const [lang, setLang] = useState<Language>("en"); // Move state here
-
+const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
   return (
     <header className="px-4 lg:px-6 h-16 flex items-center bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 fixed w-full z-50 border-b border-[#0d6c70]/10">
       <Link
@@ -40,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ t }) => {
       </Link>
       <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
         <Link
-          className="hidden md:block text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
+          className="hidden md:block  text-sm font-medium text-[#576d69] hover:text-[#0d6c70] transition-colors"
           href="#services"
         >
           {t.nav.services}
