@@ -19,7 +19,7 @@ type HeroProps = {
 const Hero: React.FC<HeroProps> = ({ t }) => {
   return (
     <section
-      className="grid-cols-full bg-section-dark-bg text-section-dark-text pt-hero-top after:h-3xl after:rounded-t-5xl after:shadow-hero-ab-card-edge relative grid gap-y-0 overflow-hidden bg-cover bg-center bg-no-repeat pb-0 after:relative after:inset-x-0 after:bottom-[-1px] after:mt-auto after:box-content after:bg-black max-[480px]:bg-[length:auto_101.5%] max-[480px]:bg-[54.8%_center]"
+      className="grid-cols-full relative grid gap-y-0 overflow-hidden bg-cover bg-center bg-no-repeat max-[480px]:bg-[length:auto_101.5%] max-[480px]:bg-[54.8%_center]"
       style={{
         backgroundImage:
           'url(https://image.mux.com/ZCCYPtpN3Aatp8DLw00ziOgKjHv02gMsST/thumbnail.webp?height=640&fit_mode=preserve&time=5)',
@@ -38,15 +38,18 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         playsInline
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-slate-500 to-slate-100 opacity-60"></div>
-      <div className="touch-device:min-h-[calc(100svh-var(--header-height))] gap-y-lg pt-4xl pb-3xl z-20 mx-auto flex h-[700px] max-w-2xl flex-col justify-between sm:min-h-min sm:justify-end sm:pt-[165px] lg:max-w-7xl lg:pt-[225px]">
-        <FadeInSection>
-          <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
-            {t.hero.title}
-          </h1>
 
+      <div className="relative px-6 lg:px-8">
+        <div className="touch-device:min-h-[calc(100svh-var(--header-height))] gap-y-lg z-20 mx-auto flex h-[calc(100vh-50px)] max-w-2xl flex-col justify-end sm:min-h-min sm:pt-[165px] lg:max-w-7xl lg:justify-between">
           <div>
-            <p className="text-white md:text-xl">{t.hero.subtitle}</p>
+            <h1 className="font-display max-w-2xl text-balance text-5xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-6xl/[0.8] md:text-8xl/[0.9]">
+              {t.hero.title}
+            </h1>
+          </div>
+          <div>
+            <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
+              {t.hero.subtitle}
+            </p>
           </div>
           <div className="space-x-4">
             <Dialog>
@@ -88,7 +91,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
               </DialogPortal>
             </Dialog>
           </div>
-        </FadeInSection>
+        </div>
       </div>
     </section>
   );
