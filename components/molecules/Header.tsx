@@ -10,7 +10,6 @@ import {
 } from '@/components/ui/dropdown-menu';
 import { Globe, ChevronDown } from 'lucide-react';
 import ElevaCareLogoSVG from '@/components/ui/eleva-care-logo';
-import Image from 'next/image'; // Ensure correct import for Image component
 
 type Language = 'en' | 'pt' | 'es'; // Use 'type' to import as a type
 
