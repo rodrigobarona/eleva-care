@@ -47,7 +47,7 @@ export default function Home() {
     <div className="relative overflow-hidden">
       <Header t={t} setLang={(lang: Language) => setLang(lang)} />
 
-      <main className="flex-1 pt-16">
+      <main role="main" id="main" tabIndex={-1} className="focus-visible:outline-none">
         <Hero t={t} />
 
         <FadeInSection>
