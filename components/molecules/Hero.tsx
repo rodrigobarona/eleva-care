@@ -18,8 +18,8 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-gradient-to-r from-[#e6f3f3] to-[#f0f8f8]">
       <MuxPlayer
         style={{ height: "100%", maxWidth: "100%" }}
-        playbackId="spiirAKtzZ7TGB01MH8JSz8i101bjm2kU3"
-        poster="https://image.mux.com/spiirAKtzZ7TGB01MH8JSz8i101bjm2kU3/thumbnail.webp?height=640&fit_mode=preserve&time=5"
+        playbackId="ZCCYPtpN3Aatp8DLw00ziOgKjHv02gMsST"
+        poster="https://image.mux.com/ZCCYPtpN3Aatp8DLw00ziOgKjHv02gMsST/thumbnail.webp?height=640&fit_mode=preserve&time=5"
         stream-type="on-demand"
         loop
         autoPlay="muted"
