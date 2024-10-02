@@ -2,7 +2,10 @@
 const nextConfig = {
   transpilePackages: ['three'],
   images: {
-    domains: ['stream.mux.com', 'image.mux.com'],
+    remotePatterns: [
+      { protocol: 'https', hostname: 'stream.mux.com' },
+      { protocol: 'https', hostname: 'image.mux.com' },
+    ],
   },
 };
 
