@@ -1,5 +1,5 @@
 import React from 'react'; // Add this line to import React
-import { Leaf, Users, Baby } from 'lucide-react';
+import { Droplets, Flower2, Baby } from 'lucide-react';
 export const translations = {
   language: 'English',
   nav: {
@@ -24,10 +24,10 @@ export const translations = {
   services: {
     title: 'Our Services',
     subtitle:
-      'At Eleva Care, we believe in a collaborative approach to care. Our team of experts work together to provide you with comprehensive and personalized support.',
+      'At Eleva Care, we believe in a collaborative approach to care. \n Our team of experts work together to provide you with comprehensive and personalized support.',
     items: [
       {
-        icon: <Baby className="mb-4 h-12 w-12 text-[#0d6c70]" />,
+        icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,
         title: 'Pregnancy & Postpartum',
         description:
           'Comprehensive care to support women through the transformative journey of pregnancy and early motherhood.',
@@ -41,18 +41,19 @@ export const translations = {
         image: '/img/Pregnant-Woman-Flowers.jpg?height=450&width=300',
       },
       {
-        icon: <Leaf className="mb-4 h-12 w-12 text-[#0d6c70]" />,
+        icon: <Droplets className="h-12 w-12 text-[#0d6c70]" />,
         title: 'Pelvic Health',
         description:
           'Specialized care addressing the unique pelvic health needs of women throughout their lives.',
         items: [
-          '**Pelvic Floor Physical Therapy:** Find relief from pelvic pain, incontinence, prolapse, and other pelvic floor dysfunctions.',
-          '**Specialized OB/GYN Care:** Receive expert diagnosis and treatment for a wide range of pelvic health concerns.',
+          '**Pelvic Physical Therapy:** Specialized treatment for incontinence, pelvic organ prolapse, and pelvic pain, including pain during intercourse.',
+          '**Specialized OB/GYN Care:** Expert diagnosis and treatment for a range of pelvic health issues, including prolapse, endometriosis, and sexual dysfunction. ',
+          '**Mental Health Support:** Counseling and therapy to address the psychological aspects of pelvic health concerns.',
         ],
         image: '/img/Woman-Working-Out-Living-Room.jpg?height=450&width=300',
       },
       {
-        icon: <Users className="mb-4 h-12 w-12 text-[#0d6c70]" />,
+        icon: <Flower2 className="h-12 w-12 text-[#0d6c70]" />,
         title: 'Through Every Stage',
         description:
           "Holistic support for women's health concerns from adolescence through menopause and beyond.",
@@ -70,7 +71,7 @@ export const translations = {
   approach: {
     title: 'Our Approach',
     description:
-      'At Eleva Care, we believe in a collaborative approach to care. Our team of experts work together to provide you with comprehensive and personalized support, ensuring that every aspect of your health is addressed.',
+      'At Eleva Care, we believe in a collaborative approach to care.  \n Our team of experts work together to provide you with comprehensive and personalized support.', // Added two spaces for a line break
   },
   mission: {
     title: 'Our Mission',

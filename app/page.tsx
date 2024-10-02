@@ -76,12 +76,12 @@ export default function Home() {
                     <CardContent className="p-6">
                       <div className="mb-4 flex items-center">
                         {service.icon}
-                        <h3 className="ml-4 text-xl font-bold text-[#0d6c70]">{service.title}</h3>
+                        <h3 className="ml-2 text-xl font-bold text-[#0d6c70]">{service.title}</h3>
                       </div>
                       <p className="text-[#576d69]">{service.description}</p>
                       <ul className="mt-4 list-inside list-disc text-[#576d69]">
                         {service.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="flex items-start">
+                          <li key={itemIndex} className="flex items-start pb-2">
                             <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
                             <ReactMarkdown>{item}</ReactMarkdown>
                           </li>
@@ -95,8 +95,11 @@ export default function Home() {
           </section>
         </FadeInSection>
         <FadeInSection>
-          <section id="approach" className="w-full bg-[#f0f8f8] py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
+          <section
+            id="approach"
+            className="mx-auto w-full bg-[#f0f8f8] px-6 py-12 md:py-24 lg:px-8 lg:py-32"
+          >
+            <div className="mx-auto max-w-2xl lg:max-w-7xl">
               <h2 className="mb-8 text-center text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
                 {t.approach.title}
               </h2>
@@ -107,8 +110,8 @@ export default function Home() {
           </section>
         </FadeInSection>
         <FadeInSection>
-          <section id="mission" className="w-full bg-white py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
+          <section id="mission" className="w-full bg-white px-6 py-12 md:py-24 lg:px-8 lg:py-32">
+            <div className="mx-auto max-w-2xl lg:max-w-7xl">
               <div className="mb-12 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
                   {t.mission.title}
@@ -153,8 +156,8 @@ export default function Home() {
           </section>
         </FadeInSection>
         <FadeInSection>
-          <section id="team" className="w-full bg-[#f0f8f8] py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
+          <section id="team" className="w-full bg-[#f0f8f8] px-6 py-12 md:py-24 lg:px-8 lg:py-32">
+            <div className="mx-auto max-w-2xl lg:max-w-7xl">
               <div className="mb-12 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
                   {t.team.title}
@@ -196,8 +199,8 @@ export default function Home() {
           </section>
         </FadeInSection>
         <FadeInSection>
-          <section className="w-full bg-[#f0f8f8] py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
+          <section className="lg-px-8 w-full bg-[#f0f8f8] px-6 py-12 md:py-24 lg:py-32">
+            <div className="mx-auto max-w-2xl lg:max-w-7xl">
               <div className="grid items-center gap-6 lg:grid-cols-2">
                 <div className="space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl">
@@ -229,8 +232,8 @@ export default function Home() {
           </section>
         </FadeInSection>
         <FadeInSection>
-          <section className="w-full bg-white py-12 md:py-24">
-            <div className="container px-4 md:px-6">
+          <section className="w-full bg-white px-6 py-12 md:py-24 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:max-w-7xl">
               <div className="mx-auto max-w-2xl text-center">
                 <h2 className="mb-4 text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl">
                   {t.newsletter.title}
@@ -261,8 +264,8 @@ export default function Home() {
         </FadeInSection>
 
         <FadeInSection>
-          <section className="w-full bg-[#f0f8f8] py-12 md:py-24">
-            <div className="container px-4 md:px-6">
+          <section className="w-full bg-[#f0f8f8] px-6 py-12 md:py-24 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:max-w-7xl">
               <h2 className="mb-8 text-center text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl">
                 {t.social.title}
               </h2>
@@ -338,7 +341,7 @@ export default function Home() {
           </section>
         </FadeInSection>
       </main>
-      <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t border-[#0d6c70]/10 bg-white px-4 py-6 sm:flex-row md:px-6">
+      <footer className="flex w-full shrink-0 flex-col items-center gap-2 border-t border-[#0d6c70]/10 bg-white px-6 py-6 sm:flex-row lg:px-8">
         <p className="text-xs text-[#576d69]">{t.footer.copyright}</p>
         <nav className="flex gap-4 sm:ml-auto sm:gap-6">
           <Link className="text-xs text-[#576d69] underline-offset-4 hover:underline" href="#">
