@@ -8,6 +8,13 @@ import { translations as pt } from '../public/locales/pt';
 import { translations as es } from '../public/locales/es';
 import { Card, CardContent } from '@/components/ui/card';
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
+
+import {
   ChevronRight,
   Podcast,
   Linkedin,
@@ -73,20 +80,29 @@ export default function Home() {
                       height={450}
                       className="w-full object-cover"
                     />
-                    <CardContent className="p-6">
-                      <div className="mb-4 flex items-center">
-                        {service.icon}
-                        <h3 className="ml-2 text-xl font-bold text-[#0d6c70]">{service.title}</h3>
+                    <CardContent className="flex flex-col justify-between p-6">
+                      <div className="flex flex-col">
+                        <div className="mb-4 flex items-center">
+                          {service.icon}
+                          <h3 className="ml-2 text-xl font-bold text-[#0d6c70]">{service.title}</h3>
+                        </div>
+                        <p className="text-[#576d69]">{service.description}</p>
                       </div>
-                      <p className="text-[#576d69]">{service.description}</p>
-                      <ul className="mt-4 list-inside list-disc text-[#576d69]">
-                        {service.items.map((item, itemIndex) => (
-                          <li key={itemIndex} className="flex items-start pb-2">
-                            <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
-                            <ReactMarkdown>{item}</ReactMarkdown>
-                          </li>
-                        ))}
-                      </ul>
+                      <Accordion type="single" collapsible>
+                        <AccordionItem value="item-1">
+                          <AccordionTrigger>Learn more</AccordionTrigger>
+                          <AccordionContent>
+                            <ul className="mt-4 list-inside list-disc text-[#576d69]">
+                              {service.items.map((item, itemIndex) => (
+                                <li key={itemIndex} className="flex items-start pb-2">
+                                  <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
+                                  <ReactMarkdown>{item}</ReactMarkdown>
+                                </li>
+                              ))}
+                            </ul>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
                     </CardContent>
                   </Card>
                 ))}
