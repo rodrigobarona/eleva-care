@@ -1,15 +1,13 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useSpring, animated, config } from "react-spring";
+import React, { useState, useRef, useEffect } from 'react';
+import { useSpring, animated, config } from 'react-spring';
 
 // Define the FadeInSection component with children type
-const FadeInSection: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+const FadeInSection: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [isVisible, setVisible] = useState(false);
   const domRef = useRef<HTMLDivElement>(null);
   const props = useSpring({
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translateY(0px)" : "translateY(50px)",
+    transform: isVisible ? 'translateY(0px)' : 'translateY(50px)',
     config: config.molasses,
   });
 
@@ -23,9 +21,12 @@ const FadeInSection: React.FC<{ children: React.ReactNode }> = ({
       observer.observe(domRef.current);
     }
 
+    const currentRef = domRef.current; // Store the current ref
+
     return () => {
-      if (domRef.current) {
-        observer.unobserve(domRef.current);
+      if (currentRef) {
+        // Use the stored variable
+        observer.unobserve(currentRef);
       }
     };
   }, []);

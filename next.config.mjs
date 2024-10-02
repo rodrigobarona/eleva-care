@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["three"],
+  transpilePackages: ['three'],
   images: {
-    domains: ["stream.mux.com", "image.mux.com"],
+    domains: ['stream.mux.com', 'image.mux.com'],
   },
 };
 
