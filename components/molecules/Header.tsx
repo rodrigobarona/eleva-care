@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Globe, ChevronDown } from 'lucide-react';
+import ElevaCareLogoSVG from '@/components/ui/eleva-care-logo';
 import Image from 'next/image'; // Ensure correct import for Image component
 
 type Language = 'en' | 'pt' | 'es'; // Use 'type' to import as a type
@@ -37,44 +38,43 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
       }`}
     >
       <div className="mx-auto flex max-w-2xl lg:max-w-7xl">
-        <Link href="https://eleva.care">
-          <Image
-            src="/img/eleva-care-logo.svg"
-            alt="Eleva Care"
-            width={1863}
-            height={316}
-            className="h-8 w-auto"
-            loading="eager"
+        <Link href="https://eleva.care" className="h-8 w-auto">
+          <ElevaCareLogoSVG
+            className={` ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
           />
         </Link>
         <nav className="ml-auto flex items-center gap-4 sm:gap-6">
           <Link
-            className="hidden text-sm font-medium text-[#576d69] transition-colors hover:text-[#0d6c70] md:block"
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
             href="#services"
           >
             {t.nav.services}
           </Link>
           <Link
-            className="hidden text-sm font-medium text-[#576d69] transition-colors hover:text-[#0d6c70] md:block"
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
             href="#approach"
           >
             {t.nav.approach}
           </Link>
           <Link
-            className="hidden text-sm font-medium text-[#576d69] transition-colors hover:text-[#0d6c70] md:block"
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
             href="#mission"
           >
             {t.nav.mission}
           </Link>
           <Link
-            className="hidden text-sm font-medium text-[#576d69] transition-colors hover:text-[#0d6c70] md:block"
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
             href="#team"
           >
             {t.nav.team}
           </Link>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="sm" className="text-[#576d69] hover:text-[#0d6c70]">
+              <Button
+                variant="ghost"
+                size="default"
+                className={`${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-[#0d6c70]'}`}
+              >
                 <Globe className="mr-2 h-5 w-5" />
                 {t.language}
                 <ChevronDown className="ml-2 h-4 w-4" />
