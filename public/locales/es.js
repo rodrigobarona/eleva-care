@@ -68,7 +68,14 @@ export const translations = {
     ],
   },
   approach: {
-    title: 'Nuestro Enfoque',
+    title: 'En Eleva Care, creemos que:',
+    items: [
+      'Cada mujer merece acceso a atención médica de calidad.',
+      'El conocimiento es poder en las decisiones de salud.',
+      'La colaboración conduce a mejores resultados de salud.',
+      'La salud de la mujer es un viaje de toda la vida en evolución.',
+      'La salud pélvica es esencial para el bienestar general.',
+    ],
     description:
       'En Eleva Care, creemos en un enfoque colaborativo del cuidado.  \n Nuestro equipo de expertos trabaja en conjunto para brindarte un apoyo integral y personalizado.',
   },

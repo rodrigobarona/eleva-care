@@ -68,7 +68,14 @@ export const translations = {
     ],
   },
   approach: {
-    title: 'A Nossa Abordagem',
+    title: 'Na Eleva Care, acreditamos que:',
+    items: [
+      'Toda mulher merece acesso a cuidados de saúde de qualidade.',
+      'O conhecimento é poder nas decisões de saúde.',
+      'A colaboração leva a melhores resultados de saúde.',
+      'A saúde da mulher é uma jornada evolutiva ao longo da vida.',
+      'A saúde pélvica é essencial para o bem-estar geral.',
+    ],
     description:
       'Na Eleva Care, acreditamos numa abordagem colaborativa aos cuidados.  \n A nossa equipa de especialistas trabalha em conjunto para lhe oferecer um apoio abrangente e personalizado.',
   },

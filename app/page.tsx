@@ -113,15 +113,20 @@ export default function Home() {
         <FadeInSection>
           <section
             id="approach"
-            className="mx-auto w-full bg-[#f0f8f8] px-6 py-12 md:py-24 lg:px-8 lg:py-32"
+            className="md:py-22 mx-auto w-full bg-[#f0f8f8] px-6 py-10 lg:px-8 lg:py-28"
           >
             <div className="mx-auto max-w-2xl lg:max-w-7xl">
-              <h2 className="mb-8 text-center text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
+              <h2 className="mx-auto mb-8 max-w-3xl text-left text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
                 {t.approach.title}
               </h2>
-              <p className="mx-auto max-w-[800px] text-center text-xl text-[#576d69]">
-                {t.approach.description}
-              </p>
+              <ul className="mx-auto max-w-3xl list-inside list-disc text-[#576d69]">
+                {t.approach.items.map((item, index) => (
+                  <li key={index} className="mb-4 flex items-center text-2xl">
+                    <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </section>
         </FadeInSection>
@@ -141,19 +146,7 @@ export default function Home() {
                     {t.mission.vision.title}
                   </h3>
                   <p className="mb-6 text-xl text-[#576d69]">{t.mission.vision.description}</p>
-                  <div className="mb-6">
-                    <h4 className="mb-2 text-xl font-bold text-[#0d6c70]">
-                      {t.mission.beliefs.title}
-                    </h4>
-                    <ul className="list-inside list-disc text-[#576d69]">
-                      {t.mission.beliefs.items.map((item, index) => (
-                        <li key={index} className="flex items-center">
-                          <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+
                   <Button className="mt-4 bg-[#0d6c70] text-white hover:bg-[#0d6c70]/90">
                     {t.mission.cta}
                     <ChevronRight className="ml-2 h-4 w-4" />
