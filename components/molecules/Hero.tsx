@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 import {
   Dialog,
   DialogContent,
   DialogTrigger,
   DialogOverlay,
   DialogPortal,
-} from "@/components/ui/dialog";
-import FadeInSection from "@/components/ui/FadeInSection";
-import MuxPlayer from "@mux/mux-video-react"; // Change to MuxPlayer
+} from '@/components/ui/dialog';
+import FadeInSection from '@/components/ui/FadeInSection';
+import MuxPlayer from '@mux/mux-video-react'; // Change to MuxPlayer
 
 type HeroProps = {
   // eslint-disable-next-line
@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
   return (
     <section className="relative w-full bg-gradient-to-r from-[#e6f3f3] to-[#f0f8f8] py-12 md:py-24 lg:py-32 xl:py-48">
       <MuxPlayer
-        style={{ height: "100%", maxWidth: "100%" }}
+        style={{ height: '100%', maxWidth: '100%' }}
         playbackId="ZCCYPtpN3Aatp8DLw00ziOgKjHv02gMsST"
         poster="https://image.mux.com/ZCCYPtpN3Aatp8DLw00ziOgKjHv02gMsST/thumbnail.webp?height=640&fit_mode=preserve&time=5"
         stream-type="on-demand"
@@ -38,9 +38,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
             <h1 className="text-3xl font-bold tracking-tighter text-white sm:text-4xl md:text-5xl lg:text-6xl/none">
               {t.hero.title}
             </h1>
-            <p className="mx-auto max-w-[700px] text-white md:text-xl">
-              {t.hero.subtitle}
-            </p>
+            <p className="mx-auto max-w-[700px] text-white md:text-xl">{t.hero.subtitle}</p>
             <div className="space-x-4">
               <Dialog>
                 <DialogTrigger asChild>
