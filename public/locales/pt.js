@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { Heart, Leaf, Users, Baby, Brain, Dumbbell } from 'lucide-react';
 
 export const translations = {
@@ -30,6 +32,13 @@ export const translations = {
         title: 'Gravidez e Pós-parto',
         description:
           'Cuidados e apoio especializados durante toda a sua jornada de gravidez e pós-parto, incluindo fisioterapia, cuidados obstétricos/ginecológicos e orientação nutricional.',
+        items: [
+          'Physical Therapy: Prepare for birth, manage pain, regain strength, address diastasis recti, and receive targeted pelvic floor interventions to prevent and treat dysfunction.',
+          'OB/GYN Care: Receive expert care throughout your pregnancy journey and postpartum recovery.',
+          'Nutritional Guidance: Optimize your diet for a healthy pregnancy and postpartum journey.',
+          'Mental Health Support: Navigate the emotional and mental challenges of motherhood with compassionate guidance.',
+          'Exercise: Explore the benefits of therapeutic exercise during pregnancy and postpartum, designed to support your changing body and promote a healthy recovery.',
+        ],
         image: '/placeholder.png?height=200&width=300',
       },
       {
@@ -37,6 +46,13 @@ export const translations = {
         title: 'Saúde Pélvica',
         description:
           'Tratamentos especializados para dor pélvica, incontinência e prolapso, com planos personalizados adaptados às suas necessidades únicas.',
+        items: [
+          'Physical Therapy: Prepare for birth, manage pain, regain strength, address diastasis recti, and receive targeted pelvic floor interventions to prevent and treat dysfunction.',
+          'OB/GYN Care: Receive expert care throughout your pregnancy journey and postpartum recovery.',
+          'Nutritional Guidance: Optimize your diet for a healthy pregnancy and postpartum journey.',
+          'Mental Health Support: Navigate the emotional and mental challenges of motherhood with compassionate guidance.',
+          'Exercise: Explore the benefits of therapeutic exercise during pregnancy and postpartum, designed to support your changing body and promote a healthy recovery.',
+        ],
         image: '/placeholder.png?height=200&width=300',
       },
       {
@@ -44,27 +60,13 @@ export const translations = {
         title: 'Bem-estar Mental',
         description:
           'Acesso a terapia e apoio para stress, ansiedade e depressão, garantindo que a sua saúde mental é priorizada em todas as etapas.',
-        image: '/placeholder.png?height=200&width=300',
-      },
-      {
-        icon: <Dumbbell className="mb-4 h-12 w-12 text-[#0d6c70]" />,
-        title: 'Fitness e Nutrição',
-        description:
-          'Planos de fitness personalizados e orientação nutricional para ajudá-la a alcançar os seus objetivos de saúde e sentir-se no seu melhor.',
-        image: '/placeholder.png?height=200&width=300',
-      },
-      {
-        icon: <Users className="mb-4 h-12 w-12 text-[#0d6c70]" />,
-        title: 'Saúde Adolescente',
-        description:
-          'Apoio especializado para jovens mulheres que atravessam a puberdade, menstruação e a transição para a idade adulta.',
-        image: '/placeholder.png?height=200&width=300',
-      },
-      {
-        icon: <Heart className="mb-4 h-12 w-12 text-[#0d6c70]" />,
-        title: 'Gestão da Menopausa',
-        description:
-          'Cuidados abrangentes para abordar as mudanças hormonais e priorizar o bem-estar durante a transição da menopausa.',
+        items: [
+          'Physical Therapy: Prepare for birth, manage pain, regain strength, address diastasis recti, and receive targeted pelvic floor interventions to prevent and treat dysfunction.',
+          'OB/GYN Care: Receive expert care throughout your pregnancy journey and postpartum recovery.',
+          'Nutritional Guidance: Optimize your diet for a healthy pregnancy and postpartum journey.',
+          'Mental Health Support: Navigate the emotional and mental challenges of motherhood with compassionate guidance.',
+          'Exercise: Explore the benefits of therapeutic exercise during pregnancy and postpartum, designed to support your changing body and promote a healthy recovery.',
+        ],
         image: '/placeholder.png?height=200&width=300',
       },
     ],

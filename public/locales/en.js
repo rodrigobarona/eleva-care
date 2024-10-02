@@ -1,4 +1,5 @@
-import { Heart, Leaf, Users, Baby, Brain, Dumbbell } from 'lucide-react';
+import React from 'react'; // Add this line to import React
+import { Leaf, Users, Baby } from 'lucide-react';
 export const translations = {
   language: 'English',
   nav: {
@@ -22,49 +23,47 @@ export const translations = {
   },
   services: {
     title: 'Our Services',
-    subtitle: "Comprehensive care for every stage of a woman's life",
+    subtitle:
+      'At Eleva Care, we believe in a collaborative approach to care. Our team of experts work together to provide you with comprehensive and personalized support.',
     items: [
       {
         icon: <Baby className="mb-4 h-12 w-12 text-[#0d6c70]" />,
         title: 'Pregnancy & Postpartum',
         description:
-          'Expert care and support throughout your pregnancy and postpartum journey, including physical therapy, OB/GYN care, and nutritional guidance.',
-        image: '/placeholder.png?height=200&width=300',
+          'Comprehensive care to support women through the transformative journey of pregnancy and early motherhood.',
+        items: [
+          '**Physical Therapy:** Prepare for birth, manage pain, regain strength, address diastasis recti, and receive targeted pelvic floor interventions to prevent and treat dysfunction.',
+          '**OB/GYN Care:** Receive expert care throughout your pregnancy journey and postpartum recovery.',
+          '**Nutritional Guidance:** Optimize your diet for a healthy pregnancy and postpartum journey.',
+          '**Mental Health Support:** Navigate the emotional and mental challenges of motherhood with compassionate guidance.',
+          '**Exercise:** Explore the benefits of therapeutic exercise during pregnancy and postpartum, designed to support your changing body and promote a healthy recovery.',
+        ],
+        image: '/img/Pregnant-Woman-Flowers.jpg?height=450&width=300',
       },
       {
         icon: <Leaf className="mb-4 h-12 w-12 text-[#0d6c70]" />,
         title: 'Pelvic Health',
         description:
-          'Specialized treatments for pelvic pain, incontinence, and prolapse, with customized plans tailored to your unique needs.',
-        image: '/placeholder.png?height=200&width=300',
-      },
-      {
-        icon: <Brain className="mb-4 h-12 w-12 text-[#0d6c70]" />,
-        title: 'Mental Wellness',
-        description:
-          'Access to therapy and support for stress, anxiety, and depression, ensuring your mental health is prioritized at every stage.',
-        image: '/placeholder.png?height=200&width=300',
-      },
-      {
-        icon: <Dumbbell className="mb-4 h-12 w-12 text-[#0d6c70]" />,
-        title: 'Fitness & Nutrition',
-        description:
-          'Personalized fitness plans and nutritional guidance to help you achieve your health goals and feel your best.',
-        image: '/placeholder.png?height=200&width=300',
+          'Specialized care addressing the unique pelvic health needs of women throughout their lives.',
+        items: [
+          '**Pelvic Floor Physical Therapy:** Find relief from pelvic pain, incontinence, prolapse, and other pelvic floor dysfunctions.',
+          '**Specialized OB/GYN Care:** Receive expert diagnosis and treatment for a wide range of pelvic health concerns.',
+        ],
+        image: '/img/Woman-Working-Out-Living-Room.jpg?height=450&width=300',
       },
       {
         icon: <Users className="mb-4 h-12 w-12 text-[#0d6c70]" />,
-        title: 'Teen Health',
+        title: 'Through Every Stage',
         description:
-          'Specialized support for young women navigating puberty, menstruation, and the transition to adulthood.',
-        image: '/placeholder.png?height=200&width=300',
-      },
-      {
-        icon: <Heart className="mb-4 h-12 w-12 text-[#0d6c70]" />,
-        title: 'Menopause Management',
-        description:
-          'Comprehensive care to address hormonal changes and prioritize well-being during the menopausal transition.',
-        image: '/placeholder.png?height=200&width=300',
+          "Holistic support for women's health concerns from adolescence through menopause and beyond.",
+        items: [
+          '**Teen Health:** Navigate puberty, menstruation, and early womanhood with confidence and support.',
+          '**Menopause Management:** Address hormonal changes, manage symptoms, and prioritize your well-being ',
+          '**Mental Wellness:** Access therapy and support to manage stress, anxiety, depression, and other mental health concerns.',
+          '**Fitness & Nutrition:** Discover personalized exercise plans and nutritional guidance tailored to your individual needs.',
+          '**Physical Therapy:** Manage pain, prevent injury, and optimize your physical performance, with specialized expertise in pelvic floor health for active women and female athletes.',
+        ],
+        image: '/img/Smiling-Women-Photo.jpg?height=450&width=300',
       },
     ],
   },

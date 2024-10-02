@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react'; // Add this line at the top of each file
+import ReactMarkdown from 'react-markdown';
 import { Button } from '@/components/ui/button';
 import { translations as en } from '../public/locales/en';
 import { translations as pt } from '../public/locales/pt';
@@ -51,12 +52,14 @@ export default function Home() {
         <Hero t={t} />
 
         <FadeInSection>
-          <section id="services" className="w-full bg-white py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6">
+          <section id="services" className="w-full bg-white px-6 py-12 md:py-24 lg:px-8 lg:py-32">
+            <div className="mx-auto max-w-2xl lg:max-w-7xl">
               <h2 className="mb-4 text-center text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
                 {t.services.title}
               </h2>
-              <p className="mb-8 text-center text-xl text-[#576d69]">{t.services.subtitle}</p>
+              <div className="mb-8 text-center text-xl text-[#576d69]">
+                <ReactMarkdown>{t.services.subtitle}</ReactMarkdown>
+              </div>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {t.services.items.map((service, index) => (
                   <Card
@@ -67,8 +70,8 @@ export default function Home() {
                       src={service.image}
                       alt={service.title}
                       width={300}
-                      height={200}
-                      className="h-48 w-full object-cover"
+                      height={450}
+                      className="w-full object-cover"
                     />
                     <CardContent className="p-6">
                       <div className="mb-4 flex items-center">
@@ -76,6 +79,14 @@ export default function Home() {
                         <h3 className="ml-4 text-xl font-bold text-[#0d6c70]">{service.title}</h3>
                       </div>
                       <p className="text-[#576d69]">{service.description}</p>
+                      <ul className="mt-4 list-inside list-disc text-[#576d69]">
+                        {service.items.map((item, itemIndex) => (
+                          <li key={itemIndex} className="flex items-start">
+                            <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
+                            <ReactMarkdown>{item}</ReactMarkdown>
+                          </li>
+                        ))}
+                      </ul>
                     </CardContent>
                   </Card>
                 ))}
