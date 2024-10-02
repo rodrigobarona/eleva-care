@@ -8,7 +8,6 @@ import {
   DialogOverlay,
   DialogPortal,
 } from '@/components/ui/dialog';
-import FadeInSection from '@/components/ui/FadeInSection';
 import MuxPlayer from '@mux/mux-video-react'; // Change to MuxPlayer
 
 type HeroProps = {
