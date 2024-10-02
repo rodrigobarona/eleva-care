@@ -1,7 +1,5 @@
-import React from 'react';
-
-import { Heart, Leaf, Users, Baby, Brain, Dumbbell } from 'lucide-react';
-
+import React from 'react'; // Add this line to import React
+import { Droplets, Flower2, Baby } from 'lucide-react';
 export const translations = {
   language: 'Português',
   nav: {
@@ -11,85 +9,84 @@ export const translations = {
     team: 'Equipa',
   },
   hero: {
-    title: 'Capacitando a Saúde das Mulheres em Todas as Etapas',
+    title: 'Capacitando a Saúde das Mulheres em Cada Etapa',
     subtitle:
-      'A Eleva Care oferece uma abordagem holística à saúde das mulheres, conectando-a com prestadores especializados que se dedicam a apoiar as mulheres em todas as fases da vida.',
+      'A Eleva Care oferece uma abordagem holística à saúde da mulher, conectando-a com profissionais especializados que se dedicam a apoiar as mulheres em todas as fases da vida.',
     cta1: 'Fazer um Questionário',
-    cta2: 'Marcar Agora',
+    cta2: 'Agendar Agora',
   },
   podcast: {
     title: 'Elevando a Saúde das Mulheres com Patrícia Mota, PT, PhD pela Eleva Care',
     description:
-      'Capacite a sua jornada de saúde com "Elevando a Saúde das Mulheres" pela Eleva Care. As nossas apresentadoras especialistas analisam semanalmente as pesquisas mais recentes em saúde feminina, traduzindo estudos complexos em informações práticas. Desde o bem-estar reprodutivo até à saúde mental, abordamos tudo.',
-    cta: 'Ouvir Agora',
+      'Capacite a sua jornada de saúde com "Elevando a Saúde das Mulheres" pela Eleva Care. As nossas apresentadoras especialistas analisam semanalmente as pesquisas mais recentes em saúde feminina, transformando estudos complexos em conhecimentos práticos. Desde o bem-estar reprodutivo até à saúde mental, abordamos todos os temas.',
+    cta: 'Ouça Agora',
   },
   services: {
     title: 'Os Nossos Serviços',
-    subtitle: 'Cuidados abrangentes para cada fase da vida de uma mulher',
+    subtitle:
+      'Na Eleva Care, acreditamos numa abordagem colaborativa aos cuidados. \n A nossa equipa de especialistas trabalha em conjunto para lhe oferecer um apoio abrangente e personalizado.',
     items: [
       {
-        icon: <Baby className="mb-4 h-12 w-12 text-[#0d6c70]" />,
+        icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,
         title: 'Gravidez e Pós-parto',
         description:
-          'Cuidados e apoio especializados durante toda a sua jornada de gravidez e pós-parto, incluindo fisioterapia, cuidados obstétricos/ginecológicos e orientação nutricional.',
+          'Cuidados abrangentes para apoiar as mulheres durante a jornada transformadora da gravidez e início da maternidade.',
         items: [
-          'Physical Therapy: Prepare for birth, manage pain, regain strength, address diastasis recti, and receive targeted pelvic floor interventions to prevent and treat dysfunction.',
-          'OB/GYN Care: Receive expert care throughout your pregnancy journey and postpartum recovery.',
-          'Nutritional Guidance: Optimize your diet for a healthy pregnancy and postpartum journey.',
-          'Mental Health Support: Navigate the emotional and mental challenges of motherhood with compassionate guidance.',
-          'Exercise: Explore the benefits of therapeutic exercise during pregnancy and postpartum, designed to support your changing body and promote a healthy recovery.',
+          '**Fisioterapia:** Prepare-se para o parto, controle a dor, recupere a força, trate a diástase abdominal e receba intervenções específicas para o pavimento pélvico para prevenir e tratar disfunções.',
+          '**Cuidados Obstétricos/Ginecológicos:** Receba cuidados especializados durante toda a sua jornada de gravidez e recuperação pós-parto.',
+          '**Orientação Nutricional:** Otimize a sua dieta para uma gravidez saudável e uma jornada pós-parto equilibrada.',
+          '**Apoio à Saúde Mental:** Navegue pelos desafios emocionais e mentais da maternidade com orientação compassiva.',
+          '**Exercício:** Explore os benefícios do exercício terapêutico durante a gravidez e pós-parto, concebido para apoiar as mudanças do seu corpo e promover uma recuperação saudável.',
         ],
-        image: '/placeholder.png?height=200&width=300',
+        image: '/img/Pregnant-Woman-Flowers.jpg?height=450&width=300',
       },
       {
-        icon: <Leaf className="mb-4 h-12 w-12 text-[#0d6c70]" />,
+        icon: <Droplets className="h-12 w-12 text-[#0d6c70]" />,
         title: 'Saúde Pélvica',
         description:
-          'Tratamentos especializados para dor pélvica, incontinência e prolapso, com planos personalizados adaptados às suas necessidades únicas.',
+          'Cuidados especializados que atendem às necessidades únicas de saúde pélvica das mulheres ao longo das suas vidas.',
         items: [
-          'Physical Therapy: Prepare for birth, manage pain, regain strength, address diastasis recti, and receive targeted pelvic floor interventions to prevent and treat dysfunction.',
-          'OB/GYN Care: Receive expert care throughout your pregnancy journey and postpartum recovery.',
-          'Nutritional Guidance: Optimize your diet for a healthy pregnancy and postpartum journey.',
-          'Mental Health Support: Navigate the emotional and mental challenges of motherhood with compassionate guidance.',
-          'Exercise: Explore the benefits of therapeutic exercise during pregnancy and postpartum, designed to support your changing body and promote a healthy recovery.',
+          '**Fisioterapia Pélvica:** Tratamento especializado para incontinência, prolapso de órgãos pélvicos e dor pélvica, incluindo dor durante as relações sexuais.',
+          '**Cuidados Obstétricos/Ginecológicos Especializados:** Diagnóstico e tratamento especializados para uma variedade de problemas de saúde pélvica, incluindo prolapso, endometriose e disfunção sexual.',
+          '**Apoio à Saúde Mental:** Aconselhamento e terapia para abordar os aspetos psicológicos das preocupações de saúde pélvica.',
         ],
-        image: '/placeholder.png?height=200&width=300',
+        image: '/img/Woman-Working-Out-Living-Room.jpg?height=450&width=300',
       },
       {
-        icon: <Brain className="mb-4 h-12 w-12 text-[#0d6c70]" />,
-        title: 'Bem-estar Mental',
+        icon: <Flower2 className="h-12 w-12 text-[#0d6c70]" />,
+        title: 'Em Todas as Fases',
         description:
-          'Acesso a terapia e apoio para stress, ansiedade e depressão, garantindo que a sua saúde mental é priorizada em todas as etapas.',
+          'Apoio holístico para questões de saúde feminina desde a adolescência até à menopausa e além.',
         items: [
-          'Physical Therapy: Prepare for birth, manage pain, regain strength, address diastasis recti, and receive targeted pelvic floor interventions to prevent and treat dysfunction.',
-          'OB/GYN Care: Receive expert care throughout your pregnancy journey and postpartum recovery.',
-          'Nutritional Guidance: Optimize your diet for a healthy pregnancy and postpartum journey.',
-          'Mental Health Support: Navigate the emotional and mental challenges of motherhood with compassionate guidance.',
-          'Exercise: Explore the benefits of therapeutic exercise during pregnancy and postpartum, designed to support your changing body and promote a healthy recovery.',
+          '**Saúde das Adolescentes:** Navegue pela puberdade, menstruação e início da vida adulta com confiança e apoio.',
+          '**Gestão da Menopausa:** Aborde as mudanças hormonais, controle os sintomas e priorize o seu bem-estar.',
+          '**Bem-estar Mental:** Aceda a terapia e apoio para gerir o stress, ansiedade, depressão e outras preocupações de saúde mental.',
+          '**Fitness e Nutrição:** Descubra planos de exercícios personalizados e orientação nutricional adaptados às suas necessidades individuais.',
+          '**Fisioterapia:** Controle a dor, previna lesões e otimize o seu desempenho físico, com expertise especializada em saúde do pavimento pélvico para mulheres ativas e atletas femininas.',
         ],
-        image: '/placeholder.png?height=200&width=300',
+        image: '/img/Smiling-Women-Photo.jpg?height=450&width=300',
       },
     ],
   },
   approach: {
     title: 'A Nossa Abordagem',
     description:
-      'Na Eleva Care, acreditamos numa abordagem colaborativa aos cuidados. A nossa equipa de especialistas trabalha em conjunto para lhe proporcionar um apoio abrangente e personalizado, garantindo que todos os aspectos da sua saúde são abordados.',
+      'Na Eleva Care, acreditamos numa abordagem colaborativa aos cuidados.  \n A nossa equipa de especialistas trabalha em conjunto para lhe oferecer um apoio abrangente e personalizado.',
   },
   mission: {
     title: 'A Nossa Missão',
     subtitle: 'Transformar os cuidados de saúde das mulheres através da inovação e compaixão',
     description:
-      'Na Eleva Care, dedicamo-nos a capacitar mulheres de todas as idades para assumirem o controlo da sua saúde e bem-estar. A nossa missão é fornecer uma plataforma de apoio e inclusiva que conecte indivíduos com recursos liderados por especialistas, informações baseadas em evidências e uma comunidade colaborativa de profissionais de saúde.',
+      'Na Eleva Care, dedicamo-nos a capacitar mulheres de todas as idades para assumirem o controlo da sua saúde e bem-estar. A nossa missão é proporcionar uma plataforma de apoio e inclusiva que conecta indivíduos com recursos liderados por especialistas, informações baseadas em evidências e uma comunidade colaborativa de profissionais de saúde.',
     vision: {
       title: 'A Nossa Visão',
       description:
-        'Colmatar a lacuna entre a investigação científica e a aplicação prática, oferecendo soluções de cuidados de saúde feminina acessíveis e personalizadas ao longo de todas as fases da vida.',
+        'Colmatar a lacuna entre a investigação científica e a aplicação prática, oferecendo soluções de cuidados de saúde feminina acessíveis e personalizadas em todas as fases da vida.',
     },
     cta: 'Junte-se a Nós',
     stats: [
       { value: '10K+', label: 'Mulheres Ajudadas' },
-      { value: '50+', label: 'Prestadores Especializados' },
+      { value: '50+', label: 'Profissionais Especialistas' },
       { value: '95%', label: 'Satisfação das Pacientes' },
       { value: '24/7', label: 'Apoio Disponível' },
     ],
@@ -99,34 +96,34 @@ export const translations = {
         'Toda mulher merece acesso a cuidados de saúde de qualidade.',
         'O conhecimento é poder nas decisões de saúde.',
         'A colaboração leva a melhores resultados de saúde.',
-        'A saúde das mulheres é uma jornada em constante evolução ao longo da vida.',
+        'A saúde da mulher é uma jornada evolutiva ao longo da vida.',
         'A saúde pélvica é essencial para o bem-estar geral.',
       ],
     },
   },
   team: {
     title: 'Conheça a Nossa Equipa',
-    subtitle: 'Fundada por especialistas apaixonados em saúde feminina',
+    subtitle: 'Fundada por especialistas apaixonados pela saúde da mulher',
     description:
-      'A Eleva Care é liderada por uma equipa de profissionais dedicados que reúnem anos de experiência em saúde feminina, tecnologia e cuidados ao paciente. Os nossos fundadores e membros-chave da equipa estão comprometidos em revolucionar a forma como as mulheres acedem e experienciam os cuidados de saúde.',
+      'A Eleva Care é liderada por uma equipa de profissionais dedicados que reúnem anos de experiência em saúde da mulher, tecnologia e cuidados ao paciente. Os nossos fundadores e membros-chave da equipa estão empenhados em revolucionar a forma como as mulheres acedem e experienciam os cuidados de saúde.',
     members: [
       {
         name: 'Dra. Patrícia Mota',
         role: 'Fundadora e CEO',
         image: '/placeholder.png?height=400&width=300',
         quote:
-          'O nosso objetivo é tornar os cuidados de saúde feminina especializados acessíveis a todas, independentemente da localização ou circunstâncias.',
+          'O nosso objetivo é tornar os cuidados de saúde especializados para mulheres acessíveis a todas, independentemente da localização ou circunstâncias.',
       },
       {
         name: 'Dra. Sofia Rodriguez',
         role: 'Diretora Médica',
         image: '/placeholder.png?height=400&width=300',
         quote:
-          'Estamos a colmatar a lacuna entre a investigação de ponta e os cuidados diários às pacientes.',
+          'Estamos a colmatar a lacuna entre a investigação de ponta e os cuidados diários ao paciente.',
       },
       {
         name: 'Emma Chen',
-        role: 'Responsável pela Experiência da Paciente',
+        role: 'Responsável pela Experiência do Paciente',
         image: '/placeholder.png?height=400&width=300',
         quote:
           'Na Eleva Care, estamos a reimaginar os cuidados de saúde para colocar as necessidades e experiências das mulheres em primeiro lugar.',
@@ -136,15 +133,15 @@ export const translations = {
         role: 'Investigadora Principal',
         image: '/placeholder.png?height=400&width=300',
         quote:
-          'A nossa investigação impulsiona a inovação na saúde das mulheres, levando a melhores resultados para todas.',
+          'A nossa investigação impulsiona a inovação na saúde da mulher, levando a melhores resultados para todas.',
       },
     ],
   },
   newsletter: {
     title: 'Mantenha-se Atualizada',
     description:
-      'Subscreva a nossa newsletter para receber as últimas novidades em saúde feminina, dicas de especialistas e conteúdo exclusivo.',
-    placeholder: 'Insira o seu e-mail',
+      'Subscreva a nossa newsletter para as últimas novidades em saúde da mulher, dicas de especialistas e conteúdo exclusivo.',
+    placeholder: 'Introduza o seu email',
     cta: 'Subscrever',
     privacy: 'Respeitamos a sua privacidade. Cancele a subscrição a qualquer momento.',
   },
