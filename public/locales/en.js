@@ -23,8 +23,7 @@ export const translations = {
   },
   services: {
     title: 'Our Services',
-    subtitle:
-      'At Eleva Care, we believe in a collaborative approach to care. \n Our team of experts work together to provide you with comprehensive and personalized support.',
+    subtitle: "Comprehensive care for every stage of a woman's life",
     items: [
       {
         icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,
@@ -71,7 +70,7 @@ export const translations = {
   approach: {
     title: 'Our Approach',
     description:
-      'At Eleva Care, we believe in a collaborative approach to care.  \n Our team of experts work together to provide you with comprehensive and personalized support.', // Added two spaces for a line break
+      'At Eleva Care, we believe in a collaborative approach to care. Our team of experts work together to provide you with comprehensive and personalized support, ensuring that every aspect of your health is addressed.',
   },
   mission: {
     title: 'Our Mission',

@@ -23,8 +23,7 @@ export const translations = {
   },
   services: {
     title: 'Nuestros Servicios',
-    subtitle:
-      'En Eleva Care, creemos en un enfoque colaborativo del cuidado. \n Nuestro equipo de expertos trabaja en conjunto para brindarte un apoyo integral y personalizado.',
+    subtitle: 'Atención integral en todas las etapas de la vida de la mujer',
     items: [
       {
         icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,

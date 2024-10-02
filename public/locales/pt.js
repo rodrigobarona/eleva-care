@@ -23,8 +23,7 @@ export const translations = {
   },
   services: {
     title: 'Os Nossos Serviços',
-    subtitle:
-      'Na Eleva Care, acreditamos numa abordagem colaborativa aos cuidados. \n A nossa equipa de especialistas trabalha em conjunto para lhe oferecer um apoio abrangente e personalizado.',
+    subtitle: 'Cuidados abrangentes para todas as fases da vida da mulher',
     items: [
       {
         icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,
