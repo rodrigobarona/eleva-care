@@ -82,7 +82,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
             <div>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="mb-4 mt-8 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-transparent bg-white/30 p-5 text-sm font-medium text-neutral-950 shadow-sm hover:bg-white/30 lg:my-0 lg:bg-transparent lg:p-6 lg:text-white lg:shadow-none">
+                  <Button className="mb-7 mt-5 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-transparent bg-white/30 p-5 text-sm font-medium text-neutral-950 shadow-sm hover:bg-white/30 lg:my-0 lg:bg-transparent lg:p-6 lg:text-white lg:shadow-none">
                     <ClipboardList className="mr-2 h-5 w-5" />
                     {t.hero.cta1}
                   </Button>
