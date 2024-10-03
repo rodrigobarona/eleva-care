@@ -35,7 +35,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         playsInline
         className="lg:rounded-4xl absolute rounded-2xl object-cover"
       />
-
+      <div className="absolute z-0 h-full w-full bg-slate-950/40"></div>
       <div className="relative px-4 lg:px-6">
         <div className="z-20 mx-auto flex max-w-2xl flex-col justify-end pt-44 lg:max-w-7xl lg:justify-between lg:pt-72">
           <div>
