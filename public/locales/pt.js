@@ -9,21 +9,21 @@ export const translations = {
     team: 'Equipa',
   },
   hero: {
-    title: 'Capacitando a Saúde das Mulheres em Cada Etapa',
+    title: 'Empoderando a saúde da mulher em todas as fases',
     subtitle:
-      'A Eleva Care oferece uma abordagem holística à saúde da mulher, conectando-a com profissionais especializados que se dedicam a apoiar as mulheres em todas as fases da vida.',
+      'A Eleva Care oferece uma abordagem holística à saúde da mulher, aproximando-a profissionais especializados que se dedicam a apoiar as mulheres em todas as fases da vida.',
     cta1: 'Fazer um Questionário',
     cta2: 'Agendar Agora',
   },
   podcast: {
     title: 'Elevando a Saúde das Mulheres com Patrícia Mota, PT, PhD pela Eleva Care',
     description:
-      'Capacite a sua jornada de saúde com "Elevando a Saúde das Mulheres" pela Eleva Care. As nossas apresentadoras especialistas analisam semanalmente as pesquisas mais recentes em saúde feminina, transformando estudos complexos em conhecimentos práticos. Desde o bem-estar reprodutivo até à saúde mental, abordamos todos os temas.',
+      'Capacite a sua jornada de saúde com "Elevando a Saúde da Mulher" pela Eleva Care. Os nossos apresentadores especialistas analisam semanalmente as investigações mais recentes em saúde feminina, transformando estudos complexos em conhecimentos práticos',
     cta: 'Ouça Agora',
   },
   services: {
     title: 'Os Nossos Serviços',
-    subtitle: 'Cuidados abrangentes para todas as fases da vida da mulher',
+    subtitle: 'Cuidados de saúde para todas as fases da vida da mulher',
     items: [
       {
         icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,
@@ -32,9 +32,9 @@ export const translations = {
           'Cuidados abrangentes para apoiar as mulheres durante a jornada transformadora da gravidez e início da maternidade.',
         items: [
           '**Fisioterapia:** Prepare-se para o parto, controle a dor, recupere a força, trate a diástase abdominal e receba intervenções específicas para o pavimento pélvico para prevenir e tratar disfunções.',
-          '**Cuidados Obstétricos/Ginecológicos:** Receba cuidados especializados durante toda a sua jornada de gravidez e recuperação pós-parto.',
+          '**Cuidados Obstétricos/Ginecológicos:** Receba cuidados especializados durante toda a sua gravidez e recuperação pós-parto.',
           '**Orientação Nutricional:** Otimize a sua dieta para uma gravidez saudável e uma jornada pós-parto equilibrada.',
-          '**Apoio à Saúde Mental:** Navegue pelos desafios emocionais e mentais da maternidade com orientação compassiva.',
+          '**Apoio à Saúde Mental:** Enfrente os desafios emocionais e mentais da maternidade com orientação adequada.',
           '**Exercício:** Explore os benefícios do exercício terapêutico durante a gravidez e pós-parto, concebido para apoiar as mudanças do seu corpo e promover uma recuperação saudável.',
         ],
         image: '/img/Pregnant-Woman-Flowers.jpg?height=450&width=300',
@@ -43,11 +43,11 @@ export const translations = {
         icon: <Droplets className="h-12 w-12 text-[#0d6c70]" />,
         title: 'Saúde Pélvica',
         description:
-          'Cuidados especializados que atendem às necessidades únicas de saúde pélvica das mulheres ao longo das suas vidas.',
+          'Cuidados especializados que atendem às necessidades únicas de saúde pélvica ao longo da vida.',
         items: [
           '**Fisioterapia Pélvica:** Tratamento especializado para incontinência, prolapso de órgãos pélvicos e dor pélvica, incluindo dor durante as relações sexuais.',
           '**Cuidados Obstétricos/Ginecológicos Especializados:** Diagnóstico e tratamento especializados para uma variedade de problemas de saúde pélvica, incluindo prolapso, endometriose e disfunção sexual.',
-          '**Apoio à Saúde Mental:** Aconselhamento e terapia para abordar os aspetos psicológicos das preocupações de saúde pélvica.',
+          '**Apoio à Saúde Mental:** Aconselhamento e terapia para abordar os aspetos psicológicos da saúde pélvica.',
         ],
         image: '/img/Woman-Working-Out-Living-Room.jpg?height=450&width=300',
       },
@@ -55,9 +55,9 @@ export const translations = {
         icon: <Flower2 className="h-12 w-12 text-[#0d6c70]" />,
         title: 'Em Todas as Fases',
         description:
-          'Apoio holístico para questões de saúde feminina desde a adolescência até à menopausa e além.',
+          'Apoio holístico para questões de saúde feminina desde a adolescência até à menopausa e mais além.',
         items: [
-          '**Saúde das Adolescentes:** Navegue pela puberdade, menstruação e início da vida adulta com confiança e apoio.',
+          '**Saúde das Adolescentes:** Viva a puberdade, menstruação e início da vida adulta com confiança e apoio.',
           '**Gestão da Menopausa:** Aborde as mudanças hormonais, controle os sintomas e priorize o seu bem-estar.',
           '**Bem-estar Mental:** Aceda a terapia e apoio para gerir o stress, ansiedade, depressão e outras preocupações de saúde mental.',
           '**Fitness e Nutrição:** Descubra planos de exercícios personalizados e orientação nutricional adaptados às suas necessidades individuais.',
@@ -70,9 +70,9 @@ export const translations = {
   approach: {
     title: 'Na Eleva Care, acreditamos que:',
     items: [
-      'Toda mulher merece acesso a cuidados de saúde de qualidade.',
-      'O conhecimento é poder nas decisões de saúde.',
-      'A colaboração leva a melhores resultados de saúde.',
+      'Todas as mulheres merecem acesso a cuidados de qualidade.',
+      'Conhecimento é poder nas decisões de saúde.',
+      'A colaboração leva a melhores resultados.',
       'A saúde da mulher é uma jornada evolutiva ao longo da vida.',
       'A saúde pélvica é essencial para o bem-estar geral.',
     ],

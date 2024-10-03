@@ -1,18 +1,22 @@
 import React from 'react'; // Add this line at the top of each file
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
 import './globals.css';
 import { Analytics } from '@vercel/analytics/react';
 
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900',
+// Import our second font
+import { Lora, Alexandria } from 'next/font/google';
+
+const lora = Lora({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-lora',
 });
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
-  weight: '100 900',
+
+// Configure the object for our second font
+const alexandria = Alexandria({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-alexandria',
 });
 
 export const metadata: Metadata = {
@@ -44,7 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${lora.variable} ${alexandria.variable} font-sans font-light antialiased`}>
         <div className="pointer-events-none absolute left-2 top-2 z-[100]">
           <a
             href="#main"

@@ -61,7 +61,7 @@ export default function Home() {
         <FadeInSection>
           <section id="services" className="w-full bg-white px-6 py-12 md:py-24 lg:px-8 lg:py-32">
             <div className="mx-auto max-w-2xl lg:max-w-7xl">
-              <h2 className="mb-4 text-center text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
+              <h2 className="mb-4 text-center font-serif text-3xl font-normal tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
                 {t.services.title}
               </h2>
               <div className="mb-8 text-center text-xl text-[#576d69]">
