@@ -14,6 +14,8 @@ export const translations = {
       'A Eleva Care oferece uma abordagem holística à saúde da mulher, aproximando-a profissionais especializados que se dedicam a apoiar as mulheres em todas as fases da vida.',
     cta1: 'Fazer um Questionário',
     cta2: 'Agendar Agora',
+    cta2Help: 'Make your appointment',
+    cta2Help2: 'in less than 3 minutes',
   },
   podcast: {
     title: 'Elevando a Saúde das Mulheres com Patrícia Mota, PT, PhD pela Eleva Care',

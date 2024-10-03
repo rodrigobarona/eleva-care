@@ -9,10 +9,12 @@ export const translations = {
     team: 'Team',
   },
   hero: {
-    title: 'World-Class Care for Women, *on-demand*',
+    title: 'World-Class Care for Women, *on-demand.*',
     subtitle: "Book Leading Women's Health Specialists - On Your Schedule. ",
     cta1: 'Not sure if we can help? Take the Quiz',
     cta2: 'Book Now',
+    cta2Help: 'Make your appointment',
+    cta2Help2: 'in less than 3 minutes.',
   },
   podcast: {
     title: "Elevating Women's Health with Patrícia Mota, PT, PhD by Eleva Care",
