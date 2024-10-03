@@ -20,7 +20,7 @@ type HeroProps = {
 const Hero: React.FC<HeroProps> = ({ t }) => {
   return (
     <section
-      className="lg:rounded-4xl relative m-2 overflow-hidden rounded-2xl bg-slate-950"
+      className="relative m-2 overflow-hidden rounded-2xl bg-slate-950 lg:rounded-4xl"
       data-component-name="hero"
     >
       <MuxPlayer
@@ -33,7 +33,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
         muted
         preload="auto"
         playsInline
-        className="lg:rounded-4xl absolute rounded-2xl object-cover"
+        className="absolute rounded-2xl object-cover lg:rounded-4xl"
       />
       <div className="absolute z-0 h-full w-full bg-slate-950/40"></div>
       <div className="relative px-4 lg:px-6">
@@ -82,7 +82,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
             <div>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="mb-7 mt-5 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-transparent bg-white/30 p-5 text-sm font-medium text-neutral-950 shadow-sm hover:bg-white/30 lg:my-0 lg:bg-transparent lg:p-6 lg:text-white lg:shadow-none">
+                  <Button className="mb-7 mt-5 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-white/30 bg-white/40 p-5 text-sm font-medium text-neutral-950 shadow-sm hover:bg-white/50 lg:my-0 lg:bg-white/10 lg:p-6 lg:text-white lg:shadow-none lg:hover:text-neutral-950">
                     <ClipboardList className="mr-2 h-5 w-5" />
                     {t.hero.cta1}
                   </Button>
