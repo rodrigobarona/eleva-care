@@ -1,8 +1,7 @@
 import React from 'react';
 
-const ElevaCareLogoSVG: React.FC<{ className?: string }> = ({ className }) => (
+const ElevaCareLogoSVG: React.FC<{ className?: string }> = () => (
   <svg
-    className={className}
     width="198"
     height="34"
     viewBox="0 0 198 34"

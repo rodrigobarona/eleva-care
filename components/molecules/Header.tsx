@@ -37,10 +37,11 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
       }`}
     >
       <div className="mx-auto flex max-w-2xl lg:max-w-7xl">
-        <Link href="https://eleva.care" className="h-8 w-auto">
-          <ElevaCareLogoSVG
-            className={` ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
-          />
+        <Link
+          href="https://eleva.care"
+          className={`h-8 w-auto ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
+        >
+          <ElevaCareLogoSVG />
         </Link>
         <nav className="ml-auto flex items-center gap-4 sm:gap-6">
           <Link
