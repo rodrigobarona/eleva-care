@@ -9,10 +9,9 @@ export const translations = {
     team: 'Team',
   },
   hero: {
-    title: "Empowering Women's Health at Every Stage",
-    subtitle:
-      "Eleva Care offers a holistic approach to women's health, connecting you with expert providers who specialize in supporting women through every stage of life.",
-    cta1: 'Take a Quiz',
+    title: 'World-Class Care for Women, *on-demand*',
+    subtitle: "Book Leading Women's Health Specialists - On Your Schedule. ",
+    cta1: 'Not sure if we can help? Take the Quiz',
     cta2: 'Book Now',
   },
   podcast: {

@@ -32,16 +32,18 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
   }, []);
   return (
     <header
-      className={`fixed z-50 w-full justify-between px-6 py-4 transition-colors lg:px-8 ${
-        isScrolled ? 'backdrop-blur supports-[backdrop-filter]:bg-white/60' : 'bg-transparent'
+      className={`fixed z-50 w-full justify-between px-6 transition-all lg:px-8 ${
+        isScrolled
+          ? 'pb-2 pt-2 shadow backdrop-blur supports-[backdrop-filter]:bg-white/80'
+          : 'bg-transparent pb-4 pt-6'
       }`}
     >
-      <div className="mx-auto flex max-w-2xl lg:max-w-7xl">
+      <div className={`mx-auto flex max-w-2xl lg:max-w-7xl`}>
         <Link
           href="https://eleva.care"
-          className={`h-8 w-auto ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
+          className={`h-12 w-auto ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
         >
-          <ElevaCareLogoSVG />
+          <ElevaCareLogoSVG className="h-12 w-auto" />
         </Link>
         <nav className="ml-auto flex items-center gap-4 sm:gap-6">
           <Link
