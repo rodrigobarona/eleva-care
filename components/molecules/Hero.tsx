@@ -20,7 +20,7 @@ type HeroProps = {
 const Hero: React.FC<HeroProps> = ({ t }) => {
   return (
     <section
-      className="lg:rounded-4xl relative m-2 overflow-hidden rounded-2xl bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#11999e] from-[28%] to-[#40514e]"
+      className="lg:rounded-4xl relative m-2 overflow-hidden rounded-2xl bg-slate-950"
       data-component-name="hero"
     >
       <MuxPlayer
