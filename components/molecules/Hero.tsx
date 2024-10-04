@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Video from 'next-video';
+import heroIntroVideo from '/components/video/hero-banner-homepage.mp4';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -7,8 +8,7 @@ import {
   DialogTrigger,
   DialogOverlay,
   DialogPortal,
-} from '@/components/ui/dialog';
-import MuxPlayer from '@mux/mux-video-react'; // Change to MuxPlayer
+} from '@/components/ui/dialog'; // Change to MuxPlayer
 import ReactMarkdown from 'react-markdown';
 import { ClipboardList } from 'lucide-react';
 
@@ -23,16 +23,14 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
       className="relative m-2 overflow-hidden rounded-2xl bg-slate-950 lg:rounded-4xl"
       data-component-name="hero"
     >
-      <MuxPlayer
+      <Video
+        src={heroIntroVideo}
         style={{ height: '100%', width: '100%' }}
-        playbackId="ZCCYPtpN3Aatp8DLw00ziOgKjHv02gMsST"
-        poster="https://image.mux.com/ZCCYPtpN3Aatp8DLw00ziOgKjHv02gMsST/thumbnail.webp?height=1080&fit_mode=preserve&time=5"
-        stream-type="on-demand"
-        loop
-        autoPlay="muted"
-        muted
-        preload="auto"
         playsInline
+        autoPlay
+        muted
+        loop
+        preload="auto"
         className="absolute rounded-2xl object-cover lg:rounded-4xl"
       />
       <div className="absolute z-0 h-full w-full bg-slate-950/40"></div>

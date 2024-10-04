@@ -47,3 +47,13 @@ yarn-error.log*
 /.next/cache/webpack/client-development/*
 /.next/server
 .gz
+.DS_Store
+public/.DS_Store
+
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+public/.DS_Store
