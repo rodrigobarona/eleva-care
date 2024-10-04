@@ -1,6 +1,5 @@
-import React from 'react';
-import Video from 'next-video';
-import heroIntroVideo from '/components/video/hero-banner-homepage.mp4';
+import React, { Suspense } from 'react';
+import VideoHero from '../video/videoHero';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -8,7 +7,7 @@ import {
   DialogTrigger,
   DialogOverlay,
   DialogPortal,
-} from '@/components/ui/dialog'; // Change to MuxPlayer
+} from '@/components/ui/dialog';
 import ReactMarkdown from 'react-markdown';
 import { ClipboardList } from 'lucide-react';
 
@@ -23,16 +22,21 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
       className="relative m-2 overflow-hidden rounded-2xl bg-slate-950 lg:rounded-4xl"
       data-component-name="hero"
     >
-      <Video
-        src={heroIntroVideo}
-        style={{ height: '100%', width: '100%' }}
-        playsInline
-        autoPlay
-        muted
-        loop
-        preload="auto"
-        className="absolute rounded-2xl object-cover lg:rounded-4xl"
-      />
+      <>
+        <Suspense fallback={<p>Loading video...</p>}>
+          <VideoHero
+            src="/videos/eleva-care-intro-banner.webm"
+            width={1920}
+            height={1080}
+            playsInline={true}
+            autoPlay={true}
+            muted={true}
+            loop={true}
+            preload="auto"
+            className="absolute rounded-2xl object-cover lg:rounded-4xl"
+          />
+        </Suspense>
+      </>
       <div className="absolute z-0 h-full w-full bg-slate-950/40"></div>
       <div className="relative px-4 lg:px-6">
         <div className="z-20 mx-auto flex max-w-2xl flex-col justify-end pt-44 lg:max-w-7xl lg:justify-between lg:pt-72">
