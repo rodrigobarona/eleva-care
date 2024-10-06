@@ -32,6 +32,7 @@ import {
 } from '@/components/ui/carousel'; // Import the Carousel component
 import Header from '@/components/molecules/Header'; // Import the NavBar component
 import Hero from '@/components/molecules/Hero'; // Import the Hero component
+import ApproachSection from '@/components/molecules/ApproachSection'; // Import the new component
 
 // Define the type for supported languages
 type Language = 'en' | 'pt' | 'es';
@@ -63,26 +64,9 @@ export default function Home() {
             },
           }}
         />
-        <FadeInSection>
-          <section
-            id="approach"
-            className="md:py-22 mx-auto w-full bg-[#f0f8f8] px-6 py-10 lg:px-8 lg:py-28"
-          >
-            <div className="mx-auto max-w-2xl lg:max-w-7xl">
-              <h2 className="mx-auto mb-8 max-w-3xl text-left text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
-                {t.approach.title}
-              </h2>
-              <ul className="mx-auto max-w-3xl list-inside list-disc text-[#576d69]">
-                {t.approach.items.map((item, index) => (
-                  <li key={index} className="mb-4 flex items-center text-2xl">
-                    <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </section>
-        </FadeInSection>
+
+        <ApproachSection title={t.approach.title} items={t.approach.items} />
+
         <FadeInSection>
           <section id="mission" className="w-full bg-white px-6 py-12 md:py-24 lg:px-8 lg:py-32">
             <div className="mx-auto max-w-2xl lg:max-w-7xl">
