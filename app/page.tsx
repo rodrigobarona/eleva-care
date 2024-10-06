@@ -50,15 +50,6 @@ export default function Home() {
 
         <ApproachSection title={t.approach.title} items={t.approach.items} />
 
-        <MissionSection
-          title={t.mission.title}
-          subtitle={t.mission.subtitle}
-          description={t.mission.description}
-          vision={t.mission.vision}
-          cta={t.mission.cta}
-          stats={t.mission.stats}
-        />
-
         <TeamSection
           title={t.team.title}
           subtitle={t.team.subtitle}
@@ -75,12 +66,22 @@ export default function Home() {
           description={t.podcast.description}
           cta={t.podcast.cta}
         />
+
         <NewsletterSection
           title={t.newsletter.title}
           description={t.newsletter.description}
           placeholder={t.newsletter.placeholder}
           cta={t.newsletter.cta}
           privacy={t.newsletter.privacy}
+        />
+
+        <MissionSection
+          title={t.mission.title}
+          subtitle={t.mission.subtitle}
+          description={t.mission.description}
+          vision={t.mission.vision}
+          cta={t.mission.cta}
+          stats={t.mission.stats}
         />
 
         <SocialSection

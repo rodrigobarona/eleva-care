@@ -37,15 +37,17 @@ type TeamSectionProps = {
 const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description, members }) => {
   return (
     <FadeInSection>
-      <section id="team" className="w-full bg-[#f0f8f8] px-6 py-12 md:py-24 lg:px-8 lg:py-32">
+      <section id="team" className="w-full px-6 py-12 md:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
-          <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
+          <div className="mb-12">
+            <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
               {title}
             </h2>
-            <p className="mt-4 text-xl text-[#576d69]">{subtitle}</p>
+            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-[#0d6c70] data-[dark]:text-white sm:text-6xl">
+              {subtitle}
+            </h3>
           </div>
-          <p className="mb-12 text-center text-xl text-[#576d69]">{description}</p>
+          <p className="mt-6 text-xl font-light text-[#576d69]">{description}</p>
           <div className="embla">
             <Carousel className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-4xl xl:max-w-5xl">
               <CarouselContent>
