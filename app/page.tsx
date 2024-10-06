@@ -1,18 +1,13 @@
 'use client';
 
 import React from 'react'; // Add this line at the top of each file
-import ReactMarkdown from 'react-markdown';
+
 import { Button } from '@/components/ui/button';
 import { translations as en } from '../public/locales/en';
 import { translations as pt } from '../public/locales/pt';
 import { translations as es } from '../public/locales/es';
 import { Card, CardContent } from '@/components/ui/card';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '@/components/ui/accordion';
+import ServiceSection from '@/components/molecules/Services';
 
 import {
   ChevronRight,
@@ -27,7 +22,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Input } from '@/components/ui/input';
-import FadeInSection from '@/components/ui/FadeInSection'; // Update the import path
+import FadeInSection from '@/components/ui/FadeInSection';
 import {
   Carousel,
   CarouselContent,
@@ -58,58 +53,16 @@ export default function Home() {
       <main role="main" id="main" tabIndex={-1} className="focus-visible:outline-none">
         <Hero t={t} />
 
-        <FadeInSection>
-          <section id="services" className="w-full bg-white px-6 py-12 md:py-24 lg:px-8 lg:py-32">
-            <div className="mx-auto max-w-2xl lg:max-w-7xl">
-              <h2 className="mb-4 text-center font-serif text-3xl font-normal tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
-                {t.services.title}
-              </h2>
-              <div className="mb-8 text-center text-xl text-[#576d69]">
-                <ReactMarkdown>{t.services.subtitle}</ReactMarkdown>
-              </div>
-              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {t.services.items.map((service, index) => (
-                  <Card
-                    key={index}
-                    className="overflow-hidden border-[#0d6c70]/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      width={300}
-                      height={450}
-                      className="w-full object-cover"
-                    />
-                    <CardContent className="flex flex-col justify-between p-6">
-                      <div className="flex flex-col">
-                        <div className="mb-4 flex items-center">
-                          {service.icon}
-                          <h3 className="ml-2 text-xl font-bold text-[#0d6c70]">{service.title}</h3>
-                        </div>
-                        <p className="text-[#576d69]">{service.description}</p>
-                      </div>
-                      <Accordion type="single" collapsible>
-                        <AccordionItem value="item-1">
-                          <AccordionTrigger>Learn more</AccordionTrigger>
-                          <AccordionContent>
-                            <ul className="mt-4 list-inside list-disc text-[#576d69]">
-                              {service.items.map((item, itemIndex) => (
-                                <li key={itemIndex} className="flex items-start pb-2">
-                                  <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
-                                  <ReactMarkdown>{item}</ReactMarkdown>
-                                </li>
-                              ))}
-                            </ul>
-                          </AccordionContent>
-                        </AccordionItem>
-                      </Accordion>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </section>
-        </FadeInSection>
+        <ServiceSection
+          t={{
+            ...t,
+            services: {
+              ...t.services,
+              item: '',
+              itemIndex: 0,
+            },
+          }}
+        />
         <FadeInSection>
           <section
             id="approach"

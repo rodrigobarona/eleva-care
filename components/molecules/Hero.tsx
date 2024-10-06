@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import VideoHero from '../video/videoHero';
+import VideoPlayer from '../ui/videoPlayer';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -24,7 +24,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
     >
       <>
         <Suspense fallback={<p>Loading video...</p>}>
-          <VideoHero
+          <VideoPlayer
             src="/videos/eleva-care-intro-banner.webm"
             width={1920}
             height={1080}
@@ -32,6 +32,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
             autoPlay={true}
             muted={true}
             loop={true}
+            controls={false}
             preload="auto"
             className="absolute rounded-2xl object-cover lg:rounded-4xl"
           />

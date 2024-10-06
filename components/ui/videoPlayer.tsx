@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface VideoHeroProps {
+interface VideoPlayerProps {
   width?: number;
   height?: number;
   src: string;
@@ -8,10 +8,11 @@ interface VideoHeroProps {
   autoPlay?: boolean;
   muted?: boolean;
   loop?: boolean;
+  controls?: boolean;
   preload?: string;
   className?: string;
 }
-export function VideoHero({
+export function VideoPlayer({
   width,
   height,
   src,
@@ -19,9 +20,10 @@ export function VideoHero({
   autoPlay,
   muted,
   loop,
+  controls,
   preload,
   className,
-}: VideoHeroProps) {
+}: VideoPlayerProps) {
   return (
     <video
       width={width}
@@ -31,6 +33,7 @@ export function VideoHero({
       autoPlay={autoPlay}
       muted={muted}
       loop={loop}
+      controls={controls}
       preload={preload}
       className={className}
     >
@@ -39,4 +42,4 @@ export function VideoHero({
     </video>
   );
 }
-export default VideoHero;
+export default VideoPlayer;
