@@ -12,7 +12,7 @@ import Image from 'next/image';
 import FadeInSection from '../ui/FadeInSection'; // Adjust the import path based on your types definition
 
 // Define the type for team members
-type TeamMember = {
+export type TeamMember = {
   name: string;
   role: string;
   image: string;

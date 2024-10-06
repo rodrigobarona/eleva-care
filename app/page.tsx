@@ -20,7 +20,7 @@ import Header from '@/components/molecules/Header'; // Import the NavBar compone
 import Hero from '@/components/molecules/Hero'; // Import the Hero component
 import ApproachSection from '@/components/molecules/ApproachSection'; // Import the new component
 import MissionSection from '@/components/molecules/MissionSection'; // Import the new component
-import TeamSection from '@/components/molecules/TeamSection';
+import TeamSection, { TeamMember } from '@/components/molecules/TeamSection'; // Corrected import statement
 
 // Define the type for supported languages
 type Language = 'en' | 'pt' | 'es';
@@ -71,7 +71,7 @@ export default function Home() {
           members={t.team.members.map((member: TeamMember) => ({
             ...member,
             description: member.description || '', // Provide a default value if missing
-            socialLinks: member.socialLinks || [], // Provide a default value if missing
+            socialLinks: member.socialLinks || undefined, // Ensure socialLinks is either an object or undefined
           }))}
         />
 
