@@ -14,6 +14,29 @@ body {
 
 @layer base {
   :root {
+    /* ELEVA CARE */
+    /* Primary Colors */
+    --color-primary: 185, 100%, 23%; /* #006D77 - Deep Teal */
+    --color-primary-light: 172, 37%, 64%; /* #83C5BE - Sage Green */
+
+    /* Secondary Colors */
+    --color-secondary: 15, 64%, 68%; /* #E29578 - Soft Coral */
+    --color-secondary-light: 14, 100%, 91%; /* #FFDDD2 - Warm Sand */
+
+    /* Accent Color */
+    --color-accent: 183, 85%, 94%; /* #E0FBFC - Pale Lavender */
+
+    /* Neutral Colors */
+    --color-neutral-100: 180, 18%, 97%; /* #F7F9F9 - Soft White */
+    --color-neutral-200: 0, 0%, 82%; /* #D1D1D1 - Light Grey */
+    --color-neutral-900: 0, 0%, 20%; /* #333333 - Charcoal*/
+
+    /* Highlight Colors */
+    --color-highlight-red: 345, 82%, 60%; /* #EE4266 - Vibrant Rose */
+    --color-highlight-purple: 283, 79%, 24%; /* #540D6E - Deep Purple */
+    --color-highlight-yellow: 44, 100%, 63%; /* #FFD23F - Sunshine Yellow */
+
+    /* shadcn/ui */
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;

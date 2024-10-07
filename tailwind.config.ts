@@ -13,8 +13,34 @@ const config: Config = {
       fontFamily: {
         serif: ['var(--font-lora)'],
         sans: ['var(--font-alexandria)'],
+        mono: ['var(--font-jetbrains)'],
       },
       colors: {
+        /* Eleva Care */
+        primary: {
+          DEFAULT: 'hsl(var(--color-primary))',
+          light: 'hsl(var(--color-primary-light))',
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--color-secondary))',
+          light: 'hsl(var(--color-secondary-light))',
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--color-accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        neutral: {
+          '100': 'hsl(var(--color-neutral-100))',
+          '200': 'hsl(var(--color-neutral-200))',
+          '900': 'hsl(var(--color-neutral-900))',
+        },
+        highlight: {
+          red: 'hsl(var(--color-highlight-red))',
+          purple: 'hsl(var(--color-highlight-purple))',
+          yellow: 'hsl(var(--color-highlight-yellow))',
+        },
+
+        /* shadcn/ui */
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -24,22 +50,6 @@ const config: Config = {
         popover: {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))',
-        },
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
-        },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -57,9 +67,6 @@ const config: Config = {
         },
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
         '4xl': '2rem',
       },
       keyframes: {

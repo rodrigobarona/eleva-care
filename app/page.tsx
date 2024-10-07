@@ -75,14 +75,14 @@ export default function Home() {
           privacy={t.newsletter.privacy}
         />
 
-        <MissionSection
+        {/*   <MissionSection
           title={t.mission.title}
           subtitle={t.mission.subtitle}
           description={t.mission.description}
           vision={t.mission.vision}
           cta={t.mission.cta}
           stats={t.mission.stats}
-        />
+        /> */}
 
         <SocialSection
           title={t.social.title}

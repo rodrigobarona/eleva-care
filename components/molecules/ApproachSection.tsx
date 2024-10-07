@@ -12,7 +12,7 @@ const ApproachSection: React.FC<ApproachSectionProps> = ({ title, items }) => {
     <FadeInSection>
       <section
         id="approach"
-        className="mx-2 rounded-t-4xl bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#16c6cc] from-[28%] to-[#11999e] px-6 py-10 sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] lg:px-8 lg:py-28"
+        className="mx-2 rounded-t-4xl bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#576d69] from-[28%] to-[#40514e] px-6 py-10 sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))] lg:px-8 lg:py-28"
       >
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="grid grid-cols-2">

@@ -47,7 +47,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
             </h1>
           </div>
           <div>
-            <p className="mb-12 mt-8 max-w-md font-sans text-xl/6 font-light text-white lg:mb-8 lg:mt-16 lg:text-2xl/7">
+            <p className="mb-12 mt-8 max-w-md font-sans text-xl/6 font-light text-neutral-100 lg:mb-8 lg:mt-16 lg:text-2xl/7">
               {t.hero.subtitle}
             </p>
           </div>

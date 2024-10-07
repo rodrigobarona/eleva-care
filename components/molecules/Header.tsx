@@ -41,31 +41,31 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
       <div className={`mx-auto flex max-w-2xl lg:max-w-7xl`}>
         <Link
           href="https://eleva.care"
-          className={`h-8 w-auto lg:h-12 ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
+          className={`h-8 w-auto lg:h-12 ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100'}`}
         >
           <ElevaCareLogoSVG className="h-8 w-auto lg:h-12" />
         </Link>
         <nav className="ml-auto flex items-center gap-4 sm:gap-6">
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100/80'}`}
             href="#services"
           >
             {t.nav.services}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100/80'}`}
             href="#approach"
           >
             {t.nav.approach}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100/80'}`}
             href="#mission"
           >
             {t.nav.mission}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-white/80'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100/80'}`}
             href="#team"
           >
             {t.nav.team}
@@ -75,14 +75,14 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
               <Button
                 variant="ghost"
                 size="default"
-                className={`${isScrolled ? 'text-[#576d69] hover:text-[#0d6c70]' : 'text-white hover:text-[#0d6c70]'}`}
+                className={`${isScrolled ? 'text-primary hover:text-primary' : 'text-neutral-100 hover:text-primary'}`}
               >
                 <Globe className="mr-2 h-5 w-5" />
                 {t.language}
                 <ChevronDown className="ml-2 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent align="end" className="">
               <DropdownMenuItem onClick={() => setLang('en')}>English</DropdownMenuItem>
               <DropdownMenuItem onClick={() => setLang('pt')}>Português</DropdownMenuItem>
               <DropdownMenuItem onClick={() => setLang('es')}>Español</DropdownMenuItem>
