@@ -70,6 +70,7 @@ export default function Home() {
 
         <NewsletterSection
           title={t.newsletter.title}
+          subtitle={t.newsletter.subtitle}
           description={t.newsletter.description}
           placeholder={t.newsletter.placeholder}
           cta={t.newsletter.cta}

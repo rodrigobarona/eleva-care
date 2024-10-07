@@ -154,9 +154,10 @@ export const translations = {
     ],
   },
   newsletter: {
-    title: 'Stay Updated',
+    title: 'Femme Focus',
+    subtitle: 'An Eleva Care Publication',
     description:
-      "Subscribe to our newsletter for the latest in women's health, expert tips, and exclusive content.",
+      "Your monthly spotlight on women's health insights, expert advice, and empowering stories to nurture every stage of your wellness journey.",
     placeholder: 'Enter your email',
     cta: 'Subscribe',
     privacy: 'We respect your privacy. Unsubscribe at any time.',
