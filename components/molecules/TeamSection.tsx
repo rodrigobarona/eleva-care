@@ -47,7 +47,9 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
               {subtitle}
             </h3>
           </div>
-          <p className="mt-6 text-xl font-light text-elevaNeutral-900">{description}</p>
+          <p className="mt-6 text-base font-light text-elevaNeutral-900 lg:text-xl">
+            {description}
+          </p>
           <div className="embla">
             <Carousel
               className="mt-12"
@@ -74,7 +76,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
                         ></div>
                         <figure className="relative z-20 p-10">
                           <blockquote>
-                            <p className="relative text-xl/7 text-elevaNeutral-100">
+                            <p className="relative text-pretty text-sm/4 text-elevaNeutral-100 lg:text-xl/7">
                               <span aria-hidden="true" className="absolute -translate-x-full">
                                 “
                               </span>

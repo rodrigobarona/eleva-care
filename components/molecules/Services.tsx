@@ -49,7 +49,9 @@ const ServiceSection: React.FC<{
               {t.services.subtitle}
             </h3>
           </div>
-          <p className="mt-6 text-xl font-light text-elevaNeutral-900">{t.services.description}</p>
+          <p className="mt-6 text-base font-light text-elevaNeutral-900 lg:text-xl">
+            {t.services.description}
+          </p>
           <div className="mt-12 grid gap-2 md:grid-cols-2 lg:grid-cols-3">
             {t.services.items.map(
               (
