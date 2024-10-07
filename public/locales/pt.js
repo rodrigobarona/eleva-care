@@ -30,7 +30,7 @@ export const translations = {
       "Access personalized care from top-rated women's health professionals worldwide. We connect you with the expertise you need, from online consultations to local resources, all tailored to your unique health journey.",
     items: [
       {
-        icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,
+        icon: <Baby className="h-12 w-12 text-elevaPrimary" />,
         title: 'Gravidez e Pós-parto',
         description:
           'Cuidados abrangentes para apoiar as mulheres durante a jornada transformadora da gravidez e início da maternidade.',
@@ -44,7 +44,7 @@ export const translations = {
         image: '/img/Pregnant-Woman-Flowers.jpg?height=450&width=300',
       },
       {
-        icon: <Droplets className="h-12 w-12 text-[#0d6c70]" />,
+        icon: <Droplets className="h-12 w-12 text-elevaPrimary" />,
         title: 'Saúde Pélvica',
         description:
           'Cuidados especializados que atendem às necessidades únicas de saúde pélvica ao longo da vida.',
@@ -56,7 +56,7 @@ export const translations = {
         image: '/img/Woman-Working-Out-Living-Room.jpg?height=450&width=300',
       },
       {
-        icon: <Flower2 className="h-12 w-12 text-[#0d6c70]" />,
+        icon: <Flower2 className="h-12 w-12 text-elevaPrimary" />,
         title: 'Em Todas as Fases',
         description:
           'Apoio holístico para questões de saúde feminina desde a adolescência até à menopausa e mais além.',

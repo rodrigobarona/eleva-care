@@ -42,14 +42,14 @@ const ServiceSection: React.FC<{
       >
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="mb-12">
-            <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
+            <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-elevaNeutral-900/70 data-[dark]:text-elevaNeutral-900/60">
               {t.services.title}
             </h2>
-            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-[#0d6c70] data-[dark]:text-elevaNeutral-100 sm:text-6xl">
+            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-elevaPrimary data-[dark]:text-elevaNeutral-100 sm:text-6xl">
               {t.services.subtitle}
             </h3>
           </div>
-          <p className="mt-6 text-xl font-light text-[#576d69]">{t.services.description}</p>
+          <p className="mt-6 text-xl font-light text-elevaNeutral-900">{t.services.description}</p>
           <div className="mt-12 grid gap-2 md:grid-cols-2 lg:grid-cols-3">
             {t.services.items.map(
               (
@@ -75,17 +75,17 @@ const ServiceSection: React.FC<{
                     <div className="flex flex-col">
                       <div className="mb-4 flex items-center">
                         {service.icon}
-                        <h3 className="ml-2 font-serif text-2xl font-normal text-[#0d6c70]">
+                        <h3 className="ml-2 font-serif text-2xl font-normal text-elevaPrimary">
                           {service.title}
                         </h3>
                       </div>
-                      <p className="text-[#576d69]">{service.description}</p>
+                      <p className="text-elevaNeutral-900">{service.description}</p>
                     </div>
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
                         <AccordionTrigger>Learn more</AccordionTrigger>
                         <AccordionContent>
-                          <ul className="mt-4 list-inside list-disc text-[#576d69]">
+                          <ul className="mt-4 list-inside list-disc text-elevaNeutral-900">
                             {service.items.map((item, itemIndex) => (
                               <li key={itemIndex} className="flex items-start pb-2 text-base">
                                 <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />

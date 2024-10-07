@@ -18,10 +18,10 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({ title, description, cta
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="grid items-center gap-6 lg:grid-cols-2">
             <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tighter text-elevaPrimary sm:text-4xl">
                 {title}
               </h2>
-              <p className="text-[#576d69] md:text-lg">{description}</p>
+              <p className="text-elevaNeutral-900 md:text-lg">{description}</p>
               <Button className="bg-[#0d6c70] text-elevaNeutral-100 hover:bg-[#0d6c70]/90" asChild>
                 <Link
                   href="https://podcasters.spotify.com/pod/show/elevacare"

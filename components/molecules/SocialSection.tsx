@@ -25,13 +25,13 @@ const SocialSection: React.FC<SocialSectionProps> = ({
     <FadeInSection>
       <section className="w-full bg-[#f0f8f8] px-6 py-12 md:py-24 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
-          <h2 className="mb-8 text-center text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl">
+          <h2 className="mb-8 text-center text-3xl font-bold tracking-tighter text-elevaPrimary sm:text-4xl">
             {title}
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
+              className="border-[#0d6c70] text-elevaPrimary hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link
@@ -45,7 +45,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
             </Button>
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
+              className="border-[#0d6c70] text-elevaPrimary hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link
@@ -59,7 +59,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
             </Button>
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
+              className="border-[#0d6c70] text-elevaPrimary hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link
@@ -73,7 +73,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
             </Button>
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
+              className="border-[#0d6c70] text-elevaPrimary hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link href="https://x.com/eleva.care" target="_blank" rel="noopener noreferrer">
@@ -83,7 +83,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
             </Button>
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
+              className="border-[#0d6c70] text-elevaPrimary hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link

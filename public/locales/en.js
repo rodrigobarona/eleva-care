@@ -29,7 +29,7 @@ export const translations = {
       "Access personalized care from top-rated women's health professionals worldwide. We connect you with the expertise you need, from online consultations to local resources, all tailored to your unique health journey.",
     items: [
       {
-        icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,
+        icon: <Baby className="h-12 w-12 text-elevaPrimary" />,
         title: 'Pregnancy & Postpartum',
         description:
           'Comprehensive care to support women through the transformative journey of pregnancy and early motherhood.',
@@ -43,7 +43,7 @@ export const translations = {
         image: '/img/Pregnant-Woman-Flowers.jpg?height=450&width=300',
       },
       {
-        icon: <Droplets className="h-12 w-12 text-[#0d6c70]" />,
+        icon: <Droplets className="h-12 w-12 text-elevaPrimary" />,
         title: 'Pelvic Health',
         description:
           'Specialized care addressing the unique pelvic health needs of women throughout their lives.',
@@ -55,7 +55,7 @@ export const translations = {
         image: '/img/Woman-Working-Out-Living-Room.jpg?height=450&width=300',
       },
       {
-        icon: <Flower2 className="h-12 w-12 text-[#0d6c70]" />,
+        icon: <Flower2 className="h-12 w-12 text-elevaPrimary" />,
         title: 'Through Every Stage',
         description:
           "Holistic support for women's health concerns from adolescence through menopause and beyond.",

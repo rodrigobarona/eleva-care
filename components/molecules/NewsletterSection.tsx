@@ -23,10 +23,10 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
       <section className="w-full bg-elevaNeutral-100 px-6 py-12 md:py-24 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="mb-4 text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl">
+            <h2 className="mb-4 text-3xl font-bold tracking-tighter text-elevaPrimary sm:text-4xl">
               {title}
             </h2>
-            <p className="mb-8 text-[#576d69]">{description}</p>
+            <p className="mb-8 text-elevaNeutral-900">{description}</p>
             <form
               action="https://app.beehiiv.com/forms/YOUR_FORM_ID_HERE"
               method="POST"
@@ -47,7 +47,7 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
                   {cta}
                 </Button>
               </div>
-              <p className="text-xs text-[#576d69]">{privacy}</p>
+              <p className="text-xs text-elevaNeutral-900">{privacy}</p>
             </form>
           </div>
         </div>
