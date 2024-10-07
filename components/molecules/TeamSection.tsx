@@ -37,7 +37,7 @@ type TeamSectionProps = {
 const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description, members }) => {
   return (
     <FadeInSection>
-      <section id="team" className="w-full px-6 py-12 md:py-24 lg:px-8 lg:py-32">
+      <section id="team" className="w-full px-6 pb-24 pt-12 md:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="mb-12">
             <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
@@ -98,8 +98,10 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <div className="absolute right-12 mt-8 flex h-10 w-6 flex-row items-end justify-end">
+                <CarouselPrevious className="h-12 w-12" />
+                <CarouselNext className="h-12 w-12" />
+              </div>
             </Carousel>
           </div>
         </div>
