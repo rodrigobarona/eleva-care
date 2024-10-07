@@ -14,7 +14,7 @@ interface PodcastSectionProps {
 const PodcastSection: React.FC<PodcastSectionProps> = ({ title, description, cta }) => {
   return (
     <FadeInSection>
-      <section className="lg-px-8 w-full bg-[#f0f8f8] px-6 py-12 md:py-24 lg:py-32">
+      <section className="mx-2 w-full rounded-5xl bg-elevaNeutral-900 px-6 py-12 md:py-24 lg:py-32">
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="grid items-center gap-6 lg:grid-cols-2">
             <div className="space-y-4">

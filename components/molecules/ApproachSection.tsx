@@ -13,14 +13,14 @@ const ApproachSection: React.FC<ApproachSectionProps> = ({ title, items }) => {
     <FadeInSection>
       <section
         id="approach"
-        className="mx-2 mt-24 rounded-5xl bg-[linear-gradient(145deg,var(--tw-gradient-stops))] from-elevaHighlight-yellow from-[28%] via-elevaHighlight-red via-[70%] to-elevaHighlight-purple py-10 lg:mt-32 lg:bg-[linear-gradient(115deg,var(--tw-gradient-stops))] lg:pb-32 lg:pt-20"
+        className="mx-2 mt-24 rounded-2xl bg-[linear-gradient(145deg,var(--tw-gradient-stops))] from-elevaHighlight-yellow from-[28%] via-elevaHighlight-red via-[70%] to-elevaHighlight-purple py-10 lg:mt-32 lg:rounded-5xl lg:bg-[linear-gradient(115deg,var(--tw-gradient-stops))] lg:pb-32 lg:pt-20"
       >
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="grid grid-flow-row-dense grid-cols-1 gap-8 lg:grid-cols-12">
             <div className="col-span-12 -mt-24 lg:col-span-5 lg:-mt-52">
-              <div className="-m-4 aspect-[3/4] rounded-4xl bg-elevaNeutral-100/15 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-elevaNeutral-900/5 max-lg:mx-auto max-lg:max-w-xs lg:-m-10">
-                <div className="rounded-4xl p-2 shadow-md shadow-elevaNeutral-900/5">
-                  <div className="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-elevaNeutral-900/10">
+              <div className="-m-4 aspect-[3/4] rounded-xl bg-elevaNeutral-100/15 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-elevaNeutral-900/5 max-lg:mx-auto max-lg:max-w-xs lg:-m-10 lg:rounded-4xl">
+                <div className="rounded-xl p-2 shadow-md shadow-elevaNeutral-900/5 lg:rounded-4xl">
+                  <div className="overflow-hidden rounded-xl shadow-2xl outline outline-1 -outline-offset-1 outline-elevaNeutral-900/10 lg:rounded-3xl">
                     <Image
                       alt=""
                       src="/img/Three-Women-Posing-Photo.jpg"
