@@ -18,7 +18,8 @@ export const translations = {
     cta2Help2: 'in less than 3 minutes',
   },
   podcast: {
-    title: 'Elevando la Salud de las Mujeres con Patrícia Mota, PT, PhD por Eleva Care',
+    title: 'Elevando la Salud de las Mujeres con Patrícia Mota, PT, PhD',
+    subtitle: 'The podcast',
     description:
       'Empodera tu viaje de salud con "Elevando la Salud de las Mujeres" de Eleva Care. Nuestras anfitrionas expertas analizan semanalmente las investigaciones más recientes en salud femenina, transformando estudios complejos en conocimientos prácticos. Desde el bienestar reproductivo hasta la salud mental, lo cubrimos todo.',
     cta: 'Escucha Ahora',

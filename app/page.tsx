@@ -63,6 +63,7 @@ export default function Home() {
 
         <PodcastSection
           title={t.podcast.title}
+          subtitle={t.podcast.subtitle}
           description={t.podcast.description}
           cta={t.podcast.cta}
         />

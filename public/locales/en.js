@@ -17,7 +17,8 @@ export const translations = {
     cta2Help2: 'in less than 3 minutes.',
   },
   podcast: {
-    title: "Elevating Women's Health with Patrícia Mota, PT, PhD by Eleva Care",
+    title: "Elevating Women's Health with Patrícia Mota, PT, PhD",
+    subtitle: 'The podcast',
     description:
       'Empower your health journey with "Elevating Women\'s Health" by Eleva Care. Our expert hosts break down cutting-edge research in women\'s health each week, translating complex studies into actionable insights. From reproductive wellness to mental health, we cover it all.',
     cta: 'Listen Now',

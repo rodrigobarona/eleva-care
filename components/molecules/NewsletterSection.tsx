@@ -28,7 +28,7 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
             </h2>
             <p className="mb-8 text-elevaNeutral-900">{description}</p>
             <form
-              action="https://app.beehiiv.com/forms/YOUR_FORM_ID_HERE"
+              action="https://app.beehiiv.com/forms/Y294b9d43-62b2-47e4-9757-2e5ef82c204d"
               method="POST"
               className="space-y-4"
             >
@@ -46,6 +46,12 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
                 >
                   {cta}
                 </Button>
+                <iframe
+                  src="https://embeds.beehiiv.com/294b9d43-62b2-47e4-9757-2e5ef82c204d?slim=true"
+                  data-test-id="beehiiv-embed"
+                  height="52"
+                  style={{ margin: 0, borderRadius: '0px', backgroundColor: 'transparent' }} // Updated to object
+                ></iframe>
               </div>
               <p className="text-xs text-elevaNeutral-900">{privacy}</p>
             </form>
