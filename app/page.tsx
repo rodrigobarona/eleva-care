@@ -9,7 +9,7 @@ import { translations as es } from '../public/locales/es';
 import Header from '@/components/molecules/Header'; // Import the NavBar component
 import Hero from '@/components/molecules/Hero'; // Import the Hero component
 import ApproachSection from '@/components/molecules/ApproachSection'; // Import the new component
-import MissionSection from '@/components/molecules/MissionSection'; // Import the new component
+// import MissionSection from '@/components/molecules/MissionSection'; // Import the new component
 import TeamSection, { TeamMember } from '@/components/molecules/TeamSection';
 import ServiceSection from '@/components/molecules/Services';
 import PodcastSection from '@/components/molecules/PodcastSection'; // Corrected import statement
