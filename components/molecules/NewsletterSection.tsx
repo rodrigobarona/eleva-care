@@ -31,7 +31,9 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
                 {title}
               </h3>
             </div>
-            <p className="text-balance text-xl font-light text-elevaNeutral-900">{description}</p>
+            <p className="text-balance text-base/5 font-light text-elevaNeutral-900 lg:text-xl">
+              {description}
+            </p>
             <form
               action="https://app.beehiiv.com/forms/Y294b9d43-62b2-47e4-9757-2e5ef82c204d"
               method="POST"
@@ -46,7 +48,7 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
                   style={{ margin: 0, borderRadius: '0px', backgroundColor: 'transparent' }} // Updated to object
                 ></iframe>
               </div>
-              <p className="text-xs text-elevaNeutral-900">{privacy}</p>
+              <p className="text-xs text-elevaNeutral-900/60">{privacy}</p>
             </form>
           </div>
         </div>

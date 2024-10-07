@@ -150,7 +150,8 @@ export const translations = {
     ],
   },
   newsletter: {
-    title: 'Mantente Actualizada',
+    title: 'Femme Focus',
+    subtitle: 'An Eleva Care Publication',
     description:
       'Suscríbete a nuestro boletín para recibir las últimas novedades en salud femenina, consejos de expertos y contenido exclusivo.',
     placeholder: 'Ingresa tu correo electrónico',
