@@ -57,3 +57,4 @@ videos/*
 !videos/*.ts
 public/_next-video
 public/.DS_Store
+public/.DS_Store

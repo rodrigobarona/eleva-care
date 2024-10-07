@@ -73,11 +73,11 @@ export const translations = {
   approach: {
     title: 'At Eleva Care, we believe:',
     items: [
-      'Every woman deserves access to quality healthcare.',
-      'Knowledge is power in healthcare decisions.',
-      'Collaboration leads to better health outcomes.',
-      "Women's health is a lifelong, evolving journey.",
-      'Pelvic health is essential to overall well-being.',
+      'Every woman deserves access to **quality healthcare**.',
+      '**Knowledge is power** in healthcare decisions.',
+      '**Collaboration** leads to better health outcomes.',
+      "Women's health is a lifelong, **evolving journey**.",
+      '**Pelvic health** is essential to overall well-being.',
     ],
     description:
       'At Eleva Care, we believe in a collaborative approach to care. Our team of experts work together to provide you with comprehensive and personalized support, ensuring that every aspect of your health is addressed.',
