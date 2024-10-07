@@ -43,7 +43,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
             <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
               {title}
             </h2>
-            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-[#0d6c70] data-[dark]:text-white sm:text-6xl">
+            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-seco data-[dark]:text-white sm:text-6xl">
               {subtitle}
             </h3>
           </div>

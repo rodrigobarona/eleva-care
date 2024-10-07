@@ -17,27 +17,27 @@ const config: Config = {
       },
       colors: {
         /* Eleva Care */
-        primary: {
-          DEFAULT: 'hsl(var(--color-primary))',
-          light: 'hsl(var(--color-primary-light))',
+        elevaPrimary: {
+          DEFAULT: 'hsl(var(--eleva-primary))',
+          foreground: 'hsl(var(--eleva-primary-foreground))',
         },
-        secondary: {
-          DEFAULT: 'hsl(var(--color-secondary))',
-          light: 'hsl(var(--color-secondary-light))',
+        elevaSecondary: {
+          DEFAULT: 'hsl(var(--eleva-secondary))',
+          foreground: 'hsl(var(--eleva-secondary-foreground))',
         },
-        accent: {
-          DEFAULT: 'hsl(var(--color-accent))',
+        elevaAccent: {
+          DEFAULT: 'hsl(var(--eleva-accent))',
           foreground: 'hsl(var(--accent-foreground))',
         },
-        neutral: {
-          '100': 'hsl(var(--color-neutral-100))',
-          '200': 'hsl(var(--color-neutral-200))',
-          '900': 'hsl(var(--color-neutral-900))',
+        elevaNeutral: {
+          '100': 'hsl(var(--eleva-neutral-100))',
+          '200': 'hsl(var(--eleva-neutral-200))',
+          '900': 'hsl(var(--eleva-neutral-900))',
         },
-        highlight: {
-          red: 'hsl(var(--color-highlight-red))',
-          purple: 'hsl(var(--color-highlight-purple))',
-          yellow: 'hsl(var(--color-highlight-yellow))',
+        elevaHighlight: {
+          red: 'hsl(var(--eleva-highlight-red))',
+          purple: 'hsl(var(--eleva-highlight-purple))',
+          yellow: 'hsl(var(--eleva-highlight-yellow))',
         },
 
         /* shadcn/ui */

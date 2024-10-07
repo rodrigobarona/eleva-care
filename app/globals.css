@@ -16,25 +16,25 @@ body {
   :root {
     /* ELEVA CARE */
     /* Primary Colors */
-    --color-primary: 185deg, 100%, 23%; /* #006D77 - Deep Teal */
-    --color-primary-light: 172deg, 37%, 64%; /* #83C5BE - Sage Green */
+    --eleva-primary: 185deg, 100%, 23%; /* #006D77 - Deep Teal */
+    --eleva-primary-foreground: 172deg, 37%, 64%; /* #83C5BE - Sage Green */
 
     /* Secondary Colors */
-    --color-secondary: 15deg, 64%, 68%; /* #E29578 - Soft Coral */
-    --color-secondary-light: 14deg, 100%, 91%; /* #FFDDD2 - Warm Sand */
+    --eleva-secondary: 15deg, 64%, 68%; /* #E29578 - Soft Coral */
+    --eleva-secondary-foreground: 14deg, 100%, 91%; /* #FFDDD2 - Warm Sand */
 
     /* Accent Color */
-    --color-accent: 183deg, 85%, 94%; /* #E0FBFC - Pale Lavender */
+    --eleva-accent: 183deg, 85%, 94%; /* #E0FBFC - Pale Lavender */
 
     /* Neutral Colors */
-    --color-neutral-100: 180deg, 18%, 97%; /* #F7F9F9 - Soft White */
-    --color-neutral-200: 0deg, 0%, 82%; /* #D1D1D1 - Light Grey */
-    --color-neutral-900: 0deg 0%, 20%; /* #333333 - Charcoal*/
+    --eleva-neutral-100: 180deg, 18%, 97%; /* #F7F9F9 - Soft White */
+    --eleva-neutral-200: 0deg, 0%, 82%; /* #D1D1D1 - Light Grey */
+    --eleva-neutral-900: 0deg 0%, 20%; /* #333333 - Charcoal*/
 
     /* Highlight Colors */
-    --color-highlight-red: 345deg, 82%, 60%; /* #EE4266 - Vibrant Rose */
-    --color-highlight-purple: 283deg, 79%, 24%; /* #540D6E - Deep Purple */
-    --color-highlight-yellow: 44deg, 100%, 63%; /* #FFD23F - Sunshine Yellow */
+    --eleva-highlight-red: 345deg, 82%, 60%; /* #EE4266 - Vibrant Rose */
+    --eleva-highlight-purple: 283deg, 79%, 24%; /* #540D6E - Deep Purple */
+    --eleva-highlight-yellow: 44deg, 100%, 63%; /* #FFD23F - Sunshine Yellow */
 
     /* shadcn/ui */
     --background: 0 0% 100%;
