@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -59,14 +59,14 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
               <CarouselContent className="-ml-4">
                 {members.map((member, index) => (
                   <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                    <Card className="relative flex aspect-[9/13] overflow-hidden rounded-3xl">
+                    <Card className="relative flex aspect-[9/16] overflow-hidden rounded-3xl">
                       <CardContent className="flex flex-col items-center justify-end p-0">
                         <Image
                           src={member.image}
                           alt={member.name}
                           width={200}
                           height={200}
-                          className="absolute inset-x-0 top-0 aspect-square w-full object-cover"
+                          className="absolute inset-x-0 top-0 aspect-[3/4] w-full object-cover"
                         />
                         <div
                           aria-hidden="true"
