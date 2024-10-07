@@ -43,7 +43,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
             <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
               {title}
             </h2>
-            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-seco data-[dark]:text-white sm:text-6xl">
+            <h3 className="text-seco mt-2 text-pretty font-serif text-4xl font-light tracking-tighter data-[dark]:text-elevaNeutral-100 sm:text-6xl">
               {subtitle}
             </h3>
           </div>
@@ -74,7 +74,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
                         ></div>
                         <figure className="relative z-20 p-10">
                           <blockquote>
-                            <p className="relative text-xl/7 text-white">
+                            <p className="relative text-xl/7 text-elevaNeutral-100">
                               <span aria-hidden="true" className="absolute -translate-x-full">
                                 “
                               </span>
@@ -85,7 +85,9 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
                             </p>
                           </blockquote>
                           <figcaption className="mt-6 border-t border-white/20 pt-6">
-                            <h3 className="text-sm/6 font-medium text-white">{member.name}</h3>
+                            <h3 className="text-sm/6 font-medium text-elevaNeutral-100">
+                              {member.name}
+                            </h3>
                             <p className="text-sm/6 font-medium">
                               <span className="bg-gradient-to-r from-[#11999e] from-[28%] via-[#11999e] via-[70%] to-[#16c6cc] bg-clip-text text-transparent">
                                 {member.role}

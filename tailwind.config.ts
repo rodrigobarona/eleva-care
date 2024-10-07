@@ -18,26 +18,29 @@ const config: Config = {
       colors: {
         /* Eleva Care */
         elevaPrimary: {
-          DEFAULT: 'hsl(var(--eleva-primary))',
-          foreground: 'hsl(var(--eleva-primary-foreground))',
+          DEFAULT: 'rgb(var(--eleva-primary))',
+          light: 'rgb(var(--eleva-primary-light))',
         },
         elevaSecondary: {
-          DEFAULT: 'hsl(var(--eleva-secondary))',
-          foreground: 'hsl(var(--eleva-secondary-foreground))',
+          DEFAULT: 'rgb(var(--eleva-secondary))',
+          light: 'rgb(var(--eleva-secondary-light))',
         },
         elevaAccent: {
-          DEFAULT: 'hsl(var(--eleva-accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          DEFAULT: 'rgb(var(--eleva-accent))',
         },
         elevaNeutral: {
-          '100': 'hsl(var(--eleva-neutral-100))',
-          '200': 'hsl(var(--eleva-neutral-200))',
-          '900': 'hsl(var(--eleva-neutral-900))',
+          '100': 'rgb(var(--eleva-neutral-100))',
+          '200': 'rgb(var(--eleva-neutral-200))',
+          '900': 'rgb(var(--eleva-neutral-900))',
         },
         elevaHighlight: {
-          red: 'hsl(var(--eleva-highlight-red))',
-          purple: 'hsl(var(--eleva-highlight-purple))',
-          yellow: 'hsl(var(--eleva-highlight-yellow))',
+          red: 'rgb(var(--eleva-highlight-red))',
+          purple: 'rgb(var(--eleva-highlight-purple))',
+          yellow: 'rgb(var(--eleva-highlight-yellow))',
+        },
+        accent: {
+          DEFAULT: 'rgb(var(--eleva-accent))',
+          foreground: 'hsl(var(--accent-foreground))',
         },
 
         /* shadcn/ui */
@@ -55,6 +58,7 @@ const config: Config = {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
         },
+
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -68,6 +72,7 @@ const config: Config = {
       },
       borderRadius: {
         '4xl': '2rem',
+        '5xl': '3rem',
       },
       keyframes: {
         'accordion-down': {

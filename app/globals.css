@@ -16,25 +16,25 @@ body {
   :root {
     /* ELEVA CARE */
     /* Primary Colors */
-    --eleva-primary: 185deg, 100%, 23%; /* #006D77 - Deep Teal */
-    --eleva-primary-foreground: 172deg, 37%, 64%; /* #83C5BE - Sage Green */
+    --eleva-primary: 0 109 119; /* #006D77 - Deep Teal */
+    --eleva-primary-light: 131 197 190; /* #83C5BE - Sage Green */
 
     /* Secondary Colors */
-    --eleva-secondary: 15deg, 64%, 68%; /* #E29578 - Soft Coral */
-    --eleva-secondary-foreground: 14deg, 100%, 91%; /* #FFDDD2 - Warm Sand */
+    --eleva-secondary: 226 149 120; /* #E29578 - Soft Coral */
+    --eleva-secondary-light: 255 221 210; /* #FFDDD2 - Warm Sand */
 
     /* Accent Color */
-    --eleva-accent: 183deg, 85%, 94%; /* #E0FBFC - Pale Lavender */
+    --eleva-accent: 224 251 252; /* #E0FBFC - Pale Lavender */
 
     /* Neutral Colors */
-    --eleva-neutral-100: 180deg, 18%, 97%; /* #F7F9F9 - Soft White */
-    --eleva-neutral-200: 0deg, 0%, 82%; /* #D1D1D1 - Light Grey */
-    --eleva-neutral-900: 0deg 0%, 20%; /* #333333 - Charcoal*/
+    --eleva-neutral-100: 247 249 249; /* #F7F9F9 - Soft White */
+    --eleva-neutral-200: 209 209 209; /* #D1D1D1 - Light Grey */
+    --eleva-neutral-900: 51 51 51; /* #333333 - Charcoal*/
 
     /* Highlight Colors */
-    --eleva-highlight-red: 345deg, 82%, 60%; /* #EE4266 - Vibrant Rose */
-    --eleva-highlight-purple: 283deg, 79%, 24%; /* #540D6E - Deep Purple */
-    --eleva-highlight-yellow: 44deg, 100%, 63%; /* #FFD23F - Sunshine Yellow */
+    --eleva-highlight-red: 238 66 102; /* #EE4266 - Vibrant Rose */
+    --eleva-highlight-purple: 84 13 110; /* #540D6E - Deep Purple */
+    --eleva-highlight-yellow: 255 210 63; /* #FFD23F - Sunshine Yellow */
 
     /* shadcn/ui */
     --background: 0 0% 100%;
@@ -96,6 +96,6 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-elevaNeutral-100 text-elevaNeutral-900;
   }
 }

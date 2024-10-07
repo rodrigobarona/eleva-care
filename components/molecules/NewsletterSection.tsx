@@ -20,7 +20,7 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
 }) => {
   return (
     <FadeInSection>
-      <section className="w-full bg-white px-6 py-12 md:py-24 lg:px-8">
+      <section className="w-full bg-elevaNeutral-100 px-6 py-12 md:py-24 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="mb-4 text-3xl font-bold tracking-tighter text-[#0d6c70] sm:text-4xl">
@@ -40,7 +40,10 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
                   required
                   className="flex-grow"
                 />
-                <Button type="submit" className="bg-[#0d6c70] text-white hover:bg-[#0d6c70]/90">
+                <Button
+                  type="submit"
+                  className="bg-[#0d6c70] text-elevaNeutral-100 hover:bg-[#0d6c70]/90"
+                >
                   {cta}
                 </Button>
               </div>

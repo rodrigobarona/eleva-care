@@ -31,7 +31,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
           <div className="flex flex-wrap justify-center gap-4">
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
+              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link
@@ -45,7 +45,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
             </Button>
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
+              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link
@@ -59,7 +59,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
             </Button>
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
+              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link
@@ -73,7 +73,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
             </Button>
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
+              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link href="https://x.com/eleva.care" target="_blank" rel="noopener noreferrer">
@@ -83,7 +83,7 @@ const SocialSection: React.FC<SocialSectionProps> = ({
             </Button>
             <Button
               variant="outline"
-              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-white"
+              className="border-[#0d6c70] text-[#0d6c70] hover:bg-[#0d6c70] hover:text-elevaNeutral-100"
               asChild
             >
               <Link

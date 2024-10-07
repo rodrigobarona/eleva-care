@@ -34,38 +34,38 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
     <header
       className={`fixed z-50 w-full justify-between px-6 transition-all lg:px-8 ${
         isScrolled
-          ? 'pb-2 pt-2 shadow backdrop-blur supports-[backdrop-filter]:bg-white/80'
+          ? 'pb-2 pt-2 shadow backdrop-blur supports-[backdrop-filter]:bg-elevaNeutral-100/70'
           : 'bg-transparent pb-4 pt-6'
       }`}
     >
       <div className={`mx-auto flex max-w-2xl lg:max-w-7xl`}>
         <Link
           href="https://eleva.care"
-          className={`h-8 w-auto lg:h-12 ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100'}`}
+          className={`h-8 w-auto lg:h-12 ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
         >
           <ElevaCareLogoSVG className="h-8 w-auto lg:h-12" />
         </Link>
         <nav className="ml-auto flex items-center gap-4 sm:gap-6">
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100/80'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#services"
           >
             {t.nav.services}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100/80'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#approach"
           >
             {t.nav.approach}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100/80'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#mission"
           >
             {t.nav.mission}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-primary hover:text-secondary' : 'text-neutral-100 hover:text-neutral-100/80'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#team"
           >
             {t.nav.team}
@@ -75,17 +75,26 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
               <Button
                 variant="ghost"
                 size="default"
-                className={`${isScrolled ? 'text-primary hover:text-primary' : 'text-neutral-100 hover:text-primary'}`}
+                className={`${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaPrimary'}`}
               >
                 <Globe className="mr-2 h-5 w-5" />
                 {t.language}
                 <ChevronDown className="ml-2 h-4 w-4" />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="">
-              <DropdownMenuItem onClick={() => setLang('en')}>English</DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setLang('pt')}>Português</DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setLang('es')}>Español</DropdownMenuItem>
+            <DropdownMenuContent align="end">
+              <DropdownMenuItem
+                onClick={() => setLang('en')}
+                className="hover:bg-elevaPrimary-light cursor-pointer"
+              >
+                English
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setLang('pt')} className="cursor-pointer">
+                Português
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setLang('es')} className="cursor-pointer">
+                Español
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </nav>

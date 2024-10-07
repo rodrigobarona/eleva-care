@@ -22,7 +22,7 @@ const PodcastSection: React.FC<PodcastSectionProps> = ({ title, description, cta
                 {title}
               </h2>
               <p className="text-[#576d69] md:text-lg">{description}</p>
-              <Button className="bg-[#0d6c70] text-white hover:bg-[#0d6c70]/90" asChild>
+              <Button className="bg-[#0d6c70] text-elevaNeutral-100 hover:bg-[#0d6c70]/90" asChild>
                 <Link
                   href="https://podcasters.spotify.com/pod/show/elevacare"
                   target="_blank"

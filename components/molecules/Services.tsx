@@ -36,13 +36,16 @@ const ServiceSection: React.FC<{
 }> = ({ t }) => {
   return (
     <FadeInSection>
-      <section id="services" className="w-full bg-white px-6 py-12 md:py-24 lg:px-8 lg:py-32">
+      <section
+        id="services"
+        className="w-full bg-elevaNeutral-100 px-6 py-12 md:py-24 lg:px-8 lg:py-32"
+      >
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="mb-12">
             <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
               {t.services.title}
             </h2>
-            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-[#0d6c70] data-[dark]:text-white sm:text-6xl">
+            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-[#0d6c70] data-[dark]:text-elevaNeutral-100 sm:text-6xl">
               {t.services.subtitle}
             </h3>
           </div>
@@ -55,7 +58,7 @@ const ServiceSection: React.FC<{
               ) => (
                 <Card
                   key={index}
-                  className="overflow-hidden border-[#0d6c70]/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  className="overflow-hidden border-[#0d6c70]/10 bg-elevaNeutral-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
                   <div className="relative h-72 shrink-0">
                     <div className="absolute w-full object-cover">
