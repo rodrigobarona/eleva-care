@@ -26,6 +26,8 @@ export const translations = {
   services: {
     title: 'Nuestros Servicios',
     subtitle: 'Atención integral en todas las etapas de la vida de la mujer',
+    description:
+      "Access personalized care from top-rated women's health professionals worldwide. We connect you with the expertise you need, from online consultations to local resources, all tailored to your unique health journey.",
     items: [
       {
         icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,

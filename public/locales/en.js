@@ -23,8 +23,10 @@ export const translations = {
     cta: 'Listen Now',
   },
   services: {
-    title: 'Our Services',
-    subtitle: "Comprehensive care for every stage of a woman's life",
+    title: 'How we support you',
+    subtitle: 'Expert-Led Care, Tailored to You',
+    description:
+      "Access personalized care from top-rated women's health professionals worldwide. We connect you with the expertise you need, from online consultations to local resources, all tailored to your unique health journey.",
     items: [
       {
         icon: <Baby className="h-12 w-12 text-[#0d6c70]" />,

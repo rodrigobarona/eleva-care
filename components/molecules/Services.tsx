@@ -27,6 +27,7 @@ const ServiceSection: React.FC<{
     services: {
       title: string;
       subtitle: string;
+      description: string;
       items: ServiceItem[];
       item: string;
       itemIndex: number;
@@ -37,13 +38,16 @@ const ServiceSection: React.FC<{
     <FadeInSection>
       <section id="services" className="w-full bg-white px-6 py-12 md:py-24 lg:px-8 lg:py-32">
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
-          <h2 className="mb-4 text-center font-serif text-3xl font-normal tracking-tighter text-[#0d6c70] sm:text-4xl md:text-5xl">
-            {t.services.title}
-          </h2>
-          <div className="mb-8 text-center text-xl text-[#576d69]">
-            <ReactMarkdown>{t.services.subtitle}</ReactMarkdown>
+          <div className="mb-12">
+            <h2 className="font-mono text-xs/5 font-semibold uppercase tracking-widest text-gray-500 data-[dark]:text-gray-400">
+              {t.services.title}
+            </h2>
+            <h3 className="mt-2 text-pretty font-serif text-4xl font-light tracking-tighter text-[#0d6c70] data-[dark]:text-white sm:text-6xl">
+              {t.services.subtitle}
+            </h3>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <p className="mt-6 text-xl font-light text-[#576d69]">{t.services.description}</p>
+          <div className="mt-12 grid gap-2 md:grid-cols-2 lg:grid-cols-3">
             {t.services.items.map(
               (
                 service: ServiceItem,
