@@ -59,18 +59,18 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
               <CarouselContent className="-ml-4">
                 {members.map((member, index) => (
                   <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                    <Card className="relative flex aspect-[9/16] overflow-hidden rounded-3xl">
+                    <Card className="relative flex aspect-[9/15] overflow-hidden rounded-3xl">
                       <CardContent className="flex flex-col items-center justify-end p-0">
                         <Image
                           src={member.image}
                           alt={member.name}
-                          width={200}
-                          height={200}
+                          width={1200}
+                          height={1200}
                           className="absolute inset-x-0 top-0 aspect-[3/4] w-full object-cover"
                         />
                         <div
                           aria-hidden="true"
-                          className="absolute inset-0 top-0 z-20 h-full w-full rounded-3xl bg-gradient-to-t from-black from-[calc(7/16*100%)] ring-1 ring-inset ring-gray-950/10 sm:from-25%"
+                          className="absolute inset-0 top-0 z-20 h-full w-full rounded-3xl bg-gradient-to-t from-slate-950 from-25% to-slate-950/0 to-40%"
                         ></div>
                         <figure className="relative z-20 p-10">
                           <blockquote>
