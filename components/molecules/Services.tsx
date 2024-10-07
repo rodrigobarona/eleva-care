@@ -57,18 +57,24 @@ const ServiceSection: React.FC<{
                   key={index}
                   className="overflow-hidden border-[#0d6c70]/10 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    width={300}
-                    height={450}
-                    className="w-full object-cover"
-                  />
-                  <CardContent className="flex flex-col justify-between p-6">
+                  <div className="relative h-72 shrink-0">
+                    <div className="absolute w-full object-cover">
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        width={300}
+                        height={450}
+                        className="w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <CardContent className="flex flex-col justify-between p-6 pt-2">
                     <div className="flex flex-col">
                       <div className="mb-4 flex items-center">
                         {service.icon}
-                        <h3 className="ml-2 text-xl font-bold text-[#0d6c70]">{service.title}</h3>
+                        <h3 className="ml-2 font-serif text-2xl font-normal text-[#0d6c70]">
+                          {service.title}
+                        </h3>
                       </div>
                       <p className="text-[#576d69]">{service.description}</p>
                     </div>
@@ -78,7 +84,7 @@ const ServiceSection: React.FC<{
                         <AccordionContent>
                           <ul className="mt-4 list-inside list-disc text-[#576d69]">
                             {service.items.map((item, itemIndex) => (
-                              <li key={itemIndex} className="flex items-start pb-2">
+                              <li key={itemIndex} className="flex items-start pb-2 text-base">
                                 <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
                                 <ReactMarkdown>{item}</ReactMarkdown>
                               </li>
