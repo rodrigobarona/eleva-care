@@ -49,28 +49,52 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
           </div>
           <p className="mt-6 text-xl font-light text-[#576d69]">{description}</p>
           <div className="embla">
-            <Carousel className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-4xl xl:max-w-5xl">
-              <CarouselContent>
+            <Carousel
+              className="mt-12"
+              opts={{
+                align: 'start',
+                loop: false,
+              }}
+            >
+              <CarouselContent className="-ml-4">
                 {members.map((member, index) => (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <div className="p-1">
-                      <Card className="border-border bg-background">
-                        <CardContent className="flex flex-col items-center p-6">
-                          <Image
-                            src={member.image}
-                            alt={member.name}
-                            width={200}
-                            height={200}
-                            className="mb-4 rounded-full"
-                          />
-                          <h3 className="text-xl font-bold text-primary">{member.name}</h3>
-                          <p className="mb-4 text-muted-foreground">{member.role}</p>
-                          <p className="text-center italic text-muted-foreground">
-                            &ldquo;{member.quote}&rdquo;
-                          </p>
-                        </CardContent>
-                      </Card>
-                    </div>
+                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                    <Card className="relative flex aspect-[9/13] overflow-hidden rounded-3xl">
+                      <CardContent className="flex flex-col items-center justify-end p-0">
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          width={200}
+                          height={200}
+                          className="absolute inset-x-0 top-0 aspect-square w-full object-cover"
+                        />
+                        <div
+                          aria-hidden="true"
+                          className="absolute inset-0 top-0 z-20 h-full w-full rounded-3xl bg-gradient-to-t from-black from-[calc(7/16*100%)] ring-1 ring-inset ring-gray-950/10 sm:from-25%"
+                        ></div>
+                        <figure className="relative z-20 p-10">
+                          <blockquote>
+                            <p className="relative text-xl/7 text-white">
+                              <span aria-hidden="true" className="absolute -translate-x-full">
+                                “
+                              </span>
+                              {member.quote}
+                              <span aria-hidden="true" className="absolute">
+                                ”
+                              </span>
+                            </p>
+                          </blockquote>
+                          <figcaption className="mt-6 border-t border-white/20 pt-6">
+                            <h3 className="text-sm/6 font-medium text-white">{member.name}</h3>
+                            <p className="text-sm/6 font-medium">
+                              <span className="bg-gradient-to-r from-[#11999e] from-[28%] via-[#11999e] via-[70%] to-[#16c6cc] bg-clip-text text-transparent">
+                                {member.role}
+                              </span>
+                            </p>
+                          </figcaption>
+                        </figure>
+                      </CardContent>
+                    </Card>
                   </CarouselItem>
                 ))}
               </CarouselContent>

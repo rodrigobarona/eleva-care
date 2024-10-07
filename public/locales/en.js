@@ -115,29 +115,36 @@ export const translations = {
       "Eleva Care is led by a team of dedicated professionals who bring together years of experience in women's health, technology, and patient care. Our founders and key team members are committed to revolutionizing the way women access and experience healthcare.",
     members: [
       {
-        name: 'Dr. Patricia Mota',
+        name: 'Patricia Mota, PT, PhD',
         role: 'Founder & CEO',
-        image: '/placeholder.png?height=400&width=300',
+        image: '/img/team/team-patricia-mota.jpg?height=1200&width=1200',
         quote:
           "Our goal is to make expert women's health care accessible to all, regardless of location or circumstances.",
       },
       {
-        name: 'Dr. Sofia Rodriguez',
+        name: 'Cristine Homsi Jorge, PT, PhD',
+        role: 'Lead Researcher',
+        image: '/img/team/team-cristine-homsi-jorge.jpg?height=1200&width=1200',
+        quote:
+          "Our research drives innovation in women's health, leading to better outcomes for all.",
+      },
+      {
+        name: 'Joana Goulão Barros, MD, PhD',
         role: 'Chief Medical Officer',
-        image: '/placeholder.png?height=400&width=300',
+        image: '/img/team/team-joana-barros.jpg?height=1200&width=1200',
         quote: "We're bridging the gap between cutting-edge research and everyday patient care.",
       },
       {
-        name: 'Emma Chen',
+        name: 'Rodrigo Barona',
         role: 'Head of Patient Experience',
-        image: '/placeholder.png?height=400&width=300',
+        image: '/img/team/team-rodrigo-barona.jpg?height=1200&width=1200',
         quote:
           "At Eleva Care, we're reimagining healthcare to put women's needs and experiences first.",
       },
       {
-        name: 'Dr. Aisha Patel',
+        name: 'Alexandre Delgado, PT, PhD',
         role: 'Lead Researcher',
-        image: '/placeholder.png?height=400&width=300',
+        image: '/img/team/team-alexandre-delgado.jpg?height=1200&width=1200',
         quote:
           "Our research drives innovation in women's health, leading to better outcomes for all.",
       },
