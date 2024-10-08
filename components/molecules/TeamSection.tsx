@@ -47,7 +47,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ title, subtitle, description,
               {subtitle}
             </h3>
           </div>
-          <p className="mt-6 text-base font-light text-elevaNeutral-900 lg:text-xl">
+          <p className="mt-6 text-balance text-base font-light text-elevaNeutral-900 lg:text-xl">
             {description}
           </p>
           <div className="embla">
