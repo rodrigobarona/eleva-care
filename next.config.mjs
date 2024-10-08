@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -7,6 +8,8 @@ module.exports = {
       },
     ],
     loader: 'custom',
-    loaderFile: './loader.js',
+    loaderFile: './app/loader.js',
   },
 };
+
+export default nextConfig;
