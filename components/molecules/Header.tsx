@@ -41,31 +41,31 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
       <div className={`mx-auto flex max-w-2xl lg:max-w-7xl`}>
         <Link
           href="https://eleva.care"
-          className={`h-8 w-auto lg:h-12 ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
+          className={`h-8 w-auto lg:h-12 ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
         >
           <ElevaCareLogoSVG className="h-8 w-auto lg:h-12" />
         </Link>
         <nav className="ml-auto flex items-center gap-4 sm:gap-6">
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#services"
           >
             {t.nav.services}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#approach"
           >
             {t.nav.approach}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#mission"
           >
             {t.nav.mission}
           </Link>
           <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#team"
           >
             {t.nav.team}
@@ -75,7 +75,7 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
               <Button
                 variant="ghost"
                 size="default"
-                className={`${isScrolled ? 'hover:text-elevaPrimary-light text-elevaPrimary' : 'text-elevaNeutral-100 hover:text-elevaPrimary'}`}
+                className={`${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaPrimary'}`}
               >
                 <Globe className="mr-2 h-5 w-5" />
                 {t.language}
@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
             <DropdownMenuContent align="end">
               <DropdownMenuItem
                 onClick={() => setLang('en')}
-                className="hover:bg-elevaPrimary-light cursor-pointer"
+                className="cursor-pointer hover:bg-elevaPrimary-light"
               >
                 English
               </DropdownMenuItem>

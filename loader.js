@@ -1,4 +1,4 @@
-const IMGIX_URL = process.env.NEXT_PUBLIC_BASE_URL;
+const IMGIX_URL = process.env.NEXT_PUBLIC_IMGIX_URL;
 
 export default function imgixLoader({ src, width, quality = 75 }) {
   const url = new URL(`${IMGIX_URL}${src}`);
