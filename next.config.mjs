@@ -1,12 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  transpilePackages: ['three'],
+module.exports = {
   images: {
     remotePatterns: [
-      { protocol: 'https', hostname: 'stream.mux.com' },
-      { protocol: 'https', hostname: 'image.mux.com' },
+      {
+        protocol: 'https',
+        hostname: 'eleva-care-preview.imgix.net',
+      },
     ],
+    loader: 'custom',
+    loaderFile: './loader.js',
   },
 };
-
-export default nextConfig;
