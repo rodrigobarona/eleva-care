@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'eleva-care-preview.imgix.net',
+        hostname: new URL(process.env.NEXT_PUBLIC_IMGIX_URL).hostname, // Use the environment variable
       },
     ],
     loader: 'custom',
