@@ -31,7 +31,7 @@ export default function Home() {
   const t = languageMap[lang]; // Now TypeScript knows lang is a valid key
 
   return (
-    <div aria-hidden="true" className="relative overflow-hidden">
+    <div className="relative overflow-hidden">
       <Header t={t} setLang={(lang: Language) => setLang(lang)} />
 
       <main id="main" tabIndex={-1} className="focus-visible:outline-none">
