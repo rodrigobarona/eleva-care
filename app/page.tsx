@@ -34,7 +34,7 @@ export default function Home() {
     <div aria-hidden="true" className="relative overflow-hidden">
       <Header t={t} setLang={(lang: Language) => setLang(lang)} />
 
-      <main role="main" id="main" tabIndex={-1} className="focus-visible:outline-none">
+      <main id="main" tabIndex={-1} className="focus-visible:outline-none">
         <Hero t={t} />
 
         <ServiceSection
