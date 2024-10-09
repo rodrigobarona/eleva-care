@@ -32,22 +32,19 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
             <p className="text-balance text-base/5 font-light text-elevaNeutral-900 lg:text-xl">
               {description}
             </p>
-            <form
-              action="https://app.beehiiv.com/forms/Y294b9d43-62b2-47e4-9757-2e5ef82c204d"
-              method="POST"
-              className="space-y-4"
-            >
-              <div className="mt-8 flex gap-2">
-                <iframe
-                  src="https://embeds.beehiiv.com/294b9d43-62b2-47e4-9757-2e5ef82c204d?slim=true"
-                  data-test-id="beehiiv-embed"
-                  height="52"
-                  width="100%"
-                  style={{ margin: 0, borderRadius: '0px', backgroundColor: 'transparent' }} // Updated to object
-                ></iframe>
-              </div>
-              <p className="text-xs text-elevaNeutral-900/60">{privacy}</p>
-            </form>
+
+            <div className="mt-8 flex gap-2">
+              <iframe
+                src="https://embeds.beehiiv.com/294b9d43-62b2-47e4-9757-2e5ef82c204d?slim=true"
+                data-test-id="beehiiv-embed"
+                height="52"
+                width="100%"
+                aria-label="newsletter"
+                aria-labelledby="behiiv"
+                style={{ margin: 0, borderRadius: '0px', backgroundColor: 'transparent' }} // Updated to object
+              ></iframe>
+            </div>
+            <p className="text-xs text-elevaNeutral-900/60">{privacy}</p>
           </div>
         </div>
       </section>
