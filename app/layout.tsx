@@ -55,7 +55,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        role="layout"
         className={`${lora.variable} ${alexandria.variable} ${jetBrains.variable} font-sans font-light antialiased`}
       >
         <div aria-hidden="true" className="pointer-events-none absolute left-2 top-2 z-[100]">
