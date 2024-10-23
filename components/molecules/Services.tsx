@@ -85,7 +85,7 @@ const ServiceSection: React.FC<{
                     </div>
                     <Accordion type="single" collapsible>
                       <AccordionItem value="item-1">
-                        <AccordionTrigger>Learn more</AccordionTrigger>
+                        <AccordionTrigger>{service.cta}</AccordionTrigger>
                         <AccordionContent>
                           <ul className="mt-4 list-inside list-disc text-elevaNeutral-900">
                             {service.items.map((item, itemIndex) => (

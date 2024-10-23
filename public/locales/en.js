@@ -7,6 +7,8 @@ export const translations = {
     approach: 'Approach',
     mission: 'Mission',
     team: 'Team',
+    podcast: 'Podcast',
+    newsletter: 'Newsletter',
   },
   hero: {
     title: 'World-Class Care for Women, *on-demand.*',
@@ -41,7 +43,8 @@ export const translations = {
           '**Mental Health Support:** Navigate the emotional and mental challenges of motherhood with compassionate guidance.',
           '**Exercise:** Explore the benefits of therapeutic exercise during pregnancy and postpartum, designed to support your changing body and promote a healthy recovery.',
         ],
-        image: '/img/Pregnant-Woman-Flowers.jpg?height=450&width=300',
+        image: '/img/Pregnant-Woman-Flowers.jpg?height=450&width=300?monochrome=006D77',
+        cta: 'Learn more',
       },
       {
         icon: <Droplets className="h-12 w-12 text-elevaPrimary" />,
@@ -54,6 +57,7 @@ export const translations = {
           '**Mental Health Support:** Counseling and therapy to address the psychological aspects of pelvic health concerns.',
         ],
         image: '/img/Woman-Working-Out-Living-Room.jpg?height=450&width=300',
+        cta: 'Learn more',
       },
       {
         icon: <Flower2 className="h-12 w-12 text-elevaPrimary" />,
@@ -68,6 +72,7 @@ export const translations = {
           '**Physical Therapy:** Manage pain, prevent injury, and optimize your physical performance, with specialized expertise in pelvic floor health for active women and female athletes.',
         ],
         image: '/img/Smiling-Women-Photo.jpg?height=450&width=300',
+        cta: 'Learn more',
       },
     ],
   },
@@ -119,40 +124,50 @@ export const translations = {
     members: [
       {
         name: 'Patricia Mota, PT, PhD',
-        role: 'Founder & CEO',
+        role: 'Co-Founder & CEO',
         image: '/img/team/team-patricia-mota.jpg?height=1200&width=1200',
         quote:
-          "Our goal is to make expert women's health care accessible to all, regardless of location or circumstances.",
+          "Our mission is to elevate women's healthcare by making it more accessible, innovative, and empowering for all women.",
       },
+
       {
         name: 'Cristine Homsi Jorge, PT, PhD',
-        role: 'Lead Researcher',
+        role: 'Chief Scientific Officer',
         image: '/img/team/team-cristine-homsi-jorge.jpg?height=1200&width=1200',
         quote:
-          "Our research drives innovation in women's health, leading to better outcomes for all.",
+          "Our groundbreaking research is the foundation for better healthcare solutions that truly serve women's unique needs.",
+      },
+      {
+        name: 'Alexandre Delgado, PT, PhD',
+        role: 'Director of Research & Innovation',
+        image: '/img/team/team-alexandre-delgado-br.png?height=1200&width=1200',
+        quote:
+          "Innovating in women's health means continually seeking new knowledge to improve care and quality of life for all.",
+      },
+      {
+        name: 'Patricia Driusso, PT, PhD',
+        role: 'Director of Clinical Research',
+        image: '/img/team/team-patricia-driusso.jpg?height=1200&width=1200',
+        quote:
+          'Our research focuses on bridging the gap between science and real-world application, empowering women through better health outcomes.',
       },
       {
         name: 'Joana Goulão Barros, MD, PhD',
         role: 'Chief Medical Officer',
         image: '/img/team/team-joana-barros.jpg?height=1200&width=1200',
-        quote: "We're bridging the gap between cutting-edge research and everyday patient care.",
+        quote:
+          "We're transforming healthcare by integrating cutting-edge research into everyday practice, ensuring the best care for every woman.",
       },
       {
         name: 'Rodrigo Barona',
-        role: 'Head of Patient Experience',
+        role: 'Co-Founder & Head of Patient Experience',
         image: '/img/team/team-rodrigo-barona.jpg?height=1200&width=1200',
         quote:
-          "At Eleva Care, we're reimagining healthcare to put women's needs and experiences first.",
-      },
-      {
-        name: 'Alexandre Delgado, PT, PhD',
-        role: 'Lead Researcher',
-        image: '/img/team/team-alexandre-delgado.jpg?height=1200&width=1200',
-        quote:
-          "Our research drives innovation in women's health, leading to better outcomes for all.",
+          "At Eleva Care, we’re redefining healthcare by ensuring every woman's voice and experience is at the heart of what we do.",
       },
     ],
   },
+
   newsletter: {
     title: 'Femme Focus',
     subtitle: 'An Eleva Care Publication',

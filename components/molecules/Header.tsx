@@ -60,16 +60,23 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
           </Link>
           <Link
             className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
-            href="#mission"
-          >
-            {t.nav.mission}
-          </Link>
-          <Link
-            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
             href="#team"
           >
             {t.nav.team}
           </Link>
+          <Link
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
+            href="#podcast"
+          >
+            {t.nav.podcast}
+          </Link>
+          <Link
+            className={`hidden text-base font-medium transition-colors md:block ${isScrolled ? 'text-elevaPrimary hover:text-elevaPrimary-light' : 'text-elevaNeutral-100 hover:text-elevaNeutral-100/60'}`}
+            href="#newsletter"
+          >
+            {t.nav.newsletter}
+          </Link>
+
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button

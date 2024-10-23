@@ -15,7 +15,10 @@ interface PodcastSectionProps {
 const PodcastSection: React.FC<PodcastSectionProps> = ({ title, subtitle, description, cta }) => {
   return (
     <FadeInSection>
-      <section className="mx-2 mt-20 rounded-3xl bg-[linear-gradient(145deg,var(--tw-gradient-stops))] from-elevaPrimary from-[5%] via-elevaPrimary-light via-[20%] to-elevaPrimary to-[45%] px-6 py-12 lg:mt-40 lg:rounded-5xl lg:bg-[linear-gradient(115deg,var(--tw-gradient-stops))] lg:from-[28%] lg:via-[70%] lg:to-[95%] lg:pb-24 lg:pt-20">
+      <section
+        id="podcast"
+        className="mx-2 mt-20 rounded-3xl bg-[linear-gradient(145deg,var(--tw-gradient-stops))] from-elevaPrimary from-[5%] via-elevaPrimary-light via-[20%] to-elevaPrimary to-[45%] px-6 py-12 lg:mt-40 lg:rounded-5xl lg:bg-[linear-gradient(115deg,var(--tw-gradient-stops))] lg:from-[28%] lg:via-[70%] lg:to-[95%] lg:pb-24 lg:pt-20"
+      >
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="flex flex-col items-center gap-4 lg:flex-row-reverse lg:gap-16">
             <div className="-mt-24 w-full flex-auto justify-end lg:-mt-40 lg:w-2/5">

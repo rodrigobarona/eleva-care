@@ -18,7 +18,7 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
 }) => {
   return (
     <FadeInSection>
-      <section className="w-full bg-elevaNeutral-100 px-6 py-12 md:py-24 lg:px-8">
+      <section id="newsletter" className="w-full bg-elevaNeutral-100 px-6 py-12 md:py-24 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-7xl">
           <div className="mx-auto max-w-xl text-center">
             <div className="mb-6">
@@ -44,7 +44,7 @@ const NewsletterSection: React.FC<NewsletterSectionProps> = ({
                 style={{ margin: 0, borderRadius: '0px', backgroundColor: 'transparent' }} // Updated to object
               ></iframe>
             </div>
-            <p className="text-xs text-elevaNeutral-900/60">{privacy}</p>
+            <p className="pt-2 text-xs text-elevaNeutral-900/60">{privacy}</p>
           </div>
         </div>
       </section>

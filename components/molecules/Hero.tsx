@@ -42,12 +42,12 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
       <div className="relative px-4 lg:px-6">
         <div className="z-20 mx-auto flex max-w-2xl flex-col justify-end pt-44 lg:max-w-7xl lg:justify-between lg:pt-72">
           <div>
-            <h1 className="max-w-3xl text-balance font-serif text-5xl/[0.9] font-light tracking-tight text-elevaNeutral-100 lg:text-8xl/[.9]">
+            <h1 className="max-w-5xl text-balance font-serif text-5xl/[0.9] font-light tracking-tight text-elevaNeutral-100 lg:text-8xl/[.9]">
               <ReactMarkdown>{t.hero.title}</ReactMarkdown>
             </h1>
           </div>
           <div>
-            <p className="mb-12 mt-8 max-w-md font-sans text-xl/6 font-light text-elevaNeutral-100 lg:mb-8 lg:mt-16 lg:text-2xl/7">
+            <p className="mb-12 mt-8 max-w-lg text-balance font-sans text-xl/6 font-light text-elevaNeutral-100 lg:mb-8 lg:mt-16 lg:text-2xl/7">
               {t.hero.subtitle}
             </p>
           </div>
@@ -84,7 +84,7 @@ const Hero: React.FC<HeroProps> = ({ t }) => {
             <div>
               <Dialog>
                 <DialogTrigger asChild>
-                  <Button className="mb-7 mt-5 inline-flex items-center justify-center whitespace-nowrap rounded-full border border-elevaNeutral-100/30 bg-elevaNeutral-100/40 p-5 text-sm font-medium text-elevaNeutral-900 shadow-sm hover:bg-elevaNeutral-100/50 lg:my-0 lg:bg-elevaNeutral-100/10 lg:p-6 lg:text-elevaNeutral-100 lg:shadow-none lg:hover:text-elevaNeutral-900">
+                  <Button className="mb-7 mt-5 inline-flex w-full items-center justify-center whitespace-nowrap rounded-full border border-elevaNeutral-100/30 bg-elevaNeutral-100/40 p-5 text-sm font-medium text-elevaNeutral-900 shadow-sm hover:bg-elevaNeutral-100/50 md:w-auto lg:my-0 lg:bg-elevaNeutral-100/10 lg:p-6 lg:text-elevaNeutral-100 lg:shadow-none lg:hover:text-elevaNeutral-900">
                     <ClipboardList className="mr-2 h-5 w-5" />
                     {t.hero.cta1}
                   </Button>
