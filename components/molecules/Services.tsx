@@ -15,6 +15,7 @@ import { ChevronRight } from 'lucide-react';
 
 // Define the type for service items
 type ServiceItem = {
+  cta: string;
   image: string;
   title: string;
   description: string;
@@ -73,8 +74,9 @@ const ServiceSection: React.FC<{
                       />
                     </div>
                   </div>
-                  <CardContent className="flex flex-col justify-between p-6 pt-2">
-                    <div className="flex flex-col">
+
+                  <CardContent className="flex flex-col p-6 pt-2">
+                    <div className="flex min-h-48 flex-col">
                       <div className="mb-4 flex items-center">
                         {service.icon}
                         <h3 className="ml-2 font-serif text-2xl font-normal text-elevaPrimary">
@@ -82,22 +84,25 @@ const ServiceSection: React.FC<{
                         </h3>
                       </div>
                       <p className="text-elevaNeutral-900">{service.description}</p>
+
+                      <div className="mt-auto">
+                        <Accordion type="single" collapsible>
+                          <AccordionItem value="item-1">
+                            <AccordionTrigger>{service.cta}</AccordionTrigger>
+                            <AccordionContent>
+                              <ul className="mt-4 list-inside list-disc text-elevaNeutral-900">
+                                {service.items.map((item, itemIndex) => (
+                                  <li key={itemIndex} className="flex items-start pb-2 text-base">
+                                    <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
+                                    <ReactMarkdown>{item}</ReactMarkdown>
+                                  </li>
+                                ))}
+                              </ul>
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
+                      </div>
                     </div>
-                    <Accordion type="single" collapsible>
-                      <AccordionItem value="item-1">
-                        <AccordionTrigger>{service.cta}</AccordionTrigger>
-                        <AccordionContent>
-                          <ul className="mt-4 list-inside list-disc text-elevaNeutral-900">
-                            {service.items.map((item, itemIndex) => (
-                              <li key={itemIndex} className="flex items-start pb-2 text-base">
-                                <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
-                                <ReactMarkdown>{item}</ReactMarkdown>
-                              </li>
-                            ))}
-                          </ul>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
                   </CardContent>
                 </Card>
               ),
