@@ -28,17 +28,17 @@ const jetBrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Expert care for Pregnancy, Postpartum & Sexual Health | Eleva Care',
   description:
-    'Eleva Care: Empowering growth, embracing care. Expert care for pregnancy, postpartum, menopause, and sexual health.',
+    "World-Class Care for Women, on-demand. Book Leading Women's Health Specialists - On Your Schedule.",
   openGraph: {
     type: 'website',
     url: 'https://eleva.care',
     siteName: 'Eleva Care',
     title: 'Expert care for Pregnancy, Postpartum & Sexual Health | Eleva Care',
     description:
-      'Eleva Care: Empowering growth, embracing care. Expert care for pregnancy, postpartum, menopause, and sexual health.',
+      "World-Class Care for Women, on-demand. Book Leading Women's Health Specialists - On Your Schedule.",
     images: [
       {
-        url: 'https://eleva.care/img/eleva-care-share.svg',
+        url: 'https://eleva.care/img/eleva-care-ogimg.svg',
         width: 1200,
         height: 680,
         alt: 'Eleva Care',
