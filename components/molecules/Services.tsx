@@ -63,7 +63,7 @@ const ServiceSection: React.FC<{
                   key={index}
                   className="overflow-hidden border-[#0d6c70]/10 bg-elevaNeutral-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                 >
-                  <div className="relative h-72 shrink-0">
+                  <div className="aspect-[300:450] relative h-72 shrink-0 overflow-hidden">
                     <div className="absolute w-full object-cover">
                       <Image
                         src={service.image}
