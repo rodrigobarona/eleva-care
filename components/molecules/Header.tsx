@@ -11,7 +11,7 @@ import {
 import { Globe, ChevronDown } from 'lucide-react';
 import ElevaCareLogoSVG from '@/components/ui/eleva-care-logo';
 
-type Language = 'en' | 'pt' | 'es'; // Use 'type' to import as a type
+type Language = 'en' | 'pt' | 'br' | 'es'; // Use 'type' to import as a type
 
 // Define the props type for Header
 type HeaderProps = {
@@ -97,7 +97,10 @@ const Header: React.FC<HeaderProps> = ({ t, setLang }) => {
                 English
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => setLang('pt')} className="cursor-pointer">
-                Português
+                Português (PT)
+              </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setLang('br')} className="cursor-pointer">
+                Português (BR)
               </DropdownMenuItem>
               <DropdownMenuItem onClick={() => setLang('es')} className="cursor-pointer">
                 Español

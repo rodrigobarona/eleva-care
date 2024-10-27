@@ -1,7 +1,7 @@
 import React from 'react'; // Add this line to import React
 import { Droplets, Flower2, Baby } from 'lucide-react';
 export const translations = {
-  language: 'Português (PT)',
+  language: 'Português (BR)',
   nav: {
     services: 'Serviços',
     approach: 'Abordagem',
@@ -22,14 +22,14 @@ export const translations = {
     title: 'Elevando a Saúde Feminina com Patrícia Mota, PT, PhD',
     subtitle: 'O podcast',
     description:
-      'Acompanhe "Elevando a Saúde Feminina" da Eleva Care e aumente o seu conhecimento em saúde. Os nossos especialistas discutem investigações de ponta em saúde feminina e traduzem estudos complexos em dicas práticas, todas as semanas. Do bem-estar reprodutivo à saúde mental, cobrimos tudo.',
+      'Acompanhe "Elevando a Saúde Feminina" da Eleva Care e capacite a sua jornada de saúde. Os nossos especialistas discutem investigações de ponta em saúde feminina e traduzem estudos complexos em dicas práticas, todas as semanas. Do bem-estar reprodutivo à saúde mental, cobrimos tudo.',
     cta: 'Ouvir agora',
   },
   services: {
     title: 'Como Podemos Ajudar',
     subtitle: 'Cuidado especializado, personalizado para si',
     description:
-      'Obtenha cuidados personalizados com profissionais altamente qualificados em saúde feminina em todo o mundo. Proporcionamos-lhe o aconsenhamento que necessita, desde consultas online até recursos locais, tudo adaptado à sua jornada de saúde.',
+      'Obtenha cuidados personalizados com profissionais altamente qualificados em saúde feminina em todo o mundo. Conectamos você à experiência de que precisa, desde consultas online até recursos locais, tudo adaptado à sua jornada de saúde.',
     items: [
       {
         icon: <Baby className="h-12 w-12 text-elevaPrimary" />,
@@ -37,7 +37,7 @@ export const translations = {
         description:
           'Apoio abrangente para mulheres durante a transformação da gravidez e maternidade.',
         items: [
-          '**Fisioterapia:** Prepare-se para o parto, controle a dor, recupere a força, trate a diástase abdominal e intervenções focadas no pavimento pélvico para prevenir e tratar disfunções.',
+          '**Fisioterapia:** Prepare-se para o parto, controle a dor, recupere a força, trate a diástase abdominal e intervenções focadas no assoalho pélvico para prevenir e tratar disfunções.',
           '**Cuidados Obstétricos e Ginecológicos:** Tratamento especializado durante a gravidez e recuperação pós-parto.',
           '**Orientação Nutricional:** Otimize a sua alimentação para uma gravidez e pós-parto saudáveis.',
           '**Apoio em Saúde Mental:** Apoio emocional para os desafios da maternidade.',
@@ -63,13 +63,13 @@ export const translations = {
         icon: <Flower2 className="h-12 w-12 text-elevaPrimary" />,
         title: 'Em Todas as Fases',
         description:
-          'Apoio holístico para a saúde feminina, desde a adolescência até a menopausa e em todos os desafios da sua vida.',
+          'Apoio holístico para a saúde feminina, desde a adolescência até a menopausa e em todos os desafios de sua vida.',
         items: [
           '**Saúde Adolescente:** Enfrente a puberdade, menstruação e primeiros anos da vida adulta feminina com confiança e apoio.',
           '**Gestão da Menopausa:** Acompanhe as mudanças hormonais, controle sintomas e priorize o seu bem-estar.',
           '**Bem-Estar Mental:** Acesso a terapia para gerir o stress, ansiedade, depressão e outras preocupações de saúde mental.',
-          '**Exercício e Nutrição:** Descubra planos de exercício e guias nutricionais personalizados.',
-          '**Fisioterapia:** Gestão de dor, prevenção de lesões e otimização do desempenho físico, com especialização em saúde do pavimento pélvico para atletas e mulheres ativas.',
+          '**Exercício e Nutrição:** Descubra planos de exercício e guias nutricionais personalizadas.',
+          '**Fisioterapia:** Gestão de dor, prevenção de lesões e otimização do desempenho físico, com especialização em saúde do assoalho pélvico para atletas e mulheres ativas.',
         ],
         image: '/img/Smiling-Women-Photo.jpg?height=450&width=300',
         cta: 'Saber mais',

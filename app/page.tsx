@@ -4,6 +4,7 @@ import React, { useState } from 'react'; // Add this line at the top of each fil
 
 import { translations as en } from '../public/locales/en';
 import { translations as pt } from '../public/locales/pt';
+import { translations as br } from '../public/locales/br';
 import { translations as es } from '../public/locales/es';
 
 import Header from '@/components/molecules/Header'; // Import the NavBar component
@@ -18,10 +19,11 @@ import SocialSection from '@/components/molecules/SocialSection';
 import Footer from '@/components/molecules/Footer';
 
 // Define the type for supported languages
-type Language = 'en' | 'pt' | 'es';
+type Language = 'en' | 'br' | 'pt' | 'es';
 
 const languageMap = {
   en: en,
+  br: br,
   pt: pt,
   es: es,
 };
