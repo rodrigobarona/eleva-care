@@ -1,5 +1,5 @@
 import React from 'react'; // Add this line to import React
-import { Droplets, Flower2, Baby } from 'lucide-react';
+import { Droplets, Flower2, Baby, Ribbon } from 'lucide-react';
 export const translations = {
   language: 'English',
   nav: {
@@ -74,6 +74,23 @@ export const translations = {
         image: '/img/Smiling-Women-Photo.jpg?height=450&width=300',
         cta: 'Learn more',
       },
+      {
+        icon: <Ribbon className="h-12 w-12 text-elevaPrimary" />,
+        title: 'Empowering Your Cancer Journey',
+        description:
+          'Specialized support for women facing breast and gynecological cancers, providing comprehensive care from diagnosis through survivorship.',
+        items: [
+          '**Physical Therapy:** Optimize your recovery with pre-surgical preparation, post-treatment rehabilitation, lymphedema management, and targeted exercise programs designed for each phase of your cancer journey.',
+          '**Pain Management:** Access evidence-based techniques for managing treatment-related pain, including manual therapy, therapeutic exercise, and scar tissue management.',
+          '**Exercise Support:** Receive personalized exercise prescriptions that adapt to your treatment phase, helping maintain strength, manage fatigue, and support your recovery journey.',
+          '**Mental Health Care:** Navigate the emotional challenges of diagnosis and treatment with professional support focused on building resilience and managing anxiety.',
+          '**Lymphedema Care:** Benefit from specialized prevention strategies and treatment including manual lymphatic drainage, compression therapy, and self-management education.',
+          '**Collaborative Approach:** Our collaborative approach ensures coordinated care with your oncology team, supporting your physical and emotional well-being throughout treatment and recovery.',
+          'Our collaborative approach ensures coordinated care with your oncology team, supporting your physical and emotional well-being throughout treatment and recovery.',
+        ],
+        image: '/img/cancer-journey.jpg?height=450&width=300',
+        cta: 'Learn more',
+      },
     ],
   },
   approach: {
@@ -125,45 +142,66 @@ export const translations = {
       {
         name: 'Patricia Mota, PT, PhD',
         role: 'Co-Founder & CEO',
-        image: '/img/team/team-patricia-mota.jpg?height=1200&width=1200',
+        image: '/img/team/team-patricia-mota-2.jpeg?height=1200&width=1200',
         quote:
           "Our mission is to elevate women's healthcare by making it more accessible, innovative, and empowering for all women.",
       },
 
       {
         name: 'Cristine Homsi Jorge, PT, PhD',
-        role: 'Chief Scientific Officer',
+        role: "Board Advisor (Women's Health)",
         image: '/img/team/team-cristine-homsi-jorge.jpg?height=1200&width=1200',
         quote:
-          "Our groundbreaking research is the foundation for better healthcare solutions that truly serve women's unique needs.",
+          'Clinical research and education empower women to make informed decisions about their healthcare journey.',
       },
       {
         name: 'Alexandre Delgado, PT, PhD',
-        role: 'Director of Research & Innovation',
+        role: 'Board Advisor (Obstetric Physical Therapy)',
         image: '/img/team/team-alexandre-delgado-br.png?height=1200&width=1200',
         quote:
-          "Innovating in women's health means continually seeking new knowledge to improve care and quality of life for all.",
+          'Evidence-based physical therapy transforms the pregnancy and birth experience, empowering women through every stage.',
       },
       {
         name: 'Patricia Driusso, PT, PhD',
-        role: 'Director of Clinical Research',
+        role: "Board Advisor (Women's Health)",
         image: '/img/team/team-patricia-driusso.jpg?height=1200&width=1200',
         quote:
-          'Our research focuses on bridging the gap between science and real-world application, empowering women through better health outcomes.',
+          'Clinical research advances rehabilitation treatments while empowering women through evidence-based education.',
+      },
+      {
+        name: 'Annelie Gutke, PT, PhD',
+        role: "Board Advisor (Women's Health)",
+        image: '/img/team/team-annelie-gutke.jpg?height=1200&width=1200',
+        quote:
+          'Understanding pain mechanisms transforms how we care for women during pregnancy and beyond.',
+      },
+      {
+        name: 'Ruben Barakat, PhD',
+        role: 'Board Advisor (Exercise Science)',
+        image: '/img/team/team-ruben-barakat.jpg?height=1200&width=1200',
+        quote:
+          "Evidence shows that personalized exercise during pregnancy can transform women's health outcomes.",
+      },
+      {
+        name: 'Jessica Margarido, PT',
+        role: 'Oncology Rehabilitation',
+        image: '/img/team/team-jessica-margarido.jpg?height=1200&width=1200',
+        quote:
+          'Evidence-based rehabilitation restores function and quality of life throughout cancer care.',
       },
       {
         name: 'Joana Goulão Barros, MD, PhD',
-        role: 'Chief Medical Officer',
+        role: 'Obstetrics & Gynecology',
         image: '/img/team/team-joana-barros.jpg?height=1200&width=1200',
         quote:
-          "We're transforming healthcare by integrating cutting-edge research into everyday practice, ensuring the best care for every woman.",
+          'Integrating medical expertise with specialized rehabilitation creates the highest standard of prenatal care.',
       },
       {
         name: 'Rodrigo Barona',
-        role: 'Co-Founder & Head of Patient Experience',
+        role: 'Co-Founder',
         image: '/img/team/team-rodrigo-barona.jpg?height=1200&width=1200',
         quote:
-          "At Eleva Care, we’re redefining healthcare by ensuring every woman's voice and experience is at the heart of what we do.",
+          "We are transforming women's healthcare by combining clinical expertise with innovative technology.",
       },
     ],
   },

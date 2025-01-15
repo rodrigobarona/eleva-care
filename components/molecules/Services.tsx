@@ -53,7 +53,7 @@ const ServiceSection: React.FC<{
           <p className="mt-6 text-balance text-base font-light text-elevaNeutral-900 lg:text-xl">
             {t.services.description}
           </p>
-          <div className="mt-12 grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-2 md:grid-cols-2 md:gap-10 lg:grid-cols-2">
             {t.services.items.map(
               (
                 service: ServiceItem,
@@ -75,7 +75,7 @@ const ServiceSection: React.FC<{
                     </div>
                   </div>
 
-                  <CardContent className="flex flex-col p-6 pt-2">
+                  <CardContent className="flex flex-col p-6 pt-6">
                     <div className="flex min-h-48 flex-col">
                       <div className="mb-4 flex items-center">
                         {service.icon}
@@ -93,8 +93,10 @@ const ServiceSection: React.FC<{
                               <ul className="mt-4 list-inside list-disc text-elevaNeutral-900">
                                 {service.items.map((item, itemIndex) => (
                                   <li key={itemIndex} className="flex items-start pb-2 text-base">
-                                    <ChevronRight className="mr-2 h-4 w-4 text-[#1999e]" />
-                                    <ReactMarkdown>{item}</ReactMarkdown>
+                                    <ChevronRight className="mr-2 mt-1 h-4 w-4 shrink-0" />
+                                    <div className="flex-1">
+                                      <ReactMarkdown>{item}</ReactMarkdown>
+                                    </div>
                                   </li>
                                 ))}
                               </ul>

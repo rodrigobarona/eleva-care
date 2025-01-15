@@ -1,5 +1,5 @@
 import React from 'react'; // Add this line to import React
-import { Droplets, Flower2, Baby } from 'lucide-react';
+import { Droplets, Flower2, Baby, Ribbon } from 'lucide-react';
 export const translations = {
   language: 'Español',
   nav: {
@@ -74,6 +74,22 @@ export const translations = {
         image: '/img/Smiling-Women-Photo.jpg?height=450&width=300',
         cta: 'Leer más',
       },
+      {
+        icon: <Ribbon className="h-12 w-12 text-elevaPrimary" />,
+        title: 'Acompañándote en tu jornada contra el Cáncer',
+        description:
+          'Apoyo especializado para mujeres que se enfrentan al cáncer de mama y ginecológico, proporcionando atención integral desde el diagnóstico hasta la supervivencia.',
+        items: [
+          '**Fisioterapia:** Optimiza tu recuperación con preparación prequirúrgica, rehabilitación postratamiento, manejo del linfedema y programas de ejercicios específicos diseñados para cada fase de tu proceso oncológico.',
+          '**Control del Dolor:** Accede a técnicas basadas en la evidencia para manejar el dolor relacionado con el tratamiento, incluyendo terapia manual, ejercicio terapéutico y tratamiento del tejido cicatricial.',
+          '**Apoyo al Ejercicio:** Recibe prescripciones de ejercicios personalizados que se adaptan a tu fase de tratamiento, ayudando a mantener la fuerza, gestionar la fatiga y apoyar tu proceso de recuperación.',
+          '**Atención a la Salud Mental:** Afronta los desafíos emocionales del diagnóstico y tratamiento con apoyo profesional centrado en desarrollar resiliencia y manejar la ansiedad.',
+          '**Cuidado del Linfedema:** Benefíciate de estrategias especializadas de prevención y tratamiento, incluyendo drenaje linfático manual, terapia de compresión y educación para el autocuidado.',
+          '**Enfoque Colaborativo:** Nuestro enfoque colaborativo garantiza una atención coordinada con tu equipo de oncología, apoyando tu bienestar físico y emocional durante el tratamiento y la recuperación.',
+        ],
+        image: '/img/cancer-journey.jpg?height=450&width=300',
+        cta: 'Saber más',
+      },
     ],
   },
   approach: {
@@ -124,38 +140,66 @@ export const translations = {
     members: [
       {
         name: 'Patricia Mota, PT, PhD',
-        role: 'Cofundadora & CEO',
-        image: '/img/team/team-patricia-mota.jpg?height=1200&width=1200',
+        role: 'Co-Fundadora y CEO',
+        image: '/img/team/team-patricia-mota-2.jpeg?height=1200&width=1200',
         quote:
-          'Nuestra misión es elevar los cuidados de salud femenina, haciéndolos más accesibles, innovadores y empoderadores para todas las mujeres.',
+          'Nuestra misión es elevar la atención médica de la mujer haciéndola más accesible, innovadora y empoderadora para todas.',
       },
       {
         name: 'Cristine Homsi Jorge, PT, PhD',
-        role: 'Directora Científica',
+        role: 'Asesora Científica (Salud de la Mujer)',
         image: '/img/team/team-cristine-homsi-jorge.jpg?height=1200&width=1200',
         quote:
-          'Nuestra investigación innovadora es la base de soluciones de salud que realmente satisfacen las necesidades únicas de las mujeres.',
+          'La investigación clínica y la educación empoderan a las mujeres para tomar decisiones informadas sobre su salud.',
       },
       {
         name: 'Alexandre Delgado, PT, PhD',
-        role: 'Director de Investigación e Innovación',
+        role: 'Asesor Científico (Fisioterapia Obstétrica)',
         image: '/img/team/team-alexandre-delgado-br.png?height=1200&width=1200',
         quote:
-          'Innovar en la salud femenina significa buscar continuamente nuevos conocimientos para mejorar la atención y la calidad de vida de todas.',
+          'La fisioterapia basada en evidencia transforma la experiencia del embarazo y parto, empoderando a las mujeres en cada etapa.',
       },
       {
         name: 'Patricia Driusso, PT, PhD',
-        role: 'Directora de Investigación Clínica',
+        role: 'Asesora Científica (Salud de la Mujer)',
         image: '/img/team/team-patricia-driusso.jpg?height=1200&width=1200',
         quote:
-          'Nuestra investigación se centra en cerrar la brecha entre la ciencia y la aplicación práctica, empoderando a las mujeres a través de mejores resultados de salud.',
+          'La investigación clínica avanza los tratamientos de rehabilitación mientras empodera a las mujeres a través de la educación basada en evidencia.',
       },
       {
-        name: 'Joana Goulão',
-        role: 'Fisioterapeuta',
-        image: '/img/team/team-joana-goulao.jpg?height=1200&width=1200',
+        name: 'Annelie Gutke, PT, PhD',
+        role: 'Asesora Científica (Salud de la Mujer)',
+        image: '/img/team/team-annelie-gutke.jpg?height=1200&width=1200',
         quote:
-          'La salud pélvica es un pilar crucial para el bienestar general de las mujeres, y estoy comprometida en brindar el mejor apoyo posible.',
+          'Comprender los mecanismos del dolor transforma cómo cuidamos a las mujeres durante el embarazo.',
+      },
+      {
+        name: 'Ruben Barakat, PhD',
+        role: 'Asesor Científico (Ciencias del Ejercicio)',
+        image: '/img/team/team-ruben-barakat.jpg?height=1200&width=1200',
+        quote:
+          'La evidencia muestra que el ejercicio personalizado durante el embarazo puede transformar los resultados de salud de las mujeres.',
+      },
+      {
+        name: 'Jessica Margarido, PT',
+        role: 'Rehabilitación Oncológica',
+        image: '/img/team/team-jessica-margarido.jpg?height=1200&width=1200',
+        quote:
+          'La rehabilitación basada en evidencia restaura la función y la calidad de vida durante el tratamiento del cáncer.',
+      },
+      {
+        name: 'Joana Goulão Barros, MD, PhD',
+        role: 'Ginecología y Obstetricia',
+        image: '/img/team/team-joana-barros.jpg?height=1200&width=1200',
+        quote:
+          'La integración de la experiencia médica con la rehabilitación especializada crea el más alto estándar de atención prenatal.',
+      },
+      {
+        name: 'Rodrigo Barona',
+        role: 'Co-Fundador',
+        image: '/img/team/team-rodrigo-barona.jpg?height=1200&width=1200',
+        quote:
+          'Estamos transformando la atención médica de la mujer combinando experiencia clínica con tecnología innovadora.',
       },
     ],
   },
