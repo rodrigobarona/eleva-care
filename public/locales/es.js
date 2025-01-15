@@ -224,7 +224,7 @@ export const translations = {
     scholar: 'Google Scholar',
   },
   footer: {
-    copyright: '© 2024 Eleva Care. All rights reserved.',
+    copyright: '© 2025 Eleva Care. Todos los derechos reservados.',
     privacy: 'Política de privacidad',
     terms: 'Términos y condiciones',
   },
